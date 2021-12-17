@@ -1,0 +1,38 @@
+.navbar {
+    width: 100%;
+    height: 9vh;
+    background-color: #4db6ac;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 80%;
+    width: 5%;
+    margin-left: 80px;
+}
+
+.links {
+    margin-right: 80px;
+}
+
+.link {
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #4db6ac;
+    padding: 10px;
+}
+
+.link:hover,
+.link:active {
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #166e66;
+    color: white;
+}
