@@ -38,7 +38,7 @@ const Donate = (props) => {
       <form className={styles.form} onSubmit={submitHandler}>
         <div>
           <label htmlFor="amount">Donation Amount</label>
-          <span>$</span>
+          <span className={styles.dollar}>$</span>
           <input
             type="number"
             min="1"
@@ -49,7 +49,7 @@ const Donate = (props) => {
             className={styles.input}
           />
         </div>
-        <button className={styles["donate-btn"]}>Donate ${amtToDonate}</button>
+        <button className={styles["donate-btn"]}>Donate {amtToDonate > 0 && '$'}{amtToDonate}</button>
       </form>
     </Card>
   );

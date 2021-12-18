@@ -2,6 +2,10 @@
     margin-bottom: 2rem;
 }
 
+.donate p {
+    text-align: center;
+}
+
 .form {
     margin: 0.5rem 2rem;
 }
@@ -32,4 +36,10 @@
     font-size: 20px;
     font-weight: 500;
     border-radius: 20px;
+}
+
+.dollar {
+    font-size: 24px;
+    margin-right: 0.3rem;
+    font-weight: 500;
 }
