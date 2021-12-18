@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 import styles from "./Donate.module.css";
 
@@ -12,9 +12,20 @@ const Donate = (props) => {
     setAmtToDonate(e.target.value);
   };
 
-  const submitHandler = e => {
-      e.preventDefault();
-  }
+  const submitHandler = (e) => {
+    e.preventDefault();
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  useEffect(() => {
+      scrollToTop();
+  }, [])
 
   return (
     <Card className={styles.donate}>
@@ -38,7 +49,7 @@ const Donate = (props) => {
             className={styles.input}
           />
         </div>
-        <button className={styles['donate-btn']}>Donate ${amtToDonate}</button>
+        <button className={styles["donate-btn"]}>Donate ${amtToDonate}</button>
       </form>
     </Card>
   );

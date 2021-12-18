@@ -24,6 +24,7 @@
 .donate-btn:hover {
     cursor: pointer;
     background-color: #4db6ac;
+    border-color: #bbb
 }
 
 .input {
