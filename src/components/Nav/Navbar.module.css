@@ -12,8 +12,8 @@
 }
 
 .logo {
-  height: 6rem;
-  width: 6rem;
+  height: 3.5rem;
+  width: 3.5rem;
   margin-left: 80px;
   border-radius: 50%;
   margin-right: auto;
@@ -28,9 +28,6 @@
 
 .links {
   margin-right: 80px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .link,
@@ -48,12 +45,15 @@
 
 .link:hover,
 .link:active,
+.link:focus,
 .link-toggle:hover,
-.link-toggle:active {
+.link-toggle:active,
+.link-toggle:focus {
   border: 2px solid white;
   border-radius: 20px;
   background-color: #166e66;
   color: white;
+  cursor: pointer;
 }
 
 .full-menu {

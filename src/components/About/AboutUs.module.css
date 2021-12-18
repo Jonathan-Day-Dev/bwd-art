@@ -1,0 +1,16 @@
+.about {
+    margin: 2rem 0;
+}
+
+.about h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.image {
+    float: right;
+}
+
+.p1 {
+    font-weight: 500;
+}

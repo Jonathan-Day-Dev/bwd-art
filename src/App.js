@@ -1,18 +1,34 @@
-import './App.css';
+import "./App.css";
 
-import Navbar from './components/Nav/Navbar';
-import Header from './components/Layout/Header';
-import WhatsNew from './components/Layout/WhatsNew';
-import Features from './components/Layout/Features';
-import Footer from './components/Layout/Footer';
+import { useSelector } from "react-redux";
+import { Fragment } from "react";
+
+import Navbar from "./components/Nav/Navbar";
+import Header from "./components/Layout/Header";
+import WhatsNew from "./components/Layout/WhatsNew";
+import Features from "./components/Layout/Features";
+import Footer from "./components/Layout/Footer";
+
+import AboutUs from "./components/About/AboutUs";
 
 function App() {
+  const page = useSelector((state) => state.page.page);
+
   return (
     <div className="App">
       <Navbar />
       <Header />
-      <WhatsNew />
-      <Features />
+      {page === "Home" && (
+        <Fragment>
+          <WhatsNew />
+          <Features />
+        </Fragment>
+      )}
+      {page === "About" && (
+        <Fragment>
+          <AboutUs />
+        </Fragment>
+      )}
       <Footer />
     </div>
   );

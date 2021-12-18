@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 
 import styles from "./Navbar.module.css";
 import logo from "../../assets/logo.png";
 
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
+
+import { pageActions } from '../../store/index';
 
 const Hamburger = (props) => {
   return (
@@ -20,23 +23,32 @@ const Hamburger = (props) => {
 };
 
 const Navbar = (props) => {
+  const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
   };
 
+  const homeHandler = () => {
+    dispatch(pageActions.home());
+  }
+
+  const aboutHandler = () => {
+    dispatch(pageActions.about())
+  }
+
   return (
     <nav className={styles.navbar}>
       <div className={styles["full-menu"]}>
         <img src={logo} alt="logo" className={styles.logo} />
         <section className={styles.links}>
-          <a href="http://localhost:3000" className={styles["link"]}>
+          <button onClick={homeHandler} className={styles["link"]}>
             Home
-          </a>
-          <a href="http://localhost:3000" className={styles["link"]}>
+          </button>
+          <button onClick={aboutHandler} className={styles["link"]}>
             About Us
-          </a>
+          </button>
           <a href="http://localhost:3000" className={styles["link"]}>
             Donate
           </a>
