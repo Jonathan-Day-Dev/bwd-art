@@ -38,6 +38,10 @@ const Navbar = (props) => {
     dispatch(pageActions.about())
   }
 
+  const donateHandler = () => {
+    dispatch(pageActions.donate())
+  }
+
   return (
     <nav className={styles.navbar}>
       <div className={styles["full-menu"]}>
@@ -49,20 +53,20 @@ const Navbar = (props) => {
           <button onClick={aboutHandler} className={styles["link"]}>
             About Us
           </button>
-          <a href="http://localhost:3000" className={styles["link"]}>
+          <button onClick={donateHandler} className={styles["link"]}>
             Donate
-          </a>
-          <a href="http://localhost:3000" className={styles["link"]}>
+          </button>
+          <button className={styles["link"]}>
             Membership
-          </a>
+          </button>
         </section>
         <section className={styles.links}>
-          <a href="http://localhost:3000" className={styles["link-toggle"]}>
+          <button className={styles["link-toggle"]}>
             2022 Virtual Portrait Contest
-          </a>
-          <a href="http://localhost:3000" className={styles["link-toggle"]}>
+          </button>
+          <button className={styles["link-toggle"]}>
             Online Art Demos
-          </a>
+          </button>
         </section>
       </div>
       <div className={styles["hamburger-menu"]}>

@@ -10,11 +10,12 @@ const pageSlice = createSlice({
     reducers: {
         home(state) {
             state.page = "Home"
-            console.log(state.page)
         },
         about(state) {
             state.page = "About"
-            console.log(state.page)
+        },
+        donate(state) {
+            state.page = "Donate"
         }
     }
 });

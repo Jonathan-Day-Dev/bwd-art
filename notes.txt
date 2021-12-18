@@ -1,10 +1,13 @@
 Google calender
 
-Set up redux store
-
 NAVBAR
  - In hamburger menu, change li's to a's or buttons
  - Hamburger menu gets cut off on smaller screens
+ - Need to highlight Home on initial render of page (use classes?)
+ - Breaks around 700px, just before hamburger icon appears
+
+MAIN
+ - Set standard margins on Card and remove margins from components using Card
 
 -----------------------------------------------------------------------
 RESPONSIVENESS
