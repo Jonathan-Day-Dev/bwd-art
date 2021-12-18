@@ -10,11 +10,14 @@
 .header h1 {
     font-size: 5rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .top {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    margin: 0 1rem;
 }
 
 .info {
@@ -35,3 +38,39 @@
     height: 14rem;
     margin-right: 2rem;
 }
+
+@media only screen and (max-width: 1200px) {
+    .header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .info {
+        flex-direction: column;
+    }
+    .info p {
+        font-size: 20px;
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 7rem;
+        height: 7rem;
+        margin: 0;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    .top {
+        flex-direction: column;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {...}
+@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 1200px) {...} */

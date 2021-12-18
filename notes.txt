@@ -2,6 +2,10 @@ Google calender
 
 Set up redux store
 
+NAVBAR
+ - In hamburger menu, change li's to a's or buttons
+ - Hamburger menu gets cut off on smaller screens
+
 -----------------------------------------------------------------------
 RESPONSIVENESS
 
@@ -17,3 +21,8 @@ Medium devices (landscape tablets, 768px and up)
 Large devices (laptops/desktops, 992px and up)
 Extra large devices (large laptops and desktops, 1200px and up)
 -----------------------------------------------------------------------
+
+Header
+Whats New
+Features
+Footer
