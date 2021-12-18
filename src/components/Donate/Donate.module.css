@@ -3,48 +3,6 @@
 }
 
 .iform {
-    height: 160vh;
+    height: 170vh;
     width: 80%;
-}
-
-.donate p {
-    text-align: center;
-}
-
-.form {
-    margin: 0.5rem 2rem;
-}
-
-.form div label {
-    display: block;
-    text-align: center;
-}
-
-.donate-btn {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: 500;
-    border: 2px solid black;
-}
-
-.donate-btn:hover {
-    cursor: pointer;
-    background-color: #4db6ac;
-    border-color: #bbb
-}
-
-.input {
-    padding: 0.5rem 1rem;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 20px;
-}
-
-.dollar {
-    font-size: 24px;
-    margin-right: 0.3rem;
-    font-weight: 500;
 }
