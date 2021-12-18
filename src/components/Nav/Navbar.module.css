@@ -54,6 +54,7 @@
   background-color: #166e66;
   color: white;
   cursor: pointer;
+  box-shadow: 5px 5px 4px gray;
 }
 
 .full-menu {

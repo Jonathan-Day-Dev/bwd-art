@@ -14,6 +14,11 @@ const Footer = props => {
             <a href="http://localhost:3000" className={styles.link}>Donate</a>
             <a href="http://localhost:3000" className={styles.link}>Membership</a>
         </div>
+        <div className={styles.social}>
+            <a href="http://facebook.com">Facebook</a>
+            <a href="http://instagram.com">Instagram</a>
+            <a href="http://twitter.com">Twitter</a>
+        </div>
     </footer>
 }
 

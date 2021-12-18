@@ -1,7 +1,7 @@
 Google calender
 
 GENERAL
- - Break up components into smaller parts
+ - UI components for buttons, links, h tags?
 
 NAVBAR
  - In hamburger menu, change li's to a's or buttons
@@ -13,6 +13,7 @@ MAIN
 CONTACT
  - Responsiveness
  - Attach contact form to an email account
+ - Clear form after send
 
 Footer
  - Social media links

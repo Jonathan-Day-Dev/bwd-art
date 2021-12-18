@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import styles from "./Contact.module.css";
 
 import Card from "../UI/Card";
+import Button from '../UI/Button';
 
 const Contact = (props) => {
   const scrollToTop = () => {
@@ -23,7 +24,7 @@ const Contact = (props) => {
   return (
     <Card className={styles.card}>
       <h2>We Would Love To Hear From You</h2>
-      <form onSubmit={submitHandler}>
+      <form onClick={submitHandler} action="mailto:jonday@jonday.dev" method="POST" enctype="text/plain">
         <div className={styles["first-line"]}>
           <div>
             <label htmlFor="name">Name</label>
@@ -47,7 +48,7 @@ const Contact = (props) => {
         <div className={styles.comment}>
           <textarea cols={60} rows={12} />
         </div>
-        <button className={styles["submit-btn"]}>Submit</button>
+        <Button className={styles["submit-btn"]}>Submit</Button>
       </form>
     </Card>
   );
