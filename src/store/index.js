@@ -16,6 +16,9 @@ const pageSlice = createSlice({
         },
         donate(state) {
             state.page = "Donate"
+        },
+        contact(state) {
+            state.page = "Contact"
         }
     }
 });

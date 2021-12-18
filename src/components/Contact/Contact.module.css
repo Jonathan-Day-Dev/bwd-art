@@ -1,0 +1,31 @@
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.first-line,
+.second-line {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.comment {
+    text-align: center;
+}
+
+.submit-btn {
+
+}

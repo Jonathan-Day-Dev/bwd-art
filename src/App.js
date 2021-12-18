@@ -11,6 +11,7 @@ import Footer from "./components/Layout/Footer";
 
 import AboutUs from "./components/About/AboutUs";
 import Donate from "./components/Donate/Donate";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const page = useSelector((state) => state.page.page);
@@ -33,6 +34,11 @@ function App() {
       {page === "Donate" && (
         <Fragment>
           <Donate />
+        </Fragment>
+      )}
+      {page === "Contact" && (
+        <Fragment>
+          <Contact />
         </Fragment>
       )}
       <Footer />

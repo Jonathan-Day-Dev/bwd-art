@@ -16,8 +16,6 @@ const Hamburger = (props) => {
       <li>About Us</li>
       <li>Donate</li>
       <li>Membership</li>
-      <li>2022 Virtual Portrait Contest</li>
-      <li>Online Art Demos</li>
     </ul>
   );
 };
@@ -42,6 +40,10 @@ const Navbar = (props) => {
     dispatch(pageActions.donate())
   }
 
+  const contactHandler = () => {
+    dispatch(pageActions.contact())
+  }
+
   return (
     <nav className={styles.navbar}>
       <div className={styles["full-menu"]}>
@@ -53,6 +55,9 @@ const Navbar = (props) => {
           <button onClick={aboutHandler} className={styles["link"]}>
             About Us
           </button>
+          <button onClick={contactHandler} className={styles["link"]}>
+            Contact
+          </button>
           <button onClick={donateHandler} className={styles["link"]}>
             Donate
           </button>
@@ -60,14 +65,14 @@ const Navbar = (props) => {
             Membership
           </button>
         </section>
-        <section className={styles.links}>
+        {/* <section className={styles.links}>
           <button className={styles["link-toggle"]}>
             2022 Virtual Portrait Contest
           </button>
           <button className={styles["link-toggle"]}>
             Online Art Demos
           </button>
-        </section>
+        </section> */}
       </div>
       <div className={styles["hamburger-menu"]}>
         <img src={logo} alt="logo" className={styles["logo-small"]} />
