@@ -1,0 +1,10 @@
+.features {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.features img {
+    width: 40%;
+    margin: 1rem;
+}
