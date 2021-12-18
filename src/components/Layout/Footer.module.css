@@ -37,3 +37,16 @@
     background-color: white;
     border-color: #4db6ac;
 }
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .footer p {
+        text-align: center;
+    }
+    .image {
+        display: none;
+    }
+}
