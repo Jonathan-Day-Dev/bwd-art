@@ -2,6 +2,11 @@
     margin-bottom: 2rem;
 }
 
+.iform {
+    height: 160vh;
+    width: 80%;
+}
+
 .donate p {
     text-align: center;
 }
