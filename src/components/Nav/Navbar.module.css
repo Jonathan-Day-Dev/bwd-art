@@ -1,59 +1,125 @@
-.navbar {
-    width: 100%;
-    background-color: #4db6ac;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0.4rem 0;
+.navbar,
+.full-menu {
+  width: 100%;
+  background-color: #4db6ac;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.4rem 0;
 }
 
 .logo {
-    height: 6rem;
-    width: 6rem;
-    margin-left: 80px;
+  height: 6rem;
+  width: 6rem;
+  margin-left: 80px;
+  border-radius: 50%;
+  margin-right: auto;
+}
+
+.logo-small {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 60px;
     border-radius: 50%;
 }
 
 .links {
-    margin-right: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  margin-right: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .link,
 .link-toggle {
-    margin: 0 10px;
-    background-color: transparent;
-    border: none;
-    font-weight: 600;
-    font-size: 24px;
-    text-decoration: none;
-    color: black;
-    border: 2px solid #4db6ac;
-    padding: 10px;
+  margin: 0 10px;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid #4db6ac;
+  padding: 10px;
 }
 
 .link:hover,
-.link:active {
-    border: 2px solid white;
-    border-radius: 20px;
-    background-color: #166e66;
-    color: white;
+.link:active,
+.link-toggle:hover,
+.link-toggle:active {
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: #166e66;
+  color: white;
+}
+
+.full-menu {
+  visibility: visible;
+}
+
+.hamburger-menu {
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.close-btn,
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  text-align: right;
+}
+
+.small-menu {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 2.4rem;
+  background: darkcyan;
+  right: 0;
+  bottom: 0;
+  height: 20vh;
+  width: 50%;
+  overflow: hidden;
+  max-width: 290px;
+  z-index: 9;
+  padding-top: 2rem;
+  padding-right: 1rem;
+}
+
+.small-menu li {
+    font-size: 24px;
 }
 
 @media only screen and (max-width: 992px) {
-    .link-toggle {
-        visibility: hidden;
-    }
+  .link-toggle {
+    visibility: hidden;
+  }
+  .link,
+  .link-toggle {
+    font-size: 20px;
+  }
+  .full-menu {
+    visibility: hidden;
+  }
+  .hamburger-menu {
+    visibility: visible;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .link {
-        font-size: 16px;
-        margin-right: 40px;
-    }
+  .link,
+  .link-toggle {
+    font-size: 16px;
+    margin-right: 40px;
+  }
 }
