@@ -15,18 +15,11 @@ const Footer = props => {
             <a href="http://localhost:3000" className={styles.link}>Membership</a>
         </div>
         <div className={styles.social}>
-            <a href="http://facebook.com">Facebook</a>
-            <a href="http://instagram.com">Instagram</a>
-            <a href="http://twitter.com">Twitter</a>
+            <a href="https://www.facebook.com/brownwoodart">Facebook</a>
+            <a href="http://instagram.com" className={styles.disabled}>Instagram</a>
+            <a href="https://twitter.com/BrownwoodArt">Twitter</a>
         </div>
     </footer>
 }
 
 export default Footer;
-
-/**
- * Brownwood Art Association
-P.O. Box 782
-Brownwood, Texas 76804
-(325) 641-2916
- */
