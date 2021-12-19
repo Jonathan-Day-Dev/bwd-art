@@ -84,21 +84,26 @@
   overflow-y: scroll;
   list-style: none;
   position: fixed;
-  top: 2.4rem;
+  top: 3.5rem;
   background: darkcyan;
-  right: 0;
+  right: 0.5rem;
   bottom: 0;
-  height: 20vh;
+  height: 35vh;
   width: 50%;
   overflow: hidden;
   max-width: 290px;
   z-index: 9;
   padding-top: 2rem;
   padding-right: 1rem;
+  transition: visibility 0.5s ease-in 0.3s;
 }
 
-.small-menu li {
+.small-menu__btn {
     font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: #ccc;
+    margin: 0.5rem 0;
 }
 
 @media only screen and (max-width: 992px) {

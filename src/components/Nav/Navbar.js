@@ -7,17 +7,76 @@ import logo from "../../assets/logo.png";
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 
-import { pageActions } from '../../store/index';
+import { pageActions } from "../../store/index";
 
 const Hamburger = (props) => {
+  const dispatch = useDispatch();
+
+  const homeHandler = () => {
+    dispatch(pageActions.home());
+    props.onClick();
+  };
+
+  const aboutHandler = () => {
+    dispatch(pageActions.about());
+    props.onClick();
+  };
+
+  const donateHandler = () => {
+    dispatch(pageActions.donate());
+    props.onClick();
+  };
+
+  const contactHandler = () => {
+    dispatch(pageActions.contact());
+    props.onClick();
+  };
+
+  const calendarHandler = () => {
+    dispatch(pageActions.calendar());
+    props.onClick();
+  };
+
+  const membershipHandler = () => {
+    dispatch(pageActions.membership());
+    props.onClick();
+  };
+
   return (
     <ul className={styles["small-menu"]}>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact</li>
-      <li>Calendar</li>
-      <li>Donate</li>
-      <li>Membership</li>
+      <li>
+        <button onClick={homeHandler} className={styles["small-menu__btn"]}>
+          Home
+        </button>
+      </li>
+      <li>
+        <button onClick={aboutHandler} className={styles["small-menu__btn"]}>
+          About Us
+        </button>
+      </li>
+      <li>
+        <button onClick={contactHandler} className={styles["small-menu__btn"]}>
+          Contact
+        </button>
+      </li>
+      <li>
+        <button onClick={calendarHandler} className={styles["small-menu__btn"]}>
+          Calendar
+        </button>
+      </li>
+      <li>
+        <button onClick={donateHandler} className={styles["small-menu__btn"]}>
+          Donate
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={membershipHandler}
+          className={styles["small-menu__btn"]}
+        >
+          Membership
+        </button>
+      </li>
     </ul>
   );
 };
@@ -32,27 +91,27 @@ const Navbar = (props) => {
 
   const homeHandler = () => {
     dispatch(pageActions.home());
-  }
+  };
 
   const aboutHandler = () => {
-    dispatch(pageActions.about())
-  }
+    dispatch(pageActions.about());
+  };
 
   const donateHandler = () => {
-    dispatch(pageActions.donate())
-  }
+    dispatch(pageActions.donate());
+  };
 
   const contactHandler = () => {
-    dispatch(pageActions.contact())
-  }
+    dispatch(pageActions.contact());
+  };
 
   const calendarHandler = () => {
-    dispatch(pageActions.calendar())
-  }
+    dispatch(pageActions.calendar());
+  };
 
   const membershipHandler = () => {
-    dispatch(pageActions.membership())
-  }
+    dispatch(pageActions.membership());
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -95,7 +154,7 @@ const Navbar = (props) => {
         {showMenu && (
           <div>
             <MdClose className={styles["close-btn"]} onClick={toggleMenu} />
-            <Hamburger />
+            <Hamburger onClick={toggleMenu} />
           </div>
         )}
       </div>
