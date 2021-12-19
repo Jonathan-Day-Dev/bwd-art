@@ -6,3 +6,9 @@
     height: 170vh;
     width: 80%;
 }
+
+@media only screen and (max-width: 768px) {
+    .donate {
+        width: 95%;
+    }
+}
