@@ -1,4 +1,5 @@
 import "./App.css";
+import "./index.css";
 
 import { useSelector, useDispatch } from "react-redux";
 import { Fragment } from "react";

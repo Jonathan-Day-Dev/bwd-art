@@ -1,5 +1,4 @@
-Google calender
-Newsletter?
+Newsletter/Blog?
 
 NAVBAR
  - Need to highlight Home on initial render of page (make "active" class and apply it with useEffect)
