@@ -14,6 +14,8 @@ const Hamburger = (props) => {
     <ul className={styles["small-menu"]}>
       <li>Home</li>
       <li>About Us</li>
+      <li>Contact</li>
+      <li>Calendar</li>
       <li>Donate</li>
       <li>Membership</li>
     </ul>
