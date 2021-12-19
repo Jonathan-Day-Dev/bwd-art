@@ -147,7 +147,7 @@ const Navbar = (props) => {
         </section> */}
       </div>
       <div className={styles["hamburger-menu"]}>
-        <img src={logo} alt="logo" className={styles["logo-small"]} />
+        {/* <img src={logo} alt="logo" className={styles["logo-small"]} /> */}
         {!showMenu && (
           <FiMenu className={styles["burger-btn"]} onClick={toggleMenu} />
         )}
