@@ -1,20 +1,12 @@
 Google calender
 Newsletter?
 
-GENERAL
- - UI components for buttons, links, h tags?
-
 NAVBAR
- - In hamburger menu, change li's to a's or buttons
  - Need to highlight Home on initial render of page (make "active" class and apply it with useEffect)
-
-MAIN
- - Set standard margins on Card and remove margins from components using Card
+ - Styling
+ - Add options for contest and vids on small screen menu
 
 CONTACT
- - Responsiveness
- - Attach contact form to an email account
- - Clear form after send
  - Form validation
 
 Footer
