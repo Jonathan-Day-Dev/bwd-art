@@ -1,13 +1,13 @@
 .main {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    width: 50vw;
-    border-radius: 20px;
+    align-items: center; */
+    /* width: 50vw; */
+    /* border-radius: 20px;
     border: 2px solid #4db6ac;
     background-color: #bbb;
-    padding: 2rem;
+    padding: 2rem; */
 }
 
 .main h2 {
@@ -36,6 +36,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .main {
+        width: 75% !important; 
+    }
     .logo-img,
     .art-center-img {
         width: 90%;

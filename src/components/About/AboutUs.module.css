@@ -34,3 +34,9 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .about {
+      width: 75% !important; 
+  }
+}
