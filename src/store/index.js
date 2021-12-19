@@ -19,6 +19,9 @@ const pageSlice = createSlice({
         },
         contact(state) {
             state.page = "Contact"
+        },
+        calendar(state) {
+            state.page = "Calendar"
         }
     }
 });

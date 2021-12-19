@@ -44,6 +44,10 @@ const Navbar = (props) => {
     dispatch(pageActions.contact())
   }
 
+  const calendarHandler = () => {
+    dispatch(pageActions.calendar())
+  }
+
   return (
     <nav className={styles.navbar}>
       <div className={styles["full-menu"]}>
@@ -57,6 +61,9 @@ const Navbar = (props) => {
           </button>
           <button onClick={contactHandler} className={styles["link"]}>
             Contact
+          </button>
+          <button onClick={calendarHandler} className={styles["link"]}>
+            Calendar
           </button>
           <button onClick={donateHandler} className={styles["link"]}>
             Donate

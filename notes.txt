@@ -1,4 +1,5 @@
 Google calender
+Newsletter?
 
 GENERAL
  - UI components for buttons, links, h tags?
@@ -14,6 +15,7 @@ CONTACT
  - Responsiveness
  - Attach contact form to an email account
  - Clear form after send
+ - Form validation
 
 Footer
  - Social media links
