@@ -84,18 +84,15 @@
   overflow-y: scroll;
   list-style: none;
   position: fixed;
-  top: 3.5rem;
+  top: 2rem;
   background: darkcyan;
-  right: 0.5rem;
+  right: 0;
   bottom: 0;
-  height: 35vh;
   width: 50%;
-  overflow: hidden;
   max-width: 290px;
   z-index: 9;
-  padding-top: 2rem;
   padding-right: 1rem;
-  transition: visibility 0.5s ease-in 0.3s;
+  height: fit-content;
 }
 
 .small-menu__btn {
