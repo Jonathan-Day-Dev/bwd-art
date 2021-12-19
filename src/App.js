@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Fragment } from "react";
 
 import Navbar from "./components/Nav/Navbar";
@@ -14,9 +14,18 @@ import Donate from "./components/Donate/Donate";
 import Contact from "./components/Contact/Contact";
 import Calendar from "./components/Calendar/Calendar";
 import Membership from "./components/Membership/Membership";
+import Classes from "./components/OnlineClasses/Classes";
+import Contest from "./components/Contest/Contest";
+
+import pageActions from './store/index';
 
 function App() {
   const page = useSelector((state) => state.page.page);
+  const dispatch = useDispatch()
+
+  const seeVidsHandler = () => {
+    dispatch(pageActions.video())
+  }
 
   return (
     <div className="App">
@@ -25,7 +34,7 @@ function App() {
       {page === "Home" && (
         <Fragment>
           <WhatsNew />
-          <Features />
+          <Features onVidSelect={seeVidsHandler} />
         </Fragment>
       )}
       {page === "About" && (
@@ -51,6 +60,16 @@ function App() {
       {page === "Membership" && (
         <Fragment>
           <Membership />
+        </Fragment>
+      )}
+      {page === "Video" && (
+        <Fragment>
+          <Classes />
+        </Fragment>
+      )}
+      {page === "Contest" && (
+        <Fragment>
+          <Contest />
         </Fragment>
       )}
       <Footer />

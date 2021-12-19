@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useDispatch } from 'react-redux';
 
 import styles from "./Features.module.css";
 
@@ -11,7 +12,18 @@ import demos from "../../assets/demos.png";
 
 import Card from "../UI/Card";
 
+import { pageActions } from '../../store/index';
+
 const Features = (props) => {
+  const dispatch = useDispatch();
+
+  const videoHandler = () => {
+    dispatch(pageActions.video())
+  }
+
+  const contestHandler = () => {
+    dispatch(pageActions.contest())
+  }
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -26,8 +38,8 @@ const Features = (props) => {
 
   return (
     <Card className={styles.features}>
-      <button><img src={vid} alt="videos" /></button>
-      <button><img src={demos} alt="videos" /></button>
+      <button onClick={videoHandler}><img src={vid} alt="videos" /></button>
+      <button onClick={contestHandler}><img src={demos} alt="videos" /></button>
       {/* <img src={vid} alt="videos" />
       <img src={demos} alt="videos" />
       <img src={hasBegun} alt="videos" />

@@ -25,6 +25,12 @@ const pageSlice = createSlice({
         },
         membership(state) {
             state.page = "Membership"
+        },
+        video(state) {
+            state.page = "Video"
+        },
+        contest(state) {
+            state.page = "Contest"
         }
     }
 });
