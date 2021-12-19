@@ -1,7 +1,21 @@
+import { useDispatch } from 'react-redux';
+
 import styles from './Footer.module.css';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png';
+
+import { pageActions } from '../../store/index';
 
 const Footer = props => {
+    const dispatch = useDispatch();
+
+    const membershipHandler = () => {
+        dispatch(pageActions.membership());
+    }
+
+    const donateHandler = () => {
+        dispatch(pageActions.donate());
+    }
+
     return <footer className={styles.footer}>
         <div className={styles.info}>
             <p>Brownwood Art Association</p>
@@ -11,8 +25,8 @@ const Footer = props => {
         </div>
         <img src={logo} alt="logo" className={styles.image} />
         <div className={styles.links}>
-            <a href="http://localhost:3000" className={styles.link}>Donate</a>
-            <a href="http://localhost:3000" className={styles.link}>Membership</a>
+            <button onClick={donateHandler} className={styles.link}>Donate</button>
+            <button onClick={membershipHandler} className={styles.link}>Membership</button>
         </div>
         <div className={styles.social}>
             <a href="https://www.facebook.com/brownwoodart">Facebook</a>
