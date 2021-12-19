@@ -50,6 +50,10 @@ const Navbar = (props) => {
     dispatch(pageActions.calendar())
   }
 
+  const membershipHandler = () => {
+    dispatch(pageActions.membership())
+  }
+
   return (
     <nav className={styles.navbar}>
       <div className={styles["full-menu"]}>
@@ -70,7 +74,7 @@ const Navbar = (props) => {
           <button onClick={donateHandler} className={styles["link"]}>
             Donate
           </button>
-          <button className={styles["link"]}>
+          <button onClick={membershipHandler} className={styles["link"]}>
             Membership
           </button>
         </section>

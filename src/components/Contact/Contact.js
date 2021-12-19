@@ -24,7 +24,7 @@ const Contact = (props) => {
   return (
     <Card className={styles.card}>
       <h2>We Would Love To Hear From You</h2>
-      <form onClick={submitHandler} action="mailto:jonday@jonday.dev" method="POST" enctype="text/plain">
+      <form onClick={submitHandler} action="mailto:jonday@jonday.dev" method="POST" encType="text/plain">
         <div className={styles["first-line"]}>
           <div>
             <label htmlFor="name">Name</label>

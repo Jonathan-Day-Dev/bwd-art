@@ -18,7 +18,7 @@ const Donate = (props) => {
 
   return (
     <Card className={styles.donate}>
-      <iframe allowpaymentrequest src="https://square.link/u/nBLV2h9F" title="order-form" className={styles.iform}/>
+      <iframe src="https://square.link/u/nBLV2h9F" title="order-form" className={styles.iform}/>
     </Card>
   );
 };

@@ -13,6 +13,7 @@ import AboutUs from "./components/About/AboutUs";
 import Donate from "./components/Donate/Donate";
 import Contact from "./components/Contact/Contact";
 import Calendar from "./components/Calendar/Calendar";
+import Membership from "./components/Membership/Membership";
 
 function App() {
   const page = useSelector((state) => state.page.page);
@@ -45,6 +46,11 @@ function App() {
       {page === "Calendar" && (
         <Fragment>
           <Calendar />
+        </Fragment>
+      )}
+      {page === "Membership" && (
+        <Fragment>
+          <Membership />
         </Fragment>
       )}
       <Footer />
