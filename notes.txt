@@ -6,6 +6,7 @@ NAVBAR
 
 CONTACT
  - Form validation
+ - Line up or stretch inputs to match textarea size
 
 FOOTER
  - Social media links

@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import styles from "./Navbar.module.css";
 import logo from "../../assets/logo.png";
@@ -11,6 +10,7 @@ import { pageActions } from "../../store/index";
 
 const Hamburger = (props) => {
   const dispatch = useDispatch();
+  const showMenu = useSelector((state) => state.page.showMenu);
 
   const homeHandler = () => {
     dispatch(pageActions.home());
@@ -45,68 +45,90 @@ const Hamburger = (props) => {
   const contestHandler = () => {
     dispatch(pageActions.contest());
     props.onClick();
-  }
+  };
 
   const videoHandler = () => {
     dispatch(pageActions.video());
     props.onClick();
-  }
+  };
 
   return (
-    <ul className={styles["small-menu"]}>
-      <li>
-        <button onClick={homeHandler} className={styles["small-menu__btn"]}>
-          Home
-        </button>
-      </li>
-      <li>
-        <button onClick={aboutHandler} className={styles["small-menu__btn"]}>
-          About Us
-        </button>
-      </li>
-      <li>
-        <button onClick={contactHandler} className={styles["small-menu__btn"]}>
-          Contact
-        </button>
-      </li>
-      <li>
-        <button onClick={calendarHandler} className={styles["small-menu__btn"]}>
-          Calendar
-        </button>
-      </li>
-      <li>
-        <button onClick={donateHandler} className={styles["small-menu__btn"]}>
-          Donate
-        </button>
-      </li>
-      <li>
-        <button
-          onClick={membershipHandler}
-          className={styles["small-menu__btn"]}
+    
+        <ul
+          className={`${styles["small-menu"]} ${showMenu ? styles.fit : styles.hidden}`}
         >
-          Membership
-        </button>
-      </li>
-      <li>
-        <button onClick={contestHandler} className={styles["small-menu__btn"]}>
-          2022 Contest
-        </button>
-      </li>
-      <li>
-        <button onClick={videoHandler} className={styles["small-menu__btn"]}>
-          Videos
-        </button>
-      </li>
-    </ul>
-  );
-};
+          <li>
+            <button onClick={homeHandler} className={styles["small-menu__btn"]}>
+              Home
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={aboutHandler}
+              className={styles["small-menu__btn"]}
+            >
+              About Us
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={contactHandler}
+              className={styles["small-menu__btn"]}
+            >
+              Contact
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={calendarHandler}
+              className={styles["small-menu__btn"]}
+            >
+              Calendar
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={donateHandler}
+              className={styles["small-menu__btn"]}
+            >
+              Donate
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={membershipHandler}
+              className={styles["small-menu__btn"]}
+            >
+              Membership
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={contestHandler}
+              className={styles["small-menu__btn"]}
+            >
+              2022 Contest
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={videoHandler}
+              className={styles["small-menu__btn"]}
+            >
+              Videos
+            </button>
+          </li>
+        </ul>
+  )}
+    
+  
 
 const Navbar = (props) => {
   const dispatch = useDispatch();
-  const [showMenu, setShowMenu] = useState(false);
+  const showMenu = useSelector((state) => state.page.showMenu);
 
   const toggleMenu = () => {
-    setShowMenu((prev) => !prev);
+    dispatch(pageActions.toggleMenu());
   };
 
   const homeHandler = () => {

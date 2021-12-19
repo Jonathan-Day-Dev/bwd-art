@@ -1,7 +1,8 @@
 import { createSlice, configureStore } from '@reduxjs/toolkit';
 
 const initialPageState = {
-    page: 'Home'
+    page: 'Home',
+    showMenu: false
 }
 
 const pageSlice = createSlice({
@@ -31,6 +32,9 @@ const pageSlice = createSlice({
         },
         contest(state) {
             state.page = "Contest"
+        },
+        toggleMenu(state) {
+            state.showMenu = !state.showMenu;
         }
     }
 });
