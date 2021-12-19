@@ -76,7 +76,6 @@ const Contact = (props) => {
   return (
     <Card className={styles.card}>
       <h2>We Would Love To Hear From You</h2>
-      {hasContacted && <p className={styles.submitted}>Your comment has been submitted and we will get back to you as soon as possible. Thank you!</p>}
       <form onSubmit={submitHandler} method="POST" encType="text/plain">
         <div className={styles["first-line"]}>
           <div>
@@ -101,6 +100,7 @@ const Contact = (props) => {
         <div className={styles.comment}>
           <textarea cols={60} rows={12} ref={commentRef} value={commentArea} onChange={commentHandler} />
         </div>
+        {hasContacted && <p className={styles.submitted}>Thank you! Your comment has been submitted and we will get back to you as soon as possible!</p>}
         <Button className={styles["submit-btn"]}>Submit</Button>
       </form>
     </Card>
