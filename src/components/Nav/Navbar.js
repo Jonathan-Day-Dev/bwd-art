@@ -42,6 +42,16 @@ const Hamburger = (props) => {
     props.onClick();
   };
 
+  const contestHandler = () => {
+    dispatch(pageActions.contest());
+    props.onClick();
+  }
+
+  const videoHandler = () => {
+    dispatch(pageActions.video());
+    props.onClick();
+  }
+
   return (
     <ul className={styles["small-menu"]}>
       <li>
@@ -75,6 +85,16 @@ const Hamburger = (props) => {
           className={styles["small-menu__btn"]}
         >
           Membership
+        </button>
+      </li>
+      <li>
+        <button onClick={contestHandler} className={styles["small-menu__btn"]}>
+          2022 Contest
+        </button>
+      </li>
+      <li>
+        <button onClick={videoHandler} className={styles["small-menu__btn"]}>
+          Videos
         </button>
       </li>
     </ul>

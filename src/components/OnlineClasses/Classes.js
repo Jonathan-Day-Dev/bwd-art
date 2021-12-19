@@ -36,18 +36,18 @@ const Classes = (props) => {
             height="180"
             src="https://www.youtube.com/embed/Wte3rdje2q0"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
           <iframe
             width="200"
             height="180"
             src="https://www.youtube.com/embed/lKkZkKW5Irg"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>
