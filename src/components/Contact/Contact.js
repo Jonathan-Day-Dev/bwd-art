@@ -120,47 +120,48 @@ const Contact = (props) => {
     }
   };
 
-  const submitHandler = async (e) => {
-    e.preventDefault();
-    formCheck();
-    if (!formIsValid) {
-      setHasError(true);
-      return;
-    }
-    setHasError(false)
-    await fetch(
-      "https://art-association-982df-default-rtdb.firebaseio.com/contact.json",
-      {
-        method: "POST",
-        body: JSON.stringify({
-          comment: {
-            name: username,
-            email: email,
-            phone: phone,
-            address: address,
-            comment: commentArea,
-          },
-        }),
-      }
-    );
-    setUsername("");
-    setEmail("");
-    setPhone("");
-    setAddress("");
-    setCommentArea("");
-    setHasContacted(true);
-  };
+  // const submitHandler = async (e) => {
+  //   e.preventDefault();
+  //   formCheck();
+  //   if (!formIsValid) {
+  //     setHasError(true);
+  //     return;
+  //   }
+  //   setHasError(false)
+  //   await fetch(
+  //     "https://art-association-982df-default-rtdb.firebaseio.com/contact.json",
+  //     {
+  //       method: "POST",
+  //       body: JSON.stringify({
+  //         comment: {
+  //           name: username,
+  //           email: email,
+  //           phone: phone,
+  //           address: address,
+  //           comment: commentArea,
+  //         },
+  //       }),
+  //     }
+  //   );
+  //   setUsername("");
+  //   setEmail("");
+  //   setPhone("");
+  //   setAddress("");
+  //   setCommentArea("");
+  //   setHasContacted(true);
+  // };
 
   return (
     <Card className={styles.card}>
       <h2>We Would Love To Hear From You</h2>
-      <form onSubmit={submitHandler} method="POST" encType="text/plain">
+      <form action="https://formsubmit.co/47278c38e64ad6628b1cc2cfb1e3762d" method="POST">
         <div className={styles["first-line"]}>
           <div>
             <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
+              name="name"
               ref={nameRef}
               value={username}
               onChange={nameHandler}
@@ -178,6 +179,7 @@ const Contact = (props) => {
             <input
               type="email"
               id="email"
+              name="email"
               ref={emailRef}
               value={email}
               onChange={emailHandler}
@@ -197,6 +199,7 @@ const Contact = (props) => {
             <input
               type="tel"
               id="phone"
+              name="phone"
               ref={phoneRef}
               value={phone}
               onChange={phoneHandler}
@@ -214,6 +217,7 @@ const Contact = (props) => {
             <input
               type="text"
               id="address"
+              name="address"
               ref={addressRef}
               value={address}
               onChange={addressHandler}
@@ -234,6 +238,7 @@ const Contact = (props) => {
             ref={commentRef}
             value={commentArea}
             onChange={commentHandler}
+            name="comment"
           />
         </div>
         {hasContacted && (

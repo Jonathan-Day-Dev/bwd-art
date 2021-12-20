@@ -16,11 +16,21 @@
     border-radius: 20px;
     width: 80%;
     border: 2px solid black;
+    height: 60vh;
 }
 
 @media only screen and (max-width: 992px) {
     .main h2 {
         font-size: 28px;
+    }
+    .art-center-img {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .art-center-img {
+        height: 40vh;
     }
 }
 

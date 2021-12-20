@@ -34,8 +34,8 @@ function App() {
       <Header />
       {page === "Home" && (
         <Fragment>
-          <WhatsNew />
           <Features onVidSelect={seeVidsHandler} />
+          <WhatsNew />
         </Fragment>
       )}
       {page === "About" && (

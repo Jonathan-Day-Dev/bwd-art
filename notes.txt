@@ -1,16 +1,15 @@
 Newsletter/Blog?
+Switch over from redux store to react routing
 
 NAVBAR
 
 CONTACT
- - Form validation
+ - Better phone and email validation
  - Line up or stretch inputs to match textarea size
 
 DONATE
- - Clean up any legacy donation code
 
 FOOTER
- - Social media links
 
 CALENDAR
 
@@ -19,8 +18,6 @@ MEMBERSHIP
 
 CONTEST
  - Add payments at the (bottom?) of the page
-
-Figure out how to send automated email from database or from code
 
 -----------------------------------------------------------------------
 RESPONSIVENESS
