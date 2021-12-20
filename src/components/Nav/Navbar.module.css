@@ -49,7 +49,8 @@
 .link:focus,
 .link-toggle:hover,
 .link-toggle:active,
-.link-toggle:focus {
+.link-toggle:focus,
+.is-active {
   border: 2px solid white;
   border-radius: 20px;
   background-color: #166e66;

@@ -53,7 +53,8 @@ const Contact = (props) => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    await fetch("https://art-association-982df-default-rtdb.firebaseio.com/contact.json", {
+    // await fetch("https://art-association-982df-default-rtdb.firebaseio.com/contact.json", {
+      await fetch("https://art-association-982df-default-rtdb.firebaseio.com/contact.json", { 
       method: 'POST',
       body: JSON.stringify({
         comment: {

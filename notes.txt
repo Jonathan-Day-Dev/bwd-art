@@ -2,27 +2,26 @@ Newsletter/Blog?
 
 NAVBAR
  - Need to highlight Home on initial render of page (make "active" class and apply it with useEffect)
- - Styling
 
 CONTACT
  - Form validation
  - Line up or stretch inputs to match textarea size
 
 DONATE
- Clean up any legacy donation code
+ - Clean up any legacy donation code
 
 FOOTER
  - Social media links
 
 CALENDAR
- - Add Google Calander to iframe
 
 MEMBERSHIP
  - Do what I can with membership page
 
-Figure out how to take payment for membership through Square
+CONTEST
+ - Add payments at the (bottom?) of the page
+
 Figure out how to send automated email from database or from code
-Connect my bank account to test Square
 
 -----------------------------------------------------------------------
 RESPONSIVENESS
@@ -38,8 +37,3 @@ Medium devices (landscape tablets, 768px and up)
 Large devices (laptops/desktops, 992px and up)
 Extra large devices (large laptops and desktops, 1200px and up)
 -----------------------------------------------------------------------
-
-Header
-Whats New
-Features
-Footer

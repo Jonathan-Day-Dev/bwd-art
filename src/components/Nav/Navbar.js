@@ -13,6 +13,7 @@ import { pageActions } from "../../store/index";
 const Navbar = (props) => {
   const dispatch = useDispatch();
   const showMenu = useSelector((state) => state.page.showMenu);
+  const page = useSelector((state) => state.page.page);
 
   const toggleMenu = () => {
     dispatch(pageActions.toggleMenu());
@@ -42,38 +43,34 @@ const Navbar = (props) => {
     dispatch(pageActions.membership());
   };
 
+  const activeLink = pageName => {
+    return `${styles.link} ${page === pageName ? styles['is-active'] : ""}`
+  }
+
   return (
     <nav className={styles.navbar}>
       <div className={styles["full-menu"]}>
         <img src={logo} alt="logo" className={styles.logo} />
         <section className={styles.links}>
-          <button onClick={homeHandler} className={styles["link"]}>
+          <button onClick={homeHandler} className={activeLink("Home")}>
             Home
           </button>
-          <button onClick={aboutHandler} className={styles["link"]}>
+          <button onClick={aboutHandler} className={activeLink("About")}>
             About Us
           </button>
-          <button onClick={contactHandler} className={styles["link"]}>
+          <button onClick={contactHandler} className={activeLink("Contact")}>
             Contact
           </button>
-          <button onClick={calendarHandler} className={styles["link"]}>
+          <button onClick={calendarHandler} className={activeLink("Calendar")}>
             Calendar
           </button>
-          <a href="https://linktr.ee/bwd_art" className={styles["link"]}>
+          <a href="https://linktr.ee/bwd_art" className={activeLink("Donate")}>
             Donate
           </a>
-          <button onClick={membershipHandler} className={styles["link"]}>
+          <button onClick={membershipHandler} className={activeLink("Membership")}>
             Membership
           </button>
         </section>
-        {/* <section className={styles.links}>
-          <button className={styles["link-toggle"]}>
-            2022 Virtual Portrait Contest
-          </button>
-          <button className={styles["link-toggle"]}>
-            Online Art Demos
-          </button>
-        </section> */}
       </div>
       <div className={styles["hamburger-menu"]}>
         {/* <img src={logo} alt="logo" className={styles["logo-small"]} /> */}
