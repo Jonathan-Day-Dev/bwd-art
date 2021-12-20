@@ -47,6 +47,15 @@ input {
   margin: 1rem;
 }
 
+.invalid {
+  background-color: rosybrown;
+  border: 1px solid red;
+}
+
+.invalid-warning {
+  color: red;
+}
+
 @media only screen and (max-width: 992px) {
   .first-line,
   .second-line {
