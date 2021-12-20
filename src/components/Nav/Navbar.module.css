@@ -41,6 +41,7 @@
   color: black;
   border: 2px solid #4db6ac;
   padding: 10px;
+  font-family: 'Prata'
 }
 
 .link:hover,
@@ -55,6 +56,7 @@
   color: white;
   cursor: pointer;
   box-shadow: 5px 5px 4px gray;
+  font-family: 'Prata'
 }
 
 .full-menu {

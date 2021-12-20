@@ -26,9 +26,9 @@ const Navbar = (props) => {
     dispatch(pageActions.about());
   };
 
-  const donateHandler = () => {
-    dispatch(pageActions.donate());
-  };
+  // const donateHandler = () => {
+  //   dispatch(pageActions.donate());
+  // };
 
   const contactHandler = () => {
     dispatch(pageActions.contact());
@@ -59,9 +59,9 @@ const Navbar = (props) => {
           <button onClick={calendarHandler} className={styles["link"]}>
             Calendar
           </button>
-          <button onClick={donateHandler} className={styles["link"]}>
+          <a href="https://linktr.ee/bwd_art" className={styles["link"]}>
             Donate
-          </button>
+          </a>
           <button onClick={membershipHandler} className={styles["link"]}>
             Membership
           </button>

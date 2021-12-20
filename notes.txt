@@ -8,11 +8,21 @@ CONTACT
  - Form validation
  - Line up or stretch inputs to match textarea size
 
+DONATE
+ - Another way to imbed without using iframes?
+
 FOOTER
  - Social media links
 
 CALENDAR
  - Add Google Calander to iframe
+
+MEMBERSHIP
+ - Do what I can with membership page
+
+Figure out how to take payment for membership through Square
+Figure out how to send automated email from database or from code
+Connect my bank account to test Square
 
 -----------------------------------------------------------------------
 RESPONSIVENESS

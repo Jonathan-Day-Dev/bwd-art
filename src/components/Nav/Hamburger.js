@@ -19,7 +19,7 @@ const Hamburger = (props) => {
   };
 
   const donateHandler = () => {
-    dispatch(pageActions.donate());
+    // dispatch(pageActions.donate());
     props.onClick();
   };
 
@@ -75,9 +75,9 @@ const Hamburger = (props) => {
         </button>
       </li>
       <li>
-        <button onClick={donateHandler} className={styles["small-menu__btn"]}>
+        <a href="https://linktr.ee/bwd_art" onClick={donateHandler} className={styles["small-menu__btn"]}>
           Donate
-        </button>
+        </a>
       </li>
       <li>
         <button
