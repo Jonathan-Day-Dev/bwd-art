@@ -18,6 +18,8 @@ const Contact = (props) => {
   const [invalidAddress, setInvalidAddress] = useState(false);
   const [formIsValid, setFormIsValid] = useState(false);
 
+  const [hasError, setHasError] = useState(false)
+
   const [hasContacted, setHasContacted] = useState(false);
 
   const nameRef = useRef();
@@ -122,9 +124,10 @@ const Contact = (props) => {
     e.preventDefault();
     formCheck();
     if (!formIsValid) {
+      setHasError(true);
       return;
     }
-    console.log(`Form valid: ${formIsValid}`)
+    setHasError(false)
     await fetch(
       "https://art-association-982df-default-rtdb.firebaseio.com/contact.json",
       {
@@ -239,6 +242,7 @@ const Contact = (props) => {
             you as soon as possible!
           </p>
         )}
+        {hasError && <p className={styles['invalid-warning']}>Please fill out all fields</p>}
         <Button className={styles["submit-btn"]}>Submit</Button>
       </form>
     </Card>

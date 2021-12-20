@@ -54,6 +54,7 @@ input {
 
 .invalid-warning {
   color: red;
+  text-align: center;
 }
 
 @media only screen and (max-width: 992px) {
