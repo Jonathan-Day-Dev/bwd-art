@@ -9,7 +9,7 @@ CONTACT
  - Line up or stretch inputs to match textarea size
 
 DONATE
- - Another way to imbed without using iframes?
+ Clean up any legacy donation code
 
 FOOTER
  - Social media links

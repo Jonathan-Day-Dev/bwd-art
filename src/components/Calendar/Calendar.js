@@ -4,8 +4,7 @@ import Card from "../UI/Card";
 
 const Calendar = props => {
     return <Card className={styles.calendar}>
-        <h2>Calendar coming soon</h2>
-        {/* <iframe className={styles.iframe} title="calendar" src="https://calendar.google.com/calendar/embed?src=jonnybio8219%40gmail.com&ctz=America%2FChicago" style={{border: 0}} width="800" height="600" frameBorder="0" scrolling="no" preview></iframe> */}
+        <iframe className={styles.iframe} title="calendar" src="https://calendar.google.com/calendar/embed?src=gsoihrrad14tjsaoio05glnag0%40group.calendar.google.com&ctz=America%2FChicago" style={{border: 0}} width="800" height="600" frameBorder="0" scrolling="no"></iframe>
     </Card>
 }
 
