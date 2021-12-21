@@ -3,15 +3,17 @@
     flex-direction: row;
     padding: 1rem;
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.features button img {
+.features .button img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
 
-.features button {
+.features .button {
     width: 40%;
     margin: 1rem;
     border-radius: 20px;
@@ -19,7 +21,7 @@
     padding: 0;
 }
 
-.features button:hover {
+.features .button:hover {
     cursor: pointer;
 }
 

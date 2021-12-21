@@ -16,11 +16,6 @@ const Contact = (props) => {
   const [invalidEmail, setInvalidEmail] = useState(false);
   const [invalidPhone, setInvalidPhone] = useState(false);
   const [invalidAddress, setInvalidAddress] = useState(false);
-  const [formIsValid, setFormIsValid] = useState(false);
-
-  const [hasError, setHasError] = useState(false)
-
-  const [hasContacted, setHasContacted] = useState(false);
 
   const nameRef = useRef();
   const emailRef = useRef();
@@ -102,54 +97,6 @@ const Contact = (props) => {
   const commentHandler = (e) => {
     setCommentArea(e.target.value);
   };
-
-  const formCheck = () => {
-    if (
-      invalidName ||
-      invalidEmail ||
-      invalidPhone ||
-      invalidAddress ||
-      username.trim() === "" ||
-      !email.includes("@") ||
-      phone.trim() === "" ||
-      address.trim() === ""
-    ) {
-      setFormIsValid(false);
-    } else {
-      setFormIsValid(true);
-    }
-  };
-
-  // const submitHandler = async (e) => {
-  //   e.preventDefault();
-  //   formCheck();
-  //   if (!formIsValid) {
-  //     setHasError(true);
-  //     return;
-  //   }
-  //   setHasError(false)
-  //   await fetch(
-  //     "https://art-association-982df-default-rtdb.firebaseio.com/contact.json",
-  //     {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         comment: {
-  //           name: username,
-  //           email: email,
-  //           phone: phone,
-  //           address: address,
-  //           comment: commentArea,
-  //         },
-  //       }),
-  //     }
-  //   );
-  //   setUsername("");
-  //   setEmail("");
-  //   setPhone("");
-  //   setAddress("");
-  //   setCommentArea("");
-  //   setHasContacted(true);
-  // };
 
   return (
     <Card className={styles.card}>
@@ -241,13 +188,6 @@ const Contact = (props) => {
             name="comment"
           />
         </div>
-        {hasContacted && (
-          <p className={styles.submitted}>
-            Thank you! Your comment has been submitted and we will get back to
-            you as soon as possible!
-          </p>
-        )}
-        {hasError && <p className={styles['invalid-warning']}>Please fill out all fields</p>}
         <Button className={styles["submit-btn"]}>Submit</Button>
       </form>
     </Card>
