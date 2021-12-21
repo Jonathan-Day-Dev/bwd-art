@@ -2,55 +2,7 @@ import styles from './Hamburger.module.css';
 
 import { Link } from 'react-router-dom';
 
-// import { useDispatch, useSelector } from 'react-redux';
-
-// import { pageActions } from '../../store/index';
-
 const Hamburger = (props) => {
-
-  // const dispatch = useDispatch();
-  // const showMenu = useSelector((state) => state.page.showMenu);
-
-  // const homeHandler = () => {
-  //   dispatch(pageActions.home());
-  //   props.onClick();
-  // };
-
-  // const aboutHandler = () => {
-  //   dispatch(pageActions.about());
-  //   props.onClick();
-  // };
-
-  // const donateHandler = () => {
-  //   // dispatch(pageActions.donate());
-  //   props.onClick();
-  // };
-
-  // const contactHandler = () => {
-  //   dispatch(pageActions.contact());
-  //   props.onClick();
-  // };
-
-  // const calendarHandler = () => {
-  //   dispatch(pageActions.calendar());
-  //   props.onClick();
-  // };
-
-  // const membershipHandler = () => {
-  //   dispatch(pageActions.membership());
-  //   props.onClick();
-  // };
-
-  // const contestHandler = () => {
-  //   dispatch(pageActions.contest());
-  //   props.onClick();
-  // };
-
-  // const videoHandler = () => {
-  //   dispatch(pageActions.video());
-  //   props.onClick();
-  // };
-
   return (
     <ul
       className={`${styles["small-menu"]} ${

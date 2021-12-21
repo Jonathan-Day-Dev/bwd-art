@@ -1,5 +1,6 @@
 Newsletter/Blog?
-Switch over from redux store to react routing
+
+Some components not rendering correctly on mobile
 
 NAVBAR
 

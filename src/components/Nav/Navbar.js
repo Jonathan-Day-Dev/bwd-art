@@ -1,4 +1,3 @@
-// import { useDispatch, useSelector } from "react-redux";
 import { useState } from 'react';
 
 import styles from "./Navbar.module.css";
@@ -11,7 +10,6 @@ import Hamburger from './Hamburger';
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 
-// import { pageActions } from "../../store/index";
 
 const Navbar = (props) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,42 +17,7 @@ const Navbar = (props) => {
   const toggleMenuHandler = () => {
     setShowMenu(showMenu => !showMenu);
   }
-  // const dispatch = useDispatch();
-  // const showMenu = useSelector((state) => state.page.showMenu);
-  // const page = useSelector((state) => state.page.page);
-
-  // const toggleMenu = () => {
-  //   dispatch(pageActions.toggleMenu());
-  // };
-
-  // const homeHandler = () => {
-  //   dispatch(pageActions.home());
-  // };
-
-  // const aboutHandler = () => {
-  //   dispatch(pageActions.about());
-  // };
-
-  // const donateHandler = () => {
-  //   dispatch(pageActions.donate());
-  // };
-
-  // const contactHandler = () => {
-  //   dispatch(pageActions.contact());
-  // };
-
-  // const calendarHandler = () => {
-  //   dispatch(pageActions.calendar());
-  // };
-
-  // const membershipHandler = () => {
-  //   dispatch(pageActions.membership());
-  // };
-
-  // const activeLink = pageName => {
-  //   return `${styles.link} ${page === pageName ? styles['is-active'] : ""}`
-  // }
-
+  
   return (
     <nav className={styles.navbar}>
       <div className={styles["full-menu"]}>
@@ -81,7 +44,6 @@ const Navbar = (props) => {
         </section>
       </div>
       <div className={styles["hamburger-menu"]}>
-        {/* <img src={logo} alt="logo" className={styles["logo-small"]} /> */}
         {!showMenu && (
           <FiMenu className={styles["burger-btn"]} onClick={toggleMenuHandler} />
         )}

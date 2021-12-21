@@ -8,7 +8,6 @@ const WhatsNew = props => {
     return <div>
     <Card className={styles.main}>
         <img src={backdrop} alt="art center" className={styles['art-center-img']} />
-        {/* <h2>WHAT'S NEW AT THE BROWNWOOD ART ASSOCIATION</h2> */}
     </Card>
     <Card className={styles.main}>
         <img src={hasBegun} alt="logo" className={styles['logo-img']}/>
