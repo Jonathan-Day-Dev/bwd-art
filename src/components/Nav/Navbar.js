@@ -1,18 +1,24 @@
 // import { useDispatch, useSelector } from "react-redux";
+import { useState } from 'react';
 
 import styles from "./Navbar.module.css";
 import logo from "../../assets/logo.png";
 
 import { Link } from 'react-router-dom';
 
-// import Hamburger from './Hamburger';
+import Hamburger from './Hamburger';
 
-// import { MdClose } from "react-icons/md";
-// import { FiMenu } from "react-icons/fi";
+import { MdClose } from "react-icons/md";
+import { FiMenu } from "react-icons/fi";
 
 // import { pageActions } from "../../store/index";
 
 const Navbar = (props) => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenuHandler = () => {
+    setShowMenu(showMenu => !showMenu);
+  }
   // const dispatch = useDispatch();
   // const showMenu = useSelector((state) => state.page.showMenu);
   // const page = useSelector((state) => state.page.page);
@@ -76,15 +82,15 @@ const Navbar = (props) => {
       </div>
       <div className={styles["hamburger-menu"]}>
         {/* <img src={logo} alt="logo" className={styles["logo-small"]} /> */}
-        {/* {!showMenu && (
-          <FiMenu className={styles["burger-btn"]} />
+        {!showMenu && (
+          <FiMenu className={styles["burger-btn"]} onClick={toggleMenuHandler} />
         )}
         {showMenu && (
           <div>
-            <MdClose className={styles["close-btn"]} />
-            <Hamburger />
+            <MdClose className={styles["close-btn"]} onClick={toggleMenuHandler} />
+            <Hamburger onToggle={toggleMenuHandler} isOpen={showMenu} />
           </div>
-        )} */}
+        )}
       </div>
     </nav>
   );
