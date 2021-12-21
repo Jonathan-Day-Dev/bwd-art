@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from "./Navbar.module.css";
 import logo from "../../assets/logo.png";
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import Hamburger from './Hamburger';
 
@@ -23,24 +23,27 @@ const Navbar = (props) => {
       <div className={styles["full-menu"]}>
         <img src={logo} alt="logo" className={styles.logo} />
         <section className={styles.links}>
-          <Link to="/home" className={styles.link}>
+          <NavLink to="/home" activeClassName={styles.isActive} className={styles.link}>
             Home
-          </Link>
-          <Link to="/about" className={styles.link}>
+          </NavLink>
+          <NavLink to="/about" activeClassName={styles.isActive} className={styles.link}>
             About Us
-          </Link>
-          <Link to="/contact" className={styles.link}>
+          </NavLink>
+          <NavLink to="/contact" activeClassName={styles.isActive} className={styles.link}>
             Contact
-          </Link>
-          <Link to="/calendar" className={styles.link}>
+          </NavLink>
+          <NavLink to="/calendar" activeClassName={styles.isActive} className={styles.link}>
             Calendar
-          </Link>
-          <a href="https://linktr.ee/bwd_art" className={styles.link}>
+          </NavLink>
+          <a href="https://brownwood-art.square.site/" className={styles.link}>
             Donate
           </a>
-          <Link to="/membership" className={styles.link}>
+          <a href="https://brownwood-art.square.site/" activeClassName={styles.isActive} className={styles.link}>
             Membership
-          </Link>
+          </a>
+          <a href="https://brownwood-art.square.site" className={styles.link}>
+            Square Store
+          </a>
         </section>
       </div>
       <div className={styles["hamburger-menu"]}>

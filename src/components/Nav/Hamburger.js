@@ -30,13 +30,13 @@ const Hamburger = (props) => {
         </Link>
       </li>
       <li>
-        <Link to="https://linktr.ee/bwd_art" onClick={props.onToggle} className={styles["small-menu__btn"]}>
+        <Link to="https://brownwood-art.square.site/" onClick={props.onToggle} className={styles["small-menu__btn"]}>
           Donate
         </Link>
       </li>
       <li>
         <Link
-          to="/membership"
+          to="https://brownwood-art.square.site/"
           className={styles["small-menu__btn"]}
           onClick={props.onToggle}
         >
@@ -53,6 +53,9 @@ const Hamburger = (props) => {
           Videos
         </Link>
       </li>
+      <a href="https://brownwood-art.square.site" onClick={props.onToggle} className={styles["small-menu__btn"]}>
+            Square Store
+          </a>
     </ul>
   );
 };
