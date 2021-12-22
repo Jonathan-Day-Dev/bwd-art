@@ -9,18 +9,7 @@ import demos from "../../assets/demos.png";
 
 import Card from "../UI/Card";
 
-// import { pageActions } from '../../store/index';
-
 const Features = (props) => {
-  // const dispatch = useDispatch();
-
-  // const videoHandler = () => {
-  //   dispatch(pageActions.video())
-  // }
-
-  // const contestHandler = () => {
-  //   dispatch(pageActions.contest())
-  // }
 
   const scrollToTop = () => {
     window.scrollTo({

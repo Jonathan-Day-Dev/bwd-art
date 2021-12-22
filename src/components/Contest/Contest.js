@@ -44,7 +44,8 @@ const Contest = (props) => {
         </div>
       </div>
       <h3 className={styles.small}>
-        BAA 2nd ANNUAL VIRTUAL PORTRAIT COMPETITION
+        2/18/2022, Finalists Notification (6): 2/25/2022, Awards Presentation,
+        3/03/2022.
       </h3>
       <div className={styles.body}>
         <p>

@@ -1,0 +1,15 @@
+.card {
+    background-image: url('../../assets/colors.jpg');
+}
+
+.link {
+    text-decoration: none;
+}
+
+.text {
+    text-align: center;
+    color: #eee;
+    background-color: rgba(100, 100, 100, 0.8);
+    padding: 1rem;
+    border-radius: 20px;
+}
