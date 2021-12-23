@@ -11,6 +11,7 @@ const Store = (props) => {
             For information on donating, buying tickets for upcoming events or
             becoming a member, visit the Brownwood Art Association's online
             store!
+            <h3>Click Here!</h3>
           </h3>
         </Card>
       </a>

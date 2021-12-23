@@ -1,7 +1,7 @@
 import "./App.css";
 import "./index.css";
 
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 
 import { Fragment } from "react";
 
@@ -23,40 +23,42 @@ import Store from "./components/SquareStore/Store";
 function App() {
   return (
     <div className="App">
-      <Route path="/">
-        <Navbar />
-        <Header />
-        <div>
-          <Route path="/home">
-            <Fragment>
-              <Store />
-              <Features />
-              <WhatsNew />
-            </Fragment>
-          </Route>
-          <Route path="/about">
-            <AboutUs />
-          </Route>
-          <Route path="/donate">
-            <Donate />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/calendar">
-            <Calendar />
-          </Route>
-          <Route path="/membership">
-            <Membership />
-          </Route>
-          <Route path="/classes">
-            <Classes />
-          </Route>
-          <Route path="/contest">
-            <Contest />
-          </Route>
-        </div>
+      <Route exact path="/">
+        <Redirect to="/home" />
       </Route>
+      <Navbar />
+      <Header />
+      <div>
+        <Route path="/home">
+          <Fragment>
+            <Store />
+            <Features />
+            <WhatsNew />
+          </Fragment>
+        </Route>
+        <Route path="/about">
+          <AboutUs />
+        </Route>
+        <Route path="/donate">
+          <Donate />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/calendar">
+          <Calendar />
+        </Route>
+        <Route path="/membership">
+          <Membership />
+        </Route>
+        <Route path="/classes">
+          <Classes />
+        </Route>
+        <Route path="/contest">
+          <Contest />
+        </Route>
+      </div>
+      {/* </Route> */}
       <Footer />
     </div>
   );

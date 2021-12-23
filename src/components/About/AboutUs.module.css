@@ -9,8 +9,8 @@
   margin-bottom: 1.5rem;
 }
 
-.p1 {
-  font-weight: 500;
+p {
+  color: #ddd;
 }
 
 @media only screen and (max-width: 1200px) {
