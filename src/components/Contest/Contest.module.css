@@ -103,4 +103,13 @@
     .body {
         margin-top: 0;
     }
+    .btns {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .btns a {
+      border-radius: 20px;
+      margin-right: 5px;
+    }
 }

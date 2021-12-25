@@ -11,12 +11,12 @@ const Footer = props => {
         </div>
         <img src={logo} alt="logo" className={styles.image} />
         <div className={styles.links}>
-            <button className={styles.link}>Donate</button>
-            <button className={styles.link}>Membership</button>
+            <a href="https://square.link/u/nBLV2h9F" className={styles.link}>Donate</a>
+            <a href="https://square.link/u/ytQ3nnnH" className={styles.link}>Membership</a>
         </div>
         <div className={styles.social}>
             <a href="https://www.facebook.com/brownwoodart">Facebook</a>
-            <a href="http://instagram.com" className={styles.disabled}>Instagram</a>
+            <a href="https://www.instagram.com/brownwoodart/" className={styles.disabled}>Instagram</a>
             <a href="https://twitter.com/BrownwoodArt">Twitter</a>
         </div>
     </footer>

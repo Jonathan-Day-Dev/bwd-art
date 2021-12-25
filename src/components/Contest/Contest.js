@@ -29,24 +29,22 @@ const Contest = (props) => {
         <div className={styles.info}>
           <h2>Brownwood Art Association, Inc</h2>
           <p>For more information</p>
-          <a href="mailto:brownwoodart@gmail.com" className={styles.email}>
-            Email Us
-          </a>
-          <a
-            href="mailto:regency1298@gmail.com"
-            className={styles["brenda-email"]}
-          >
-            Email Brenda Shaw
-          </a>
+          <div className={styles.btns}>
+            <a href="mailto:brownwoodart@gmail.com" className={styles.email}>
+              Email Us
+            </a>
+            <a
+              href="mailto:regency1298@gmail.com"
+              className={styles["brenda-email"]}
+            >
+              Email Brenda Shaw
+            </a>
+          </div>
           <h3 className={styles.full}>
             BAA 2nd ANNUAL VIRTUAL PORTRAIT COMPETITION
           </h3>
         </div>
       </div>
-      <h3 className={styles.small}>
-        2/18/2022, Finalists Notification (6): 2/25/2022, Awards Presentation,
-        3/03/2022.
-      </h3>
       <div className={styles.body}>
         <p>
           Established in 1927, the Brownwood Art Association, Inc. became a
@@ -61,8 +59,8 @@ const Contest = (props) => {
           five Juror awards of $60
         </p>
         <p>
-          <span className={styles.bold}>Entry Deadline: </span>Best of Show –
-          $1000, five Juror awards of $60
+          <span className={styles.bold}>Entry Deadline: </span>2/18/2022,
+          Finalists Notification (6): 2/25/2022, Awards Presentation, 3/03/2022.
         </p>
         <p>
           <span className={styles.bold}>Entry Fee: </span>$20 per portrait –
@@ -98,7 +96,7 @@ const Contest = (props) => {
         <h3>JUROR: BOB STUTH-WADE</h3>
         <p>
           Renowned Texas artist, Bob Stuth-Wade, is a contemporary artist who
-          was born in1953. He is known for his still life, portrait and
+          was born in 1953. He is known for his still life, portrait and
           landscape paintings, and takes much of his influence from Perry
           Nichols and Mary Sloan. Knowing his subject and painting from life is
           key to Bob’s painting whether he is painting the figure, still life or
