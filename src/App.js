@@ -18,7 +18,7 @@ import Calendar from "./components/Calendar/Calendar";
 import Membership from "./components/Membership/Membership";
 import Classes from "./components/OnlineClasses/Classes";
 import Contest from "./components/Contest/Contest";
-// import Store from "./components/SquareStore/Store";
+import MemberArt from './components/MemberArt/MemberArt'
 
 function App() {
   return (
@@ -57,8 +57,10 @@ function App() {
         <Route path="/contest">
           <Contest />
         </Route>
+        <Route path="/members">
+          <MemberArt />
+        </Route>
       </div>
-      {/* </Route> */}
       <Footer />
     </div>
   );

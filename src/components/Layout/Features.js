@@ -6,6 +6,7 @@ import styles from "./Features.module.css";
 
 import vid from "../../assets/vid.png";
 import demos from "../../assets/demos.png";
+import galleries from "../../assets/galleries.jpg";
 
 import Card from "../UI/Card";
 
@@ -26,6 +27,7 @@ const Features = (props) => {
     <Card className={styles.features}>
       <Link to="/classes" className={styles.button}><img src={vid} alt="videos" /></Link>
       <Link to="/contest" className={styles.button}><img src={demos} alt="videos" /></Link>
+      <Link to="/members" className={styles.button}><img src={galleries} alt="galleries" /></Link>
     </Card>
   );
 };
