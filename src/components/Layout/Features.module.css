@@ -14,15 +14,32 @@
 }
 
 .features .button {
-    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 15rem;
     margin: 1rem;
     border-radius: 20px;
     border: 2px solid black;
     padding: 0;
+    text-decoration: none;
+    text-align: center;
+    background-image: url('../../assets/colors.jpg')
 }
 
 .features .button:hover {
     cursor: pointer;
+}
+
+.inner-card {
+    text-align: center;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 992px) {
