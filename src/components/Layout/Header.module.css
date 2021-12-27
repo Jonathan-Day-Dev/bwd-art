@@ -1,94 +1,179 @@
+.full {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5rem;
+  height: 70vh;
+  width: 90vw;
+}
+
 .header {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-top: 5rem;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-bottom: 3rem;
-    background-image: url('../../assets/backdrop.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 3rem;
+  background-image: url("../../assets/backdrop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  min-width: 40%;
+  height: 80%;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.upcoming {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  border: 3px solid green;
+  border-radius: 20px;
+}
+
+.upcoming__title {
+  text-align: center;
 }
 
 .header h1 {
-    font-size: 4.5rem;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 0;
-    color: black;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #051a04;
 }
 
 .top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 1rem;
-    height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  height: 100%;
 }
 
 .info {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 0;
-    background-color: white;
-    opacity: 0.7;
-    border-radius: 20px;
-    padding: 0.5rem;
-    border: 2px solid black;
-    justify-self: baseline;
-    width: 100%;
-    float: left;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 20px;
+  border: 2px solid black;
+  justify-self: baseline;
+  width: 90%;
 }
 
 .info p {
-    font-size: 24px;
-    font-weight: 500;
-    color: black;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
 }
 
 .logo {
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    margin-right: 2rem;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 2rem;
+}
+
+.caption {
+  justify-self: flex-end;
+  color: black;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 20px;
+  padding: 0.4rem;
+  border: 2px solid black;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.event h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.portrait {
+  width: 90%;
+  margin: auto;
+}
+
+.event-link {
+  text-decoration: none;
+  border: 1px solid green;
+  margin: 1rem auto;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 1200px) {
-    .header h1 {
-        font-size: 3.5rem;
-    }
-    .info {
-        flex-direction: column;
-    }
-    .info p {
-        font-size: 20px;
-        margin: 0;
-    }
-}
-
-@media only screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 3.5rem;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .info p {
+    font-size: 20px;
+    margin: 0;
+  }
+  .full {
+    flex-direction: column;
+  }
+  .upcoming {
+    width: 80%;
+    height: 20rem;
+    flex-direction: row;
+    padding: 0 2rem;
+    margin: 2rem 0;
+  }
+  .upcoming__title {
+      display: none;
+  }
+  .event {
+      flex-direction: row;
+      width: 90%;
+  }
+  .portrait {
+      width: 50%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .logo {
-        width: 7rem;
-        height: 7rem;
-        margin: 0;
-    }
-    .header {
-        margin-top: 2rem;
-    }
-    .header h1 {
-        font-size: 2.5rem;
-    }
-    .top {
-        flex-direction: column;
-    }
+  .logo {
+    width: 7rem;
+    height: 7rem;
+    margin: 0;
+  }
+  .header {
+    margin-top: 2rem;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+    color: #ddd;
+  }
+  .top {
+    align-items: column;
+    justify-content: space-between;
+  }
 }

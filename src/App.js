@@ -19,6 +19,7 @@ import Membership from "./components/Membership/Membership";
 import Classes from "./components/OnlineClasses/Classes";
 import Contest from "./components/Contest/Contest";
 import MemberArt from './components/MemberArt/MemberArt'
+import Event from './components/Event/Event';
 
 function App() {
   return (
@@ -31,7 +32,6 @@ function App() {
       <div>
         <Route path="/home">
           <Fragment>
-            {/* <Store /> */}
             <Features />
             <WhatsNew />
           </Fragment>
@@ -59,6 +59,9 @@ function App() {
         </Route>
         <Route path="/members">
           <MemberArt />
+        </Route>
+        <Route path="/event">
+          <Event />
         </Route>
       </div>
       <Footer />

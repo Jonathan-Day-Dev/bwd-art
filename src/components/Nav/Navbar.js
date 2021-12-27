@@ -37,7 +37,7 @@ const Navbar = (props) => {
           </NavLink>
           <a href="https://square.link/u/nBLV2h9F" className={styles.link}>Donations</a>
           <a href="https://square.link/u/ytQ3nnnH" className={styles.link}>Membership</a>
-          <a href="http://brownwood-art.square.site/" className={styles.link}>Upcoming Events</a>
+          {/* <a href="http://brownwood-art.square.site/" className={styles.link}>Upcoming Events</a> */}
         </section>
       </div>
       <div className={styles["hamburger-menu"]}>
