@@ -9,5 +9,6 @@
     background-color: #777;
     padding: 2rem;
     margin: 1.5rem 0;
-    box-shadow: 5px 5px 4px gray;
+    /* box-shadow: 5px 5px 4px gray; */
+    box-shadow: 5px 5px 4px rgb(29, 27, 27);
 }

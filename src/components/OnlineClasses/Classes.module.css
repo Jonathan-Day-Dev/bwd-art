@@ -5,6 +5,8 @@
 
 .card {
     width: 50%;
+    border: 3px solid purple;
+    box-shadow: 5px 5px 4px rgb(29, 27, 27);
 }
 
 .block-title {

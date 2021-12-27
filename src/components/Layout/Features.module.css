@@ -26,6 +26,7 @@
   text-decoration: none;
   text-align: center;
   background-image: url("../../assets/colors.jpg");
+  box-shadow: 5px 5px 4px rgb(29, 27, 27);
 }
 
 .features .button:hover {
