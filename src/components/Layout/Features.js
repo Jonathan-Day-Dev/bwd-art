@@ -28,8 +28,6 @@ const Features = (props) => {
     <Card className={styles.features}>
       <Link to="/members" className={styles.button}><p className={styles['inner-card']}>CLICK HERE TO SEE OUR MEMBERS' ART GALLERIES!</p></Link>
       <OnlineClasses />
-      {/* <Link to="/classes" className={styles.button}><img src={vid} alt="videos" /></Link> */}
-      {/* <Link to="/contest" className={styles.button}><img src={demos} alt="videos" /></Link> */}
     </Card>
   );
 };

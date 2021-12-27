@@ -139,6 +139,7 @@
   }
   .full {
     flex-direction: column;
+    height: 100vh;
   }
   .upcoming {
     width: 80%;
@@ -153,9 +154,30 @@
   .event {
       flex-direction: row;
       width: 90%;
+      height: 100%;
+      justify-content: space-between;
   }
   .portrait {
-      width: 50%;
+      width: 40%;
+      max-height: 95%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+  .caption {
+    font-size: 1rem;
+  }
+  .event {
+    flex-direction: column;
+  }
+  .portrait {
+    width: 50%;
   }
 }
 

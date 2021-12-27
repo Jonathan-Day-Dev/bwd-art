@@ -19,12 +19,6 @@ const Classes = (props) => {
   return (
     <Card className={styles.card}>
       <h2>Welcome to your next inspiration!</h2>
-      {/* <h3>
-        Our new video series will feature a well-curated selection of artists
-        and mediums. ​Highlighting a lifetime’s worth of skill in a short,
-        enjoyable format. We will be adding new content often with some of the
-        demos becoming in-person workshops and classes!
-      </h3> */}
       <h2>Come learn with us!</h2>
       <div className={styles["block-one"]}>
         <h4 className={styles["block-title"]}>
