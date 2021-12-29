@@ -1,75 +1,44 @@
+.card {
+  @apply w-[75%];
+}
+
 form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  @apply w-[70vw] flex flex-col;
 }
 
 label {
-  display: block;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 0.5rem;
+  @apply block font-semibold text-center mb-2;
 }
 
 input {
-  padding: 0.5rem;
-  width: 100%;
+  @apply mb-4 lg:mb-0 p-2 lg:w-full w-[40vw];
 }
 
 .first-line,
 .second-line {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 2rem;
+  @apply flex flex-col mb-0 lg:flex-row justify-evenly items-center lg:mb-8;
 }
 
 .comment {
-  text-align: center;
+  @apply text-center;
 }
 
 .comment textarea {
-  max-width: 90%;
-  box-sizing: border-box;
-  margin: 0 auto;
+  @apply max-w-[70%] box-border my-0 mx-auto;
 }
 
 .submit-btn {
-  min-width: 30%;
-  margin: 0 auto;
+  @apply min-w-[30%] my-0 mx-auto;
 }
 
 .submitted {
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  margin: 1rem;
+  @apply text-slate-200 text-lg font-medium text-center m-4;
 }
 
 .invalid {
-  background-color: rosybrown;
-  border: 1px solid red;
+  @apply bg-red-100 border-2 border-solid border-red-600;
 }
 
 .invalid-warning {
-  color: red;
-  text-align: center;
-}
-
-@media only screen and (max-width: 992px) {
-  .first-line,
-  .second-line {
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-  input {
-      margin-bottom: 1rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .card {
-      width: 75% !important; 
-  }
+  @apply text-red-600 text-center;
 }

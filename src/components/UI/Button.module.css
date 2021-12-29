@@ -1,8 +1,3 @@
 .btn {
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: 2px solid #4db6ac;
-    box-shadow: 5px 5px 4px gray;
-    font-weight: 700;
-    font-size: 16px;
+    @apply py-2 px-4 rounded-xl border-2 border-solid border-blue-500 shadow-lg shadow-black font-extrabold text-lg;
 }

@@ -1,40 +1,23 @@
-.card * {
-    margin: 0;
-    text-align: center;
+.card {
+    @apply w-[95%] md:w-[50%] border-4 border-solid border-fuchsia-600;
 }
 
-.card {
-    width: 50%;
-    border: 3px solid purple;
-    box-shadow: 5px 5px 4px rgb(29, 27, 27);
+.welcome {
+    @apply mb-2 text-center md:text-xl font-semibold;
+}
+
+.learn {
+    @apply mb-2 text-center;
 }
 
 .block-title {
-    text-align: center;
+    @apply text-sm md:text-base text-center;
 }
 
 .vids {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    @apply flex flex-wrap justify-evenly items-center;
 }
 
 .vids iframe {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-}
-
-@media only screen and (max-width: 768px) {
-    .card {
-        width: 80%;
-    }
-    .card h2 {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-    .block-title {
-        font-size: 12px;
-    }
+    @apply mx-4 mb-4 w-[10rem];
 }

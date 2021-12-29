@@ -1,109 +1,42 @@
 .navbar,
 .full-menu {
-  width: 100%;
-  background-color: #4db6ac;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 0.4rem 0;
-  z-index: 100;
+  @apply w-full bg-blue-400 flex justify-between items-center fixed top-0 left-0 py-2 z-10;
 }
 
 .logo {
-  height: 3.5rem;
-  width: 3.5rem;
-  margin-left: 80px;
-  border-radius: 50%;
-  margin-right: auto;
+  @apply h-14 w-14 ml-10 rounded-full mr-auto;
 }
 
 .logo-small {
-    height: 4rem;
-    width: 4rem;
-    margin-left: 60px;
-    border-radius: 50%;
+    @apply h-16 w-16 ml-14 rounded-full;
 }
 
 .links {
-  margin-right: 80px;
+  @apply mr-10;
 }
 
-.link,
-.link-toggle {
-  margin: 0 10px;
-  background-color: transparent;
-  border: none;
-  font-weight: 600;
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  border: 2px solid #4db6ac;
-  padding: 10px;
+.link {
+  @apply mx-3 bg-transparent font-semibold text-xl no-underline text-slate-900 border-2 border-solid border-blue-400 p-3;
   font-family: 'Prata'
 }
 
 .link:hover,
 .link:active,
 .link:focus,
-.link-toggle:hover,
-.link-toggle:active,
-.link-toggle:focus,
 .is-active {
-  border: 2px solid white;
-  border-radius: 20px;
-  background-color: #166e66;
-  color: white;
-  cursor: pointer;
-  box-shadow: 5px 5px 4px gray;
+  @apply border-2 border-solid border-slate-200 rounded-3xl bg-teal-600 text-slate-200 cursor-pointer shadow-lg shadow-black;
   font-family: 'Prata'
 }
 
 .full-menu {
-  visibility: visible;
+  @apply invisible lg:visible;
 }
 
 .hamburger-menu {
-  visibility: hidden;
-  margin-left: auto;
-  margin-right: 2rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
+  @apply visible lg:invisible ml-auto mr-8 flex justify-end items-center w-full;
 }
 
 .close-btn,
 .burger-btn {
-  width: 40px;
-  height: 40px;
-  display: block;
-  margin-left: auto;
-  text-align: right;
-}
-
-@media only screen and (max-width: 992px) {
-  .link-toggle {
-    visibility: hidden;
-  }
-  .link,
-  .link-toggle {
-    font-size: 20px;
-  }
-  .full-menu {
-    visibility: hidden;
-  }
-  .hamburger-menu {
-    visibility: visible;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .link,
-  .link-toggle {
-    font-size: 16px;
-    margin-right: 40px;
-  }
+  @apply w-10 h-10 block ml-auto text-right;
 }

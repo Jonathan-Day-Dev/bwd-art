@@ -12,10 +12,8 @@ import Features from "./components/Layout/Features";
 import Footer from "./components/Layout/Footer";
 
 import AboutUs from "./components/About/AboutUs";
-import Donate from "./components/Donate/Donate";
 import Contact from "./components/Contact/Contact";
 import Calendar from "./components/Calendar/Calendar";
-import Membership from "./components/Membership/Membership";
 import Classes from "./components/OnlineClasses/Classes";
 import Contest from "./components/Contest/Contest";
 import MemberArt from './components/MemberArt/MemberArt'
@@ -39,17 +37,11 @@ function App() {
         <Route path="/about">
           <AboutUs />
         </Route>
-        <Route path="/donate">
-          <Donate />
-        </Route>
         <Route path="/contact">
           <Contact />
         </Route>
         <Route path="/calendar">
           <Calendar />
-        </Route>
-        <Route path="/membership">
-          <Membership />
         </Route>
         <Route path="/classes">
           <Classes />

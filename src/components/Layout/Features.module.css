@@ -1,72 +1,16 @@
 .features {
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  @apply mt-4 lg:mt-5 flex-wrap flex-row p-4 mb-8 ml-auto mr-auto lg:w-[80vw];
 }
 
 .features .button img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
+  @apply w-full h-full rounded-xl;
 }
 
 .features .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 15rem;
-  margin: 1rem;
-  border-radius: 20px;
-  border: 2px solid black;
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
+  @apply flex justify-center items-center w-[80vw] sm:w-[90%] h-60 m-4 rounded-xl border-2 border-solid border-slate-900 p-0 no-underline text-center shadow-lg shadow-black hover:cursor-pointer;
   background-image: url("../../assets/colors.jpg");
-  box-shadow: 5px 5px 4px rgb(29, 27, 27);
-}
-
-.features .button:hover {
-  cursor: pointer;
 }
 
 .inner-card {
-  text-align: center;
-  background-color: white;
-  color: black;
-  opacity: 0.7;
-  width: 80%;
-  padding: 1rem;
-  border-radius: 20px;
-}
-
-@media only screen and (max-width: 1200px) {
-    .features {
-      margin-top: 5rem;
-    }
-  }
-
-@media only screen and (max-width: 992px) {
-  .features {
-    width: 80vw;
-    margin-top: 7rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .features {
-    margin-top: 8rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .features {
-    margin-top: 5rem;
-  }
-  .features button {
-    width: 80vw;
-  }
+  @apply text-center bg-slate-200 text-slate-900 opacity-70 w-[80%] p-4 rounded-xl;
 }

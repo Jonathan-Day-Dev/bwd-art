@@ -18,8 +18,8 @@ const Classes = (props) => {
 
   return (
     <Card className={styles.card}>
-      <h2>Welcome to your next inspiration!</h2>
-      <h2>Come learn with us!</h2>
+      <h2 className={styles.welcome}>Welcome to your next inspiration!</h2>
+      <h2 className={styles.learn}>Come learn with us!</h2>
       <div className={styles["block-one"]}>
         <h4 className={styles["block-title"]}>
           Palette Knife Demo 1 & 2 - Christine Brisley

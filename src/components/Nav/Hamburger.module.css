@@ -1,41 +1,20 @@
 .small-menu {
-  overflow-y: scroll;
-  list-style: none;
-  position: fixed;
-  top: 2rem;
-  background: #4db6ac;
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  max-width: 290px;
-  z-index: 9;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 0 0 0 20%;
-  transition: all 1s ease-in-out;
+  @apply overflow-y-scroll list-none fixed top-8 bg-blue-500 right-0 bottom-0 w-[50%] max-w-[290px] z-50 pl-2 pr-4 py-4 rounded-b-xl;
 }
 
 .hide {
-  max-height: 0;
+  @apply max-h-0;
 }
 
 .fit {
-  max-height: fit-content;
+  @apply max-h-fit;
 }
 
 .small-menu__btn {
-  font-size: 24px;
-  background-color: transparent;
-  border: none;
-  color: #333;
-  margin: 0.5rem 0;
+  @apply text-2xl bg-transparent border-none text-slate-900 my-2 no-underline;
   font-family: "Prata";
-  text-decoration: none;
 }
 
 a {
-  padding-left: 0.3rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  @apply pl-1 py-1 my-4;
 }

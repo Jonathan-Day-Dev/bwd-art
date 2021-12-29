@@ -1,115 +1,73 @@
 .card {
-  width: 80%;
+  @apply w-[80%];
 }
 
 .title {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  border-bottom: 2px solid black;
-  padding-bottom: 5rem;
+  @apply w-full flex justify-evenly items-center text-center border-b-2 border-solid border-slate-800 pb-0 md:pb-20;
 }
 
 .title p {
-  text-decoration: underline;
-  font-weight: 600;
-  text-align: center;
+  @apply underline font-semibold text-center;
 }
 
 .title a {
-  display: block;
-  text-decoration: none;
-  color: lightgrey;
-  border: 2px solid lightgrey;
-  padding: 1rem;
-  text-align: center;
-  font-weight: 600;
+  @apply block no-underline text-slate-300 border-2 border-solid border-slate-300 p-4 text-center font-semibold hover:bg-slate-200 hover:text-slate-900;
+}
+
+.info {
+  @apply mx-0 sm:mx-2;
+}
+
+.info h2 {
+  @apply sm:text-lg md:text-xl lg:text-3xl;
+}
+
+.info h2,
+.info p,
+.info div {
+  @apply mb-4 md:mb-8 lg:mb-16;
 }
 
 .image {
-    width: 95%;
+  @apply w-[95%];
 }
 
 .email {
-  border-radius: 20px 20px 0 0;
+  @apply rounded-t-2xl;
 }
 
 .brenda-email {
-  border-radius: 0 0 20px 20px;
-}
-
-.title a:hover {
-  background-color: lightgray;
-  color: black;
+  @apply rounded-b-2xl;
 }
 
 .caption {
-  display: block;
+  @apply block text-sm md:text-base;
 }
 
 .body {
-  margin-top: 2rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  border-bottom: 2px solid black;
+  @apply mt-4 md:mt-8 mx-4 md:mx-16 border-b-2 border-solid border-slate-800;
 }
 
 .bold {
-  font-weight: bold;
+  @apply font-bold;
 }
 
 .bottom {
-  margin-top: 2rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  @apply mt-8 mx-4 md:mx-16;
 }
 
 .full {
-    visibility: visible;
+  @apply invisible md:visible;
 }
 
 .small {
-    visibility: hidden;
+  @apply invisible md:border-b-2 md:border-solid md:border-slate-800 md:mt-28 md:pb-4;
 }
 
-@media only screen and (max-width: 600px) {
-    .info {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
-    .caption {
-        font-size: 10px;
-    }
-    .body,
-    .bottom {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .full {
-        visibility: hidden;
-    }
-    .small {
-        visibility: visible;
-        border-bottom: 2px solid black;
-        margin-top: 7rem;
-        padding-bottom: 1rem;
-    }
-    .title {
-        padding-bottom: 0;
-        border: none;
-        height: 40vh;
-    }
-    .body {
-        margin-top: 0;
-    }
-    .btns {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-    .btns a {
-      border-radius: 20px;
-      margin-right: 5px;
-    }
+.btns {
+  @apply flex flex-col justify-evenly items-center;
+}
+
+.btns a {
+  @apply rounded-xl text-sm md:text-base;
 }

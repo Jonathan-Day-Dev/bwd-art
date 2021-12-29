@@ -1,10 +1,7 @@
 .calendar {
-    width: 60vw;
-    height: 70vh;
+    @apply w-[60vw] h-4/6 mx-10;
 }
 
 .iframe {
-    width: 100%;
-    border-radius: 20px;
-    padding: 1rem;
+    @apply w-full rounded-2xl p-4;
 }

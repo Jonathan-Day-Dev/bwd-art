@@ -1,43 +1,23 @@
 .card {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 40vw;
+    @apply w-1/2;
 }
 
 .info div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @apply flex flex-col justify-evenly items-center;
 }
 
 .info div p {
-    margin: 0;
-    color: black;
+    @apply m-0 text-slate-900;
 }
 
 .email {
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    margin-top: 0.5rem;
+    @apply no-underline bg-slate-200 text-slate-900 py-2 px-4 rounded-xl mt-2 hover:bg-slate-600 hover:text-slate-200;
 }
 
 .image {
-    height: 20rem;
+    @apply h-auto md:h-80 w-auto max-w-[80%];
 }
 
 .desc {
-    text-align: center;
-    color: black;
-}
-
-@media only screen and (max-width: 768px) {
-    .image {
-        width: 90%;
-        height: auto;
-    }
+    @apply text-center text-slate-900;
 }
