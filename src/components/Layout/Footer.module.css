@@ -29,3 +29,11 @@
 .disabled {
     @apply pointer-events-none;
 }
+
+.nav {
+    @apply flex flex-col;
+}
+
+.nav a {
+    @apply no-underline text-slate-200 my-4 mx-auto border-none bg-transparent;
+}

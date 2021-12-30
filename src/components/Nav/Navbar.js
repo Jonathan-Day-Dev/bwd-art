@@ -26,12 +26,7 @@ const Navbar = (props) => {
           <NavLink to="/home" activeClassName={styles.isActive} className={styles.link}>
             Home
           </NavLink>
-          <NavLink to="/about" activeClassName={styles.isActive} className={styles.link}>
-            About Us
-          </NavLink>
-          <NavLink to="/contact" activeClassName={styles.isActive} className={styles.link}>
-            Contact
-          </NavLink>
+          
           <NavLink to="/calendar" activeClassName={styles.isActive} className={styles.link}>
             Calendar
           </NavLink>

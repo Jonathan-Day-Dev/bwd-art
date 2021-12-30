@@ -3,7 +3,7 @@
 }
 
 h2 {
-  @apply text-2xl font-medium;
+  @apply font-semibold md:text-lg lg:text-xl mb-4;
 }
 
 form {
