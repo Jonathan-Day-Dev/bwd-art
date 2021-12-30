@@ -1,22 +1,32 @@
 .card {
-  @apply w-[75%];
+  @apply w-full lg:w-[90%];
+}
+
+h2 {
+  @apply text-2xl font-medium;
 }
 
 form {
-  @apply w-[70vw] flex flex-col;
+  @apply w-[70%] flex flex-col;
 }
 
 label {
   @apply block font-semibold text-center mb-2;
 }
 
-input {
-  @apply mb-4 lg:mb-0 p-2 lg:w-full w-[40vw];
-}
-
 .first-line,
 .second-line {
   @apply flex flex-col mb-0 lg:flex-row justify-evenly items-center lg:mb-8;
+}
+
+.first-line div,
+.second-line div {
+  @apply mx-2;
+}
+
+.first-line div input,
+.second-line div input {
+  @apply mb-4 md:mb-0 p-2 lg:w-full w-full;
 }
 
 .comment {

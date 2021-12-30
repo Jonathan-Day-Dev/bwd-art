@@ -1,6 +1,6 @@
 .navbar,
 .full-menu {
-  @apply w-full bg-blue-400 flex justify-between items-center fixed top-0 left-0 py-2 z-10;
+  @apply w-full bg-blue-500 flex justify-between items-center fixed top-0 left-0 py-2 z-10;
 }
 
 .logo {
@@ -16,7 +16,7 @@
 }
 
 .link {
-  @apply mx-3 bg-transparent font-semibold text-xl no-underline text-slate-900 border-2 border-solid border-blue-400 p-3;
+  @apply mx-3 bg-transparent font-semibold text-xl no-underline text-slate-900 border-2 border-solid border-blue-500 p-3;
   font-family: 'Prata'
 }
 
