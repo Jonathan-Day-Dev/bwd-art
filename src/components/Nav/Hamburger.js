@@ -18,24 +18,6 @@ const Hamburger = (props) => {
           Home
         </Link>
       </li>
-      <li>
-        <Link
-          to="/about"
-          onClick={props.onToggle}
-          className={styles["small-menu__btn"]}
-        >
-          About Us
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/contact"
-          onClick={props.onToggle}
-          className={styles["small-menu__btn"]}
-        >
-          Contact
-        </Link>
-      </li>
       <a
         href="https://brownwood-art.square.site/"
         onClick={props.onToggle}
@@ -69,24 +51,6 @@ const Hamburger = (props) => {
         >
           Membership
         </a>
-      </li>
-      <li>
-        <Link
-          to="/contest"
-          onClick={props.onToggle}
-          className={styles["small-menu__btn"]}
-        >
-          2022 Contest
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/classes"
-          onClick={props.onToggle}
-          className={styles["small-menu__btn"]}
-        >
-          Videos
-        </Link>
       </li>
     </ul>
   );

@@ -1,8 +1,7 @@
 import styles from "./Header.module.css";
 import logo from "../../assets/logo.png";
-import portrait from '../../assets/portrait.jpg';
 
-import { Link } from 'react-router-dom';
+import HeaderExtra from './HeaderExtra';
 
 const Header = (props) => {
   return (
@@ -24,14 +23,7 @@ const Header = (props) => {
           Building at 215 Fisk Ave.
         </p>
       </header>
-      <div className={styles.upcoming}>
-        <h2 className={styles['upcoming__title']}>Upcoming Events</h2>
-        <div className={styles.event}>
-          <h3>Portrait Workshop</h3>
-          <img src={portrait} className={styles.portrait} alt={portrait} />
-        </div>
-        <Link to="/event" className={styles['event-link']}>See Details</Link>
-      </div>
+      <HeaderExtra />
     </div>
   );
 };

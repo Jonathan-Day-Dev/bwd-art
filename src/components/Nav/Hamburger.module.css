@@ -3,11 +3,11 @@
 }
 
 .hide {
-  @apply max-h-0 transition duration-500;
+  @apply h-0 transition duration-500;
 }
 
 .fit {
-  @apply max-h-fit transition duration-500;
+  @apply h-fit transition duration-500;
 }
 
 .small-menu__btn {

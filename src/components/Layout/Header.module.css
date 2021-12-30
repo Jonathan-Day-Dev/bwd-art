@@ -10,14 +10,6 @@
   background-position-y: center;
 }
 
-.upcoming {
-  @apply w-[80%] px-6 mt-8 xl:mt-0 h-80 flex xl:flex-col justify-evenly items-center xl:w-[20%] xl:h-full border-4 border-solid border-green-500 rounded-xl shadow-lg shadow-black;
-}
-
-.upcoming__title {
-  @apply hidden xl:block mb-8 mt-4 text-center text-2xl font-semibold;
-}
-
 .header h1 {
   @apply text-2xl font-normal text-center my-0 text-slate-900 xl:text-5xl lg:text-4xl md:text-3xl;
 }
@@ -40,20 +32,4 @@
 
 .caption {
   @apply text-sm md:text-base justify-self-end text-slate-900 bg-slate-200 opacity-70 rounded-xl p-2 border-2 border-solid border-slate-900 w-[90%] text-center mb-0;
-}
-
-.event {
-  @apply flex flex-col md:flex-row w-[90%] h-full xl:w-full xl:flex-col justify-evenly items-center;
-}
-
-.event h3 {
-  @apply underline text-center text-xl;
-}
-
-.portrait {
-  @apply w-[50%] md:w-[40%] max-h-[95%] min-h-[70%] xl:w-full m-auto;
-}
-
-.event-link {
-  @apply no-underline border-2 border-solid border-green-700 my-4 mx-auto py-2 px-4 rounded-xl bg-green-700 text-slate-200 font-bold hover:bg-green-900 shadow-lg shadow-black transition duration-300;
 }
