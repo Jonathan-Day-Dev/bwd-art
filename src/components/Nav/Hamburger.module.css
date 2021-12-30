@@ -1,13 +1,13 @@
 .small-menu {
-  @apply overflow-y-scroll list-none fixed top-8 bg-blue-500 right-0 bottom-0 w-[50%] max-w-[290px] z-50 pl-2 pr-4 py-4 rounded-b-xl;
+  @apply overflow-y-scroll list-none fixed top-10 bg-blue-500 right-0 bottom-0 w-[50%] max-w-[290px] z-50 pl-2 pr-4 py-4 rounded-b-xl;
 }
 
 .hide {
-  @apply max-h-0;
+  @apply max-h-0 transition duration-500;
 }
 
 .fit {
-  @apply max-h-fit;
+  @apply max-h-fit transition duration-500;
 }
 
 .small-menu__btn {
