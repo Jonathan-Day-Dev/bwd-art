@@ -7,7 +7,7 @@
 }
 
 .features .button {
-  @apply flex justify-center items-center w-[80vw] sm:w-[90%] h-60 m-4 rounded-xl border-2 border-solid border-slate-900 p-0 no-underline text-center shadow-lg shadow-black hover:cursor-pointer;
+  @apply flex justify-center items-center w-[80vw] sm:w-[90%] h-60 m-4 rounded-xl border-2 border-solid border-slate-900 hover:border-fuchsia-700 p-0 no-underline text-center shadow-lg hover:shadow-fuchsia-500 transition duration-300 shadow-black hover:cursor-pointer;
   background-image: url("../../assets/colors.jpg");
 }
 
