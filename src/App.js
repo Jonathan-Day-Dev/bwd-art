@@ -27,7 +27,7 @@ function App() {
       </Route>
       <Navbar />
       <Header />
-      <div>
+      <div id="main">
         <Route path="/home">
           <Fragment>
             <Features />
