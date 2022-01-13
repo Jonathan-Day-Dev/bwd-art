@@ -6,6 +6,11 @@ import Card from "../UI/Card";
 const Event = (props) => {
   return (
     <Card className={styles.card}>
+      <p className={styles.disclaimer}>
+        This workshop is being postponed until February due to the high rate of
+        Covid-19 in Brown County, at this point. Stay tuned for exact dates.
+        Again... NOT cancelled, only postponed.
+      </p>
       <img src={portrait} alt={portrait} className={styles.image} />
       <h2>Portrait Workshop</h2>
       <div className={styles.info}>
@@ -22,7 +27,9 @@ const Event = (props) => {
         <div>
           <p>Instructor - Brenda Shaw</p>
           <p>(325) 642-0417</p>
-          <a href="mailto:regency1298@gmail.com" className={styles.email}>Email</a>
+          <a href="mailto:regency1298@gmail.com" className={styles.email}>
+            Email
+          </a>
         </div>
         <p className={styles.desc}>
           The workshop will be an introduction to painting the portrait in oil
@@ -37,12 +44,14 @@ const Event = (props) => {
               <p>Black, White, Yellow Ochre, Cadmium Red Light</p>
             </li>
             <li>
-                <p>12"x12" the Fine Touch canvas, available at Hobby Lobby</p>
+              <p>12"x12" the Fine Touch canvas, available at Hobby Lobby</p>
             </li>
             <li>
-                <p>Master's Touch brush for Oil & Acrylic</p>
-                <p>#10 -filbert #8 flat #4 flat</p>
-                <p><em>If you have these items, bring your own</em></p>
+              <p>Master's Touch brush for Oil & Acrylic</p>
+              <p>#10 -filbert #8 flat #4 flat</p>
+              <p>
+                <em>If you have these items, bring your own</em>
+              </p>
             </li>
           </ul>
         </div>

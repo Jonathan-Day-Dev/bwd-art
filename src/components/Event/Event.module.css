@@ -3,7 +3,7 @@
 }
 
 .info div {
-    @apply flex flex-col justify-evenly items-center;
+    @apply flex flex-col items-center justify-evenly;
 }
 
 .info div p {
@@ -11,7 +11,7 @@
 }
 
 .email {
-    @apply no-underline bg-slate-200 text-slate-900 py-2 px-4 rounded-xl mt-2 hover:bg-slate-600 hover:text-slate-200;
+    @apply px-4 py-2 mt-2 no-underline bg-slate-200 text-slate-900 rounded-xl hover:bg-slate-600 hover:text-slate-200;
 }
 
 .image {
@@ -20,4 +20,8 @@
 
 .desc {
     @apply text-center text-slate-900;
+}
+
+.disclaimer {
+    @apply px-3 py-2 mb-4 text-center border-4 border-red-600 border-solid shadow-lg rounded-xl bg-slate-300 shadow-black;
 }
