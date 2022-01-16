@@ -16,7 +16,6 @@
   font-family: 'Prata'
 }
 
-/* .link:hover, */
 .link:active,
 .link:focus,
 .is-active {
@@ -35,4 +34,8 @@
 .close-btn,
 .burger-btn {
   @apply w-10 h-10 block ml-auto text-right;
+}
+
+.logo-link {
+  @apply my-0;
 }
