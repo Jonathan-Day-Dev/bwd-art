@@ -1,8 +1,22 @@
 import styles from "./Calendar.module.css";
 
+import { useEffect } from 'react';
+
 import Card from "../UI/Card";
 
 const Calendar = (props) => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 450,
+      behavior: "smooth"
+    });
+  };
+
+  useEffect(() => {
+      scrollToTop();
+  }, [])
+
   return (
     <Card>
       <div className={styles.calendar}>
