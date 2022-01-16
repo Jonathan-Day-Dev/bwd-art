@@ -1,9 +1,21 @@
 import styles from "./Event.module.css";
 import portrait from "../../assets/portrait.jpg";
 
+import { useEffect } from 'react';
+
 import Card from "../UI/Card";
 
 const Event = (props) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 450,
+      behavior: "smooth"
+    });
+  };
+
+  useEffect(() => {
+      scrollToTop();
+  }, [])
   return (
     <Card className={styles.card}>
       <p className={styles.disclaimer}>

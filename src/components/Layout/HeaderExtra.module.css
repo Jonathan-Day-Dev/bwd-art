@@ -11,7 +11,7 @@
 }
 
 .event h3 {
-  @apply underline text-center text-xl;
+  @apply text-center text-xl;
 }
 
 .portrait {
