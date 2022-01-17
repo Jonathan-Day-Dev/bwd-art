@@ -35,5 +35,5 @@
 }
 
 .event-btn {
-  
+  @apply bg-amber-900 text-slate-200 border-4 tracking-wider border-solid border-slate-200 rounded-xl px-5 py-3 mr-auto ml-auto font-bold opacity-90 shadow-lg shadow-black;
 }
