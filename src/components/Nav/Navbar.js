@@ -39,6 +39,9 @@ const Navbar = (props) => {
           >
             Calendar
           </NavLink>
+          <NavLink to="/members" activeClassName={styles.isActive} className={styles.link}>
+            Members Galleries
+          </NavLink>
           <a href="https://square.link/u/nBLV2h9F" className={styles.link}>
             Donations
           </a>

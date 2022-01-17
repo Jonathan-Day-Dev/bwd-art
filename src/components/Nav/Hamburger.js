@@ -37,6 +37,11 @@ const Hamburger = (props) => {
           </Link>
         </li>
         <li>
+          <Link to="/members" onClick={props.onToggle} className={styles["small-menu__btn"]}>
+            Members Galleries
+          </Link>
+        </li>
+        <li>
           <a
             href="https://square.link/u/nBLV2h9F"
             onClick={props.onToggle}

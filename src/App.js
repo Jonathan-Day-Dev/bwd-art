@@ -18,6 +18,7 @@ import Classes from "./components/OnlineClasses/Classes";
 import Contest from "./components/Contest/Contest";
 import MemberArt from './components/MemberArt/MemberArt'
 import Event from './components/Event/Event';
+import Salon from './components/Salon/Salon';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <div id="main">
         <Route path="/home">
           <Fragment>
+            <Salon />
             <Features />
             <WhatsNew />
           </Fragment>
