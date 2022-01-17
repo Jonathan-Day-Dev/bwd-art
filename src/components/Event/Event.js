@@ -18,11 +18,11 @@ const Event = (props) => {
   }, [])
   return (
     <Card className={styles.card}>
-      <p className={styles.disclaimer}>
+      {/* <p className={styles.disclaimer}>
         This workshop is being postponed until February due to the high rate of
         Covid-19 in Brown County, at this point. Stay tuned for exact dates.
         Again... NOT cancelled, only postponed.
-      </p>
+      </p> */}
       <img src={portrait} alt={portrait} className={styles.image} />
       <h2>Portrait Workshop</h2>
       <div className={styles.info}>
@@ -32,7 +32,7 @@ const Event = (props) => {
           </p>
           <p>The Art Center, 215 Fisk Avenue</p>
           <p>Brownwood, TX</p>
-          <p>January 18-20, 2022</p>
+          <p>February 21-23, 2022</p>
           <p>9:30 am to 3:00 pm</p>
           <p>$95 signup</p>
         </div>

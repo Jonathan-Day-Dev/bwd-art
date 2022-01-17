@@ -3,6 +3,8 @@ import logo from "../../assets/logo.png";
 
 import HeaderExtra from './HeaderExtra';
 
+// import { Link } from 'react-router-dom';
+
 const Header = (props) => {
   return (
     <div className={styles.full}>
@@ -22,6 +24,7 @@ const Header = (props) => {
           Mural by Christine Brisley-Wade and June Musick on the Art Center
           Building at 215 Fisk Ave.
         </p>
+        {/* <Link to="/event" className={styles['event-btn']}>See Upcoming Events</Link> */}
       </header>
       <HeaderExtra />
     </div>

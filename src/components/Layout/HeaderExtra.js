@@ -1,6 +1,7 @@
 import styles from './HeaderExtra.module.css';
 import portrait from '../../assets/portrait.jpg';
 
+
 import { Link } from 'react-router-dom';
 
 const HeaderExtra = (props) => {
