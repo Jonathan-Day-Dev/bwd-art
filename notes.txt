@@ -14,11 +14,6 @@ FOOTER
 
 CALENDAR
 
-MEMBERSHIP
- - Do what I can with membership page
-
-CONTEST
- - Add payments at the (bottom?) of the page
 
 -----------------------------------------------------------------------
 RESPONSIVENESS

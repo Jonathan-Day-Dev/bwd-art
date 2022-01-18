@@ -1,8 +1,8 @@
 import styles from "./HeaderExtra.module.css";
 
-import artcenter from "../../assets/artcenter02.jpg";
+import artcenter from "../../../assets/artcenter02.jpg";
 
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 
 const HeaderExtra = (props) => {
   return (

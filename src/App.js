@@ -6,8 +6,7 @@ import { Route, Redirect } from "react-router-dom";
 import { Fragment } from "react";
 
 import Navbar from "./components/Nav/Navbar";
-import Header from "./components/Layout/Header";
-import WhatsNew from "./components/Layout/WhatsNew";
+import Header from "./components/Layout/Header/Header";
 import Features from "./components/Layout/Features";
 import Footer from "./components/Layout/Footer";
 
@@ -33,7 +32,6 @@ function App() {
           <Fragment>
             <Salon />
             <Features />
-            <WhatsNew />
           </Fragment>
         </Route>
         <Route path="/about">
