@@ -9,7 +9,7 @@ const AboutUs = (props) => {
   
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0,
+      top: 450,
       behavior: "smooth"
     });
   };
