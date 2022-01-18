@@ -3,7 +3,7 @@
 }
 
 .header {
-  @apply mt-4 flex flex-col justify-between items-start pt-4 pl-4 pb-12 min-w-[40%] h-[80%] border-2 border-solid border-slate-900 rounded-xl shadow-lg shadow-black;
+  @apply mt-4 mb-4 flex flex-col justify-between items-start pt-4 pl-4 pb-12 min-w-[40%] h-full xl:h-[80%] border-4 border-solid border-slate-900 rounded-xl shadow-lg shadow-black;
   background-image: url("../../assets/backdrop.jpg");
   background-size: cover;
   background-repeat: no-repeat;

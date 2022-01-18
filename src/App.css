@@ -20,3 +20,7 @@
   z-index: -20;
   opacity: 0.4;
 }
+
+#main {
+  @apply mt-8;
+}

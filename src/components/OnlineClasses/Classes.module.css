@@ -1,5 +1,5 @@
 .card {
-    @apply w-[95%] md:w-[50%] border-4 border-solid border-fuchsia-600;
+    @apply w-[95%] flex-col md:w-[50%] border-4 border-solid border-fuchsia-600;
 }
 
 .welcome {

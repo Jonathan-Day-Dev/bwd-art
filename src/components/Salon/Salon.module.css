@@ -1,3 +1,7 @@
+.card {
+    @apply w-[80%] flex-col;
+}
+
 p {
     @apply my-2 font-semibold text-slate-900 leading-loose;
 }

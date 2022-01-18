@@ -18,7 +18,7 @@ const Calendar = (props) => {
   }, [])
 
   return (
-    <Card>
+    <Card className={styles.card}>
       <div className={styles.calendar}>
         <iframe
           className={styles.iframe}

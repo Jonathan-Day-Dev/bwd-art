@@ -1,3 +1,3 @@
 .card {
-    @apply min-w-[70%] md:w-[95%] ml-auto mr-auto;
+    @apply min-w-[70%] flex-col md:w-[95%] ml-auto mr-auto;
 }

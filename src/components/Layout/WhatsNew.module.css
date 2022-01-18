@@ -1,3 +1,7 @@
+.main {
+    @apply w-[80%];
+}
+
 .logo-img {
     @apply w-[90%] h-[30%] md:w-[80%] rounded-xl border-2 border-solid border-slate-900 shadow-lg shadow-black;
 }

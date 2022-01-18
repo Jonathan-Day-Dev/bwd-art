@@ -1,5 +1,9 @@
+.card {
+    @apply w-[85%];
+}
+
 .calendar {
-    @apply w-[100%] h-4/6 mx-10;
+    @apply w-full h-4/6 mx-10;
 }
 
 .iframe {
