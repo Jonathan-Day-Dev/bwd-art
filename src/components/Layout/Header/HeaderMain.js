@@ -10,7 +10,7 @@ const HeaderMain = (props) => {
       <div className={styles.top}>
         <img src={logo} alt="logo" className={styles.logo} />
         <div>
-          <h1>Brownwood Art Association</h1>
+          <h1 className={styles.title}>Brownwood Art Association</h1>
           <div className={styles.info}>
             <p>P.O. Box 782</p>
             <p>Brownwood, Texas 76804</p>
