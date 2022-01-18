@@ -18,11 +18,6 @@ const Event = (props) => {
   }, [])
   return (
     <Card className={styles.card}>
-      {/* <p className={styles.disclaimer}>
-        This workshop is being postponed until February due to the high rate of
-        Covid-19 in Brown County, at this point. Stay tuned for exact dates.
-        Again... NOT cancelled, only postponed.
-      </p> */}
       <img src={portrait} alt={portrait} className={styles.image} />
       <h2>Portrait Workshop</h2>
       <div className={styles.info}>
