@@ -15,11 +15,11 @@ import Contact from "./components/Contact/Contact";
 import Calendar from "./components/Calendar/Calendar";
 import Classes from "./components/OnlineClasses/Classes";
 import Contest from "./components/Contest/Contest";
-import MemberArt from './components/MemberArt/MemberArt'
-import Event from './components/Event/Event';
-import Salon from './components/Salon/Salon';
+import MemberArt from "./components/MemberArt/MemberArt";
+import Event from "./components/Event/Event";
+import Salon from "./components/Salon/Salon";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Route exact path="/">
