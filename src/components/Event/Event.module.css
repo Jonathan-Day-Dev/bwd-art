@@ -1,25 +1,17 @@
 .card {
-    @apply w-1/2 flex-col;
+    @apply flex-col w-1/2;
 }
 
-.info div {
-    @apply flex flex-col items-center justify-evenly;
+ul {
+    @apply w-full;
 }
 
-.info div p {
-    @apply m-0 text-slate-900;
+.btn {
+    @apply flex flex-col items-center w-full py-2 border-2 border-solid rounded justify-evenly border-slate-200;
 }
 
-.email {
-    @apply px-4 py-2 mt-2 no-underline bg-slate-200 text-slate-900 rounded-xl hover:bg-slate-600 hover:text-slate-200;
-}
-
-.image {
-    @apply h-auto md:h-80 w-auto max-w-[80%];
-}
-
-.desc {
-    @apply text-center text-slate-900;
+.btn h2 {
+    @apply text-xl font-bold;
 }
 
 .disclaimer {
