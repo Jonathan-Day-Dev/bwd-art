@@ -9,7 +9,7 @@ const HeaderMain = (props) => {
     <header className={styles.header}>
       <div className={styles.top}>
         <img src={logo} alt="logo" className={styles.logo} />
-        <div>
+        <div className={styles['top-main']}>
           <h1 className={styles.title}>Brownwood Art Association</h1>
           <div className={styles.info}>
             <p>P.O. Box 782</p>

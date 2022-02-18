@@ -30,10 +30,10 @@ const Footer = (props) => {
       </div>
       <img src={logo} alt="logo" className={styles.image} />
       <div className={styles.links}>
-        <a href="https://square.link/u/nBLV2h9F" className={styles.link}>
+        <a href="https://checkout.square.site/merchant/3M8VC0T8TZ955/checkout/CGOPRSY5DJFUMQZHL5MXFQU4" className={styles.link}>
           Donate
         </a>
-        <a href="https://square.link/u/ytQ3nnnH" className={styles.link}>
+        <a href="https://checkout.square.site/merchant/3M8VC0T8TZ955/checkout/BRMFSPKMUFN3T3XT2SYEYPZ6" className={styles.link}>
           Membership
         </a>
       </div>

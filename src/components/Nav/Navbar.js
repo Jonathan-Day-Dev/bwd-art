@@ -42,10 +42,10 @@ const Navbar = (props) => {
           <NavLink to="/members" activeClassName={styles.isActive} className={styles.link}>
             Members Galleries
           </NavLink>
-          <a href="https://square.link/u/nBLV2h9F" className={styles.link}>
+          <a href="https://checkout.square.site/merchant/3M8VC0T8TZ955/checkout/CGOPRSY5DJFUMQZHL5MXFQU4" className={styles.link}>
             Donations
           </a>
-          <a href="https://square.link/u/ytQ3nnnH" className={styles.link}>
+          <a href="https://checkout.square.site/merchant/3M8VC0T8TZ955/checkout/BRMFSPKMUFN3T3XT2SYEYPZ6" className={styles.link}>
             Membership
           </a>
         </section>
