@@ -27,16 +27,27 @@ const events = [
       "12\"x12\" the Fine Touch canvas, avaliable at Hobby Lobby",
       "Master's Touch brush for Oil & Acrylic",
       "#10 -filber #8 flat #4 flat"
-    ]
+    ],
+    benefit: true
   },
   {
-    title: "March Water Color Exhibit",
+    title: "Water Media Exhibit - Intake",
     date: "February 28, 2022",
     time: "2 pm to 6 pm",
     img: marchExhibit,
     description:
       "The Brownwood Art Association's March exhibit will feature works of water media done by Association members. Water media include watercolors, gouache, and acrylics on paper. Works submitted must be framed and wired to hang. There is no charge to submit your work into the show. Art may be offered for sale. ",
+    benefit: false
   },
+  {
+    title: "Water Media Exhibit - Reception",
+    date: "March 3, 2022",
+    time: "5 pm to 8 pm",
+    img: marchExhibit,
+    description:
+      "Browse artwork by BAA member artists while enjoying a glass of wine and hors d'oeuvres",
+    benefit: false
+  }
 ];
 
 const Event = (props) => {
@@ -73,6 +84,7 @@ const Event = (props) => {
           instructor={selectedEvent.instructor}
           desc={selectedEvent.description}
           supplies={selectedEvent.supplies}
+          benefit={selectedEvent.benefit}
           onClear={clearEvents}
         />
       )}

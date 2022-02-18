@@ -7,7 +7,7 @@
 }
 
 .image {
-    @apply h-auto md:h-80 w-auto max-w-[80%];
+    @apply h-auto md:h-80 w-auto max-w-[80%] mb-4;
 }
 
 .info div {

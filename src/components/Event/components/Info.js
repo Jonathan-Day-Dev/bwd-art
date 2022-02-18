@@ -13,9 +13,9 @@ const Info = (props) => {
       <img src={props.img} alt={portrait} className={styles.image} />
       <div className={styles.info}>
         <div>
-          <p>
+          {props.benefit && <p>
             <em>benefiting the Brownwood Art Association</em>
-          </p>
+          </p>}
           <p>The Art Center, 215 Fisk Avenue</p>
           <p>Brownwood, TX</p>
           <p>{props.date}</p>
