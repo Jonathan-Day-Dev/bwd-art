@@ -18,17 +18,18 @@ const events = [
       name: "Brenda Shaw",
       phone: "(325) 642-0417",
       email: "regency1298@gmail.com",
+      isInstructor: true
     },
     description:
       "The workshop will be an introduction to painting the portrait in oil paint. The oil portrait training will focus on painting the face in one session using the Zorn palette in a traditional manner.",
     supplies: [
       "Zorn limited palette for oil",
       "Black, White, Yellow Ochre, Cadmium Red Light",
-      "12\"x12\" the Fine Touch canvas, avaliable at Hobby Lobby",
+      '12"x12" the Fine Touch canvas, avaliable at Hobby Lobby',
       "Master's Touch brush for Oil & Acrylic",
-      "#10 -filber #8 flat #4 flat"
+      "#10 -filber #8 flat #4 flat",
     ],
-    benefit: true
+    benefit: true,
   },
   {
     title: "Water Media Exhibit - Intake",
@@ -37,7 +38,13 @@ const events = [
     img: marchExhibit,
     description:
       "The Brownwood Art Association's March exhibit will feature works of water media done by Association members. Water media include watercolors, gouache, and acrylics on paper. Works submitted must be framed and wired to hang. There is no charge to submit your work into the show. Art may be offered for sale. ",
-    benefit: false
+    benefit: false,
+    instructor: {
+      name: "Brenda Shaw",
+      phone: "(325) 642-0417",
+      email: "regency1298@gmail.com",
+      isInstructor: false
+    },
   },
   {
     title: "Water Media Exhibit - Reception",
@@ -45,9 +52,15 @@ const events = [
     time: "5 pm to 8 pm",
     img: marchExhibit,
     description:
-      "Browse artwork by BAA member artists while enjoying a glass of wine and hors d'oeuvres",
-    benefit: false
-  }
+      "Browse artwork by BAA member artists while enjoying a glass of wine and hors d'oeuvres. The exhibit will remain open throughout March.",
+    benefit: false,
+    instructor: {
+      name: "Brenda Shaw",
+      phone: "(325) 642-0417",
+      email: "regency1298@gmail.com",
+      isInstructor: false
+    },
+  },
 ];
 
 const Event = (props) => {
@@ -70,7 +83,7 @@ const Event = (props) => {
 
   const clearEvents = () => {
     setSelectedEvent(null);
-  }
+  };
 
   return (
     <Card className={styles.card}>
@@ -91,11 +104,16 @@ const Event = (props) => {
       {!selectedEvent && (
         <ul>
           {events.map((event, i) => (
-            <li key={event.title}>
+            <li key={event.title} className={styles['list-item']}>
               <button className={styles.btn} onClick={() => eventSelect(i)}>
-                <h2>{event.title}</h2>
-                <span>{event.date}</span>
-                <span>{event.time}</span>
+                <div className={styles.coverImg}>
+                  <img src={event.img} alt={event.title} className={styles.img} />
+                </div>
+                <div className={styles.info}>
+                  <h2>{event.title}</h2>
+                  <span>{event.date}</span>
+                  <span>{event.time}</span>
+                </div>
               </button>
             </li>
           ))}

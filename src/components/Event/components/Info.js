@@ -7,15 +7,19 @@ const Info = (props) => {
   return (
     <Fragment>
       <div className="relative w-full">
-        <button className={styles["back-btn"]} onClick={props.onClear}>X</button>
+        <button className={styles["back-btn"]} onClick={props.onClear}>
+          X
+        </button>
         <h2 className="text-center">{props.title}</h2>
       </div>
       <img src={props.img} alt={portrait} className={styles.image} />
       <div className={styles.info}>
         <div>
-          {props.benefit && <p>
-            <em>benefiting the Brownwood Art Association</em>
-          </p>}
+          {props.benefit && (
+            <p>
+              <em>benefiting the Brownwood Art Association</em>
+            </p>
+          )}
           <p>The Art Center, 215 Fisk Avenue</p>
           <p>Brownwood, TX</p>
           <p>{props.date}</p>
@@ -24,7 +28,14 @@ const Info = (props) => {
         </div>
         {props.instructor && (
           <div>
-            <p>Instructor - {props.instructor.name}</p>
+            <p>
+              {props.instructor.isInstructor ? (
+                <span>Instructor - </span>
+              ) : (
+                <span>For More Information, Contact </span>
+              )}
+              {props.instructor.name}
+            </p>
             <p>{props.instructor.phone}</p>
             <a
               href={`mailto:${props.instructor.email}`}
@@ -41,7 +52,9 @@ const Info = (props) => {
           <h4 className="mt-4 text-xl font-semibold">Supplies</h4>
           <ul>
             {props.supplies.map((item) => (
-              <li key={item} className={styles["list-item"]}>{item}</li>
+              <li key={item} className={styles["list-item"]}>
+                {item}
+              </li>
             ))}
           </ul>
         </div>
