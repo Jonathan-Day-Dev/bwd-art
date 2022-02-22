@@ -24,7 +24,7 @@ const Info = (props) => {
           <p>Brownwood, TX</p>
           <p>{props.date}</p>
           <p>{props.time}</p>
-          {props.price && <p>$95 signup</p>}
+          {props.price && <p>${props.price} signup</p>}
         </div>
         {props.instructor && (
           <div>

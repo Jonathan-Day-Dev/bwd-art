@@ -29,15 +29,10 @@ const Hamburger = (props) => {
         </a>
         <li>
           <Link
-            to="/calendar"
+            to="/members"
             onClick={props.onToggle}
             className={styles["small-menu__btn"]}
           >
-            Calendar
-          </Link>
-        </li>
-        <li>
-          <Link to="/members" onClick={props.onToggle} className={styles["small-menu__btn"]}>
             Members Galleries
           </Link>
         </li>

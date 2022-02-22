@@ -1,5 +1,17 @@
+.container {
+    @apply flex justify-evenly items-center;
+}
+
+.textile-card {
+    @apply flex-col w-[30%];
+}
+
+.textile-img {
+    @apply h-[20rem];
+}
+
 .card {
-    @apply flex-col w-1/2;
+    @apply flex-col w-[60%];
 }
 
 ul {
@@ -33,3 +45,4 @@ ul {
 .img {
     @apply w-48 h-full border-2 border-solid rounded-full border-slate-900;
 }
+

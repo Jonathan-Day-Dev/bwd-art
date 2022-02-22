@@ -12,7 +12,6 @@ import Footer from "./components/Layout/Footer";
 
 import AboutUs from "./components/About/AboutUs";
 import Contact from "./components/Contact/Contact";
-import Calendar from "./components/Calendar/Calendar";
 import Classes from "./components/OnlineClasses/Classes";
 import Contest from "./components/Contest/Contest";
 import MemberArt from "./components/MemberArt/MemberArt";
@@ -39,9 +38,6 @@ const App = () => {
         </Route>
         <Route path="/contact">
           <Contact />
-        </Route>
-        <Route path="/calendar">
-          <Calendar />
         </Route>
         <Route path="/classes">
           <Classes />
