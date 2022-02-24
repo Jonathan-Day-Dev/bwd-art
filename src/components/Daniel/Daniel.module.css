@@ -1,0 +1,15 @@
+.container {
+    @apply w-[90%]
+}
+
+.image {
+    @apply h-[16rem];
+}
+
+.info h2 {
+    @apply text-center;
+}
+
+.info p {
+    @apply mb-4 mx-4;
+}

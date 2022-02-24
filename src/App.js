@@ -16,7 +16,7 @@ import Classes from "./components/OnlineClasses/Classes";
 import Contest from "./components/Contest/Contest";
 import MemberArt from "./components/MemberArt/MemberArt";
 import Event from "./components/Event/Event";
-import Salon from "./components/Salon/Salon";
+import Daniel from "./components/Daniel/Daniel";
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
       <div id="main">
         <Route path="/home">
           <Fragment>
-            <Salon />
+            <Daniel />
             <Features />
           </Fragment>
         </Route>
