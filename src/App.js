@@ -13,7 +13,6 @@ import Footer from "./components/Layout/Footer";
 import AboutUs from "./components/About/AboutUs";
 import Contact from "./components/Contact/Contact";
 import Classes from "./components/OnlineClasses/Classes";
-import Contest from "./components/Contest/Contest";
 import MemberArt from "./components/MemberArt/MemberArt";
 import Event from "./components/Event/Event";
 import Daniel from "./components/Daniel/Daniel";
@@ -45,9 +44,6 @@ const App = () => {
         </Route>
         <Route path="/classes">
           <Classes />
-        </Route>
-        <Route path="/contest">
-          <Contest />
         </Route>
         <Route path="/members">
           <MemberArt />
