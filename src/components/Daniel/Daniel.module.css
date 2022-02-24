@@ -1,5 +1,5 @@
 .container {
-    @apply w-[90%]
+    @apply w-[25%] flex-col;
 }
 
 .image {
@@ -7,7 +7,7 @@
 }
 
 .info h2 {
-    @apply text-center;
+    @apply text-center mt-4;
 }
 
 .info p {

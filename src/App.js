@@ -17,6 +17,7 @@ import Contest from "./components/Contest/Contest";
 import MemberArt from "./components/MemberArt/MemberArt";
 import Event from "./components/Event/Event";
 import Daniel from "./components/Daniel/Daniel";
+import Board from "./components/Board/Board";
 
 const App = () => {
   return (
@@ -29,7 +30,10 @@ const App = () => {
       <div id="main">
         <Route path="/home">
           <Fragment>
-            <Daniel />
+            <div className="flex justify-evenly items-center;">
+              <Board />
+              <Daniel />
+            </div>
             <Features />
           </Fragment>
         </Route>
@@ -55,6 +59,6 @@ const App = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

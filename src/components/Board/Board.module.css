@@ -1,0 +1,7 @@
+.card {
+    @apply w-[60%] flex-col;
+}
+
+.card ul {
+    @apply text-center;
+}
