@@ -11,11 +11,11 @@
 }
 
 .top {
-  @apply flex items-start justify-center md:justify-between m-0 h-full;
+  @apply flex items-start justify-center h-full m-0 md:justify-between;
 }
 
 .logo {
-  @apply hidden md:inline-block rounded-full m-0 w-28 h-28 md:w-40 md:h-40 mr-8;
+  @apply hidden m-0 mr-8 rounded-full md:inline-block w-28 h-28 md:w-40 md:h-40;
 }
 
 .info {
@@ -23,7 +23,7 @@
 }
 
 .info p {
-  @apply font-medium md:text-lg xl:text-xl text-slate-900 text-center;
+  @apply font-medium text-center md:text-lg xl:text-xl text-slate-900;
 }
 
 .caption {
@@ -31,9 +31,9 @@
 }
 
 .event-btn {
-  @apply bg-amber-900 text-slate-200 border-4 tracking-wider border-solid border-slate-200 rounded-xl px-5 py-3 mr-auto ml-auto font-bold opacity-90 shadow-lg shadow-black;
+  @apply px-5 py-3 mx-4 font-bold tracking-wider border-4 border-solid shadow-lg bg-amber-900 text-slate-200 border-slate-200 rounded-xl opacity-90 shadow-black;
 }
 
 .top-main {
-  @apply flex flex-col justify-evenly items-center w-full;
+  @apply flex flex-col items-center w-full justify-evenly;
 }

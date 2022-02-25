@@ -21,6 +21,7 @@ import MemberArt from "./components/MemberArt/MemberArt";
 import Event from "./components/Event/Event";
 import Daniel from "./components/Daniel/Daniel";
 import Board from "./components/Board/Board";
+import Programs from "./components/Event/Programs";
 
 const App = () => {
   return (
@@ -56,6 +57,9 @@ const App = () => {
           </Route>
           <Route path="/event">
             <Event />
+          </Route>
+          <Route path="/programs">
+            <Programs />
           </Route>
         </div>
         <Footer />

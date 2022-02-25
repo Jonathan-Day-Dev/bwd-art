@@ -11,8 +11,10 @@ const HeaderExtra = (props) => {
       <div className={styles["sm-btm"]}>
         <img src={artcenter} alt="art-center" className={styles.image} />
         <div className={styles.time}>
+          <p>Call or visit us</p>
           <p>Monday - Friday</p>
           <p>2:00 pm - 6:00 pm</p>
+          <p>(325) 641-2916</p>
         </div>
       </div>
     </Card>
