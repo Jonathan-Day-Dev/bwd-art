@@ -38,7 +38,7 @@ const Board = () => {
       </p>
       <ul>
         <li>Mary Engle | (325) 203-2370</li>
-        <li>Roger Levesque | (325) 998-3025</li>
+        <li>Roger Levesque | (325) 998-3025 | <a href="mailto:rjlevesque@yourvisions.com" className={styles.email}>Email</a></li>
         <li>Kit Timmins | (325) 646-7032</li>
       </ul>
     </Card>

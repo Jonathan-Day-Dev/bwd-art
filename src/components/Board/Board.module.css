@@ -5,3 +5,7 @@
 .card ul {
     @apply text-center;
 }
+
+.email {
+    @apply border-2 border-solid border-slate-900 bg-slate-300 p-[.1rem] rounded hover:bg-blue-600 hover:text-slate-200;
+}
