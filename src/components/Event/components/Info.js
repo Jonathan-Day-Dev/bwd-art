@@ -1,5 +1,4 @@
 import styles from "./Info.module.css";
-import portrait from "../../../assets/portrait.jpg";
 
 import { Fragment } from "react";
 
@@ -12,7 +11,7 @@ const Info = (props) => {
         </button>
         <h2 className="text-center">{props.title}</h2>
       </div>
-      <img src={props.img} alt={portrait} className={styles.image} />
+      <img src={props.img} alt="event" className={styles.image} />
       <div className={styles.info}>
         <div>
           {props.benefit && (
