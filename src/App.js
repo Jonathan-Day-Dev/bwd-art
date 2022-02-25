@@ -5,6 +5,10 @@ import { Route, Redirect } from "react-router-dom";
 
 import { Fragment } from "react";
 
+// import AppBar from "./components/Nav/AppBar";
+// import { ThemeProvider } from "@mui/material/styles";
+// import theme from "./components/UI/Theme";
+
 import Navbar from "./components/Nav/Navbar";
 import Header from "./components/Layout/Header/Header";
 import Features from "./components/Layout/Features";
@@ -20,40 +24,43 @@ import Board from "./components/Board/Board";
 
 const App = () => {
   return (
-    <div className="App">
-      <Route exact path="/">
-        <Redirect to="/home" />
-      </Route>
-      <Navbar />
-      <Header />
-      <div id="main">
-        <Route path="/home">
-          <Fragment>
-            <div className="flex justify-evenly items-center;">
-              <Board />
-              <Daniel />
-            </div>
-            <Features />
-          </Fragment>
+    // <ThemeProvider theme={theme}>
+      <div className="App">
+        <Route exact path="/">
+          <Redirect to="/home" />
         </Route>
-        <Route path="/about">
-          <AboutUs />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/classes">
-          <Classes />
-        </Route>
-        <Route path="/members">
-          <MemberArt />
-        </Route>
-        <Route path="/event">
-          <Event />
-        </Route>
+        {/* <AppBar /> */}
+        <Navbar />
+        <Header />
+        <div id="main">
+          <Route path="/home">
+            <Fragment>
+              <div className="flex justify-evenly items-center;">
+                <Board />
+                <Daniel />
+              </div>
+              <Features />
+            </Fragment>
+          </Route>
+          <Route path="/about">
+            <AboutUs />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/classes">
+            <Classes />
+          </Route>
+          <Route path="/members">
+            <MemberArt />
+          </Route>
+          <Route path="/event">
+            <Event />
+          </Route>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    // </ThemeProvider>
   );
 };
 
