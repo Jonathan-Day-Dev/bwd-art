@@ -1,15 +1,14 @@
 import "./App.css";
 import "./index.css";
 
-import { Route, Redirect } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import { Fragment } from "react";
 
-// import AppBar from "./components/Nav/AppBar";
-// import { ThemeProvider } from "@mui/material/styles";
-// import theme from "./components/UI/Theme";
+import AppBar from "./components/Nav/AppBar";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./components/UI/Theme";
 
-import Navbar from "./components/Nav/Navbar";
 import Header from "./components/Layout/Header/Header";
 import Features from "./components/Layout/Features";
 import Footer from "./components/Layout/Footer";
@@ -25,46 +24,34 @@ import Programs from "./components/Event/Programs";
 
 const App = () => {
   return (
-    // <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <div className="App">
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-        {/* <AppBar /> */}
-        <Navbar />
-        <Header />
-        <div id="main">
-          <Route path="/home">
-            <Fragment>
-              <div className="flex justify-evenly items-center;">
-                <Board />
-                <Daniel />
-              </div>
-              <Features />
-            </Fragment>
-          </Route>
-          <Route path="/about">
-            <AboutUs />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/classes">
-            <Classes />
-          </Route>
-          <Route path="/members">
-            <MemberArt />
-          </Route>
-          <Route path="/event">
-            <Event />
-          </Route>
-          <Route path="/programs">
-            <Programs />
-          </Route>
-        </div>
-        <Footer />
+          <AppBar />
+          <Header />
+        <Routes>
+            <Route
+              path="/"
+              element={
+                <Fragment>
+                  <div className="flex justify-evenly items-center;">
+                    <Board />
+                    <Daniel />
+                  </div>
+                  <Features />
+                </Fragment>
+              }
+            />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/classes" element={<Classes />} />
+            <Route path="/members" element={<MemberArt />} />
+            <Route path="/event" element={<Event />} />
+            <Route path="/programs" element={<Programs />} />
+          {/* </div> */}
+        </Routes>
+          <Footer />
       </div>
-    // </ThemeProvider>
+    </ThemeProvider>
   );
 };
 

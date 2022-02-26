@@ -1,7 +1,7 @@
 import styles from "./Footer.module.css";
 import logo from "../../assets/logo.png";
 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = (props) => {
   return (
@@ -13,20 +13,20 @@ const Footer = (props) => {
         <p>(325) 641-2916</p>
       </div>
       <div className={styles.nav}>
-        <NavLink
+        <Link
           to="/about"
-          activeClassName={styles.isActive}
+          // activeClassName={styles.isActive}
           className={styles.link}
         >
           About Us
-        </NavLink>
-        <NavLink
+        </Link>
+        <Link
           to="/contact"
-          activeClassName={styles.isActive}
+          // activeClassName={styles.isActive}
           className={styles.link}
         >
           Contact
-        </NavLink>
+        </Link>
       </div>
       <img src={logo} alt="logo" className={styles.image} />
       <div className={styles.links}>
