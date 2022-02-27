@@ -3,7 +3,7 @@
 }
 
 .desc {
-    @apply text-center text-slate-900;
+    @apply text-center text-slate-900 max-w-[50%];
 }
 
 .image {

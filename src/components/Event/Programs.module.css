@@ -1,0 +1,39 @@
+.container {
+    @apply flex justify-evenly items-center w-[60%];
+}
+
+.card {
+    @apply flex-col w-full;
+}
+
+ul {
+    @apply w-full;
+}
+
+.btn {
+    @apply flex items-center justify-between w-full py-2 border-2 border-solid rounded shadow border-slate-200 bg-slate-500 shadow-slate-900;
+}
+
+.btn h2 {
+    @apply text-xl font-bold;
+}
+
+.disclaimer {
+    @apply px-3 py-2 mb-4 text-center border-4 border-red-600 border-solid shadow-lg rounded-xl bg-slate-300 shadow-black;
+}
+
+.list-item {
+    @apply flex items-center justify-between mb-2;
+}
+
+.info {
+    @apply flex flex-col items-center justify-between w-full;
+}
+
+.coverImg {
+    @apply h-32 ml-10;
+}
+
+.img {
+    @apply w-48 h-full border-2 border-solid rounded-full border-slate-900;
+}

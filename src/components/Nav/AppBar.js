@@ -1,5 +1,3 @@
-import styles from "./AppBar.module.css";
-
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -10,28 +8,13 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
+// import Tooltip from '@mui/material/Tooltip';
 import MenuItem from "@mui/material/MenuItem";
-import { styled } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo.png";
-
-const donateLink =
-  "//checkout.square.site/merchant/3M8VC0T8TZ955/checkout/CGOPRSY5DJFUMQZHL5MXFQU4";
-const membershipLink =
-  "//checkout.square.site/merchant/3M8VC0T8TZ955/checkout/BRMFSPKMUFN3T3XT2SYEYPZ6";
-const pages = [
-  { name: "Home", path: "/" },
-  { name: "Member Galleries", path: "/members" },
-  { name: "Donations", link: donateLink },
-  { name: "Membership", link: membershipLink },
-];
-
-const MyNav = styled("div")({
-  backgroundColor: "darkcyan",
-  paddingTop: ".2rem",
-  paddingBottom: ".2rem",
-});
+import pages from "./tab_data";
+import { MyLogo, MyNav } from "./styles";
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -46,7 +29,7 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar position="fixed">
-      <MyNav id="navbar">
+      <MyNav>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -55,8 +38,9 @@ const ResponsiveAppBar = () => {
               component="div"
               sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             >
-              <img src={logo} alt="Logo" className={styles.logo} />
+              <MyLogo src={logo} alt={logo} />
             </Typography>
+
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
@@ -103,22 +87,18 @@ const ResponsiveAppBar = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
             >
-              Bwd Art Association
+              BAA Offical Site
             </Typography>
-            <Box
-              sx={{ flexGrow: 1, ml: 9, display: { xs: "none", md: "flex" } }}
-            >
+            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
                 <Button
                   key={page.name}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, mx: 6, color: "black", display: "block" }}
+                  sx={{ my: 2, mx: 10, color: "black", display: "block", fontSize: "18px" }}
                 >
-                  <Typography variant="h6">
-                    <Link to={page.path || { pathname: page.link }}>
-                      {page.name}
-                    </Link>
-                  </Typography>
+                  <Link to={page.path || { pathname: page.link }}>
+                    {page.name}
+                  </Link>
                 </Button>
               ))}
             </Box>
