@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import styles from "./Contact.module.css";
 
@@ -22,17 +22,6 @@ const Contact = (props) => {
   const phoneRef = useRef();
   const addressRef = useRef();
   const commentRef = useRef();
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  useEffect(() => {
-    scrollToTop();
-  }, []);
 
   const nameHandler = (e) => {
     const enteredName = e.target.value;

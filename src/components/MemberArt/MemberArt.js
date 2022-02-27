@@ -1,5 +1,4 @@
 import styles from "./MemberArt.module.css";
-import { useEffect } from "react";
 
 import Card from "../UI/Card";
 import Member from "./Member";
@@ -31,16 +30,6 @@ import kit_04 from "../../assets/kit_timmins/04.jpg";
 import kit_05 from "../../assets/kit_timmins/05.jpg";
 
 const MemberArt = (props) => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  useEffect(() => {
-    scrollToTop();
-  }, []);
 
   const memberArt = [
     {

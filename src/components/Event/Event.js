@@ -4,7 +4,7 @@ import marchExhibit2 from "../../assets/march_image02.jpg";
 import textile from "../../assets/textile_img.png";
 import sailboat from "../../assets/sailboat.jpg";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Card from "../UI/Card";
 import Info from "./components/Info";
@@ -57,17 +57,6 @@ const events = [
 
 const Event = (props) => {
   const [selectedEvent, setSelectedEvent] = useState(null);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 450,
-      behavior: "smooth",
-    });
-  };
-
-  useEffect(() => {
-    scrollToTop();
-  }, []);
 
   const eventSelect = (index) => {
     setSelectedEvent(events[index]);

@@ -1,22 +1,9 @@
-import { useEffect } from 'react';
-
 import styles from "./AboutUs.module.css";
 import donated from "../../assets/donated.jpg";
 
 import Card from "../UI/Card";
 
 const AboutUs = (props) => {
-  
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 450,
-      behavior: "smooth"
-    });
-  };
-
-  useEffect(() => {
-      scrollToTop();
-  }, [])
 
   return (
     <Card className={styles.about}>

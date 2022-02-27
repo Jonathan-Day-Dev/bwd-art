@@ -2,7 +2,7 @@ import styles from "./Programs.module.css";
 import painting from "../../assets/christine_painting.jpg";
 import people from "../../assets/people_paint.jpg";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Card from "../UI/Card";
 import Info from "./components/Info";
@@ -20,7 +20,7 @@ const events = [
       phone: "(325) 642-0417",
       isInstructor: true,
     },
-    price: 120,
+    // price: 120,
   },
   {
     title: "Acrylics Class with Christine Brisley-Wade",
@@ -42,17 +42,6 @@ const events = [
 
 const Program = (props) => {
   const [selectedEvent, setSelectedEvent] = useState(null);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 450,
-      behavior: "smooth",
-    });
-  };
-
-  useEffect(() => {
-    scrollToTop();
-  }, []);
 
   const eventSelect = (index) => {
     setSelectedEvent(events[index]);

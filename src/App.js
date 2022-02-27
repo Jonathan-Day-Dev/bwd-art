@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 
 import { Fragment } from "react";
 
-import AppBar from "./components/Nav/AppBar";
+import AppBar from "./components/Nav/Scroll";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./components/UI/Theme";
 
@@ -26,30 +26,30 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-          <AppBar />
-          <Header />
+        <AppBar />
+        <Header />
         <Routes>
-            <Route
-              path="/"
-              element={
-                <Fragment>
-                  <div className="flex justify-evenly items-center;">
-                    <Board />
-                    <Daniel />
-                  </div>
-                  <Features />
-                </Fragment>
-              }
-            />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/classes" element={<Classes />} />
-            <Route path="/members" element={<MemberArt />} />
-            <Route path="/event" element={<Event />} />
-            <Route path="/programs" element={<Programs />} />
+          <Route
+            path="/"
+            element={
+              <Fragment>
+                <div className="flex justify-evenly items-center;">
+                  <Board />
+                  <Daniel />
+                </div>
+                <Features />
+              </Fragment>
+            }
+          />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/members" element={<MemberArt />} />
+          <Route path="/event" element={<Event />} />
+          <Route path="/programs" element={<Programs />} />
           {/* </div> */}
         </Routes>
-          <Footer />
+        <Footer />
       </div>
     </ThemeProvider>
   );
