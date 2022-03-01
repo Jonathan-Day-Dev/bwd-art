@@ -9,7 +9,7 @@ import AppBar from "./components/Nav/Scroll";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./components/UI/Theme";
 
-import Header from "./components/Layout/Header/Header";
+import Banner from "./components/Layout/Header/Banner";
 import Features from "./components/Layout/Features";
 import Footer from "./components/Layout/Footer";
 
@@ -27,7 +27,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div className="App">
         <AppBar />
-        <Header />
+        <Banner />
         <Routes>
           <Route
             path="/"

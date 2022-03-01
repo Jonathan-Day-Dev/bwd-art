@@ -4,7 +4,7 @@ import marchExhibit2 from "../../assets/march_image02.jpg";
 import textile from "../../assets/textile_img.png";
 import sailboat from "../../assets/sailboat.jpg";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Card from "../UI/Card";
 import Info from "./components/Info";
@@ -57,6 +57,14 @@ const events = [
 
 const Event = (props) => {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const topRef = useRef();
+
+  useEffect(() => {
+    topRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  }, [])
 
   const eventSelect = (index) => {
     setSelectedEvent(events[index]);
@@ -67,7 +75,7 @@ const Event = (props) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={topRef}>
       <Card className={styles['textile-card']}>
         <p className="mb-0 text-2xl">Tuesday, March 8</p>
         <p>6:00 pm</p>

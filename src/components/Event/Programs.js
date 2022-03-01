@@ -2,7 +2,7 @@ import styles from "./Programs.module.css";
 import painting from "../../assets/christine_painting.jpg";
 import people from "../../assets/people_paint.jpg";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Card from "../UI/Card";
 import Info from "./components/Info";
@@ -42,6 +42,14 @@ const events = [
 
 const Program = (props) => {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const topRef = useRef();
+
+  useEffect(() => {
+    topRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  }, [])
 
   const eventSelect = (index) => {
     setSelectedEvent(events[index]);
@@ -52,7 +60,7 @@ const Program = (props) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={topRef}>
       <Card className={styles.card}>
         {selectedEvent && (
           <Info
