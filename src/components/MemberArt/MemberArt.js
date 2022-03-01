@@ -1,4 +1,5 @@
 import styles from "./MemberArt.module.css";
+import { useEffect, useRef } from "react";
 
 import Card from "../UI/Card";
 import Member from "./Member";
@@ -30,6 +31,13 @@ import kit_04 from "../../assets/kit_timmins/04.jpg";
 import kit_05 from "../../assets/kit_timmins/05.jpg";
 
 const MemberArt = (props) => {
+  const topRef = useRef();
+
+  useEffect(() => {
+    topRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, []);
 
   const memberArt = [
     {
@@ -56,14 +64,16 @@ const MemberArt = (props) => {
   ];
 
   return (
-    <Card className={styles.card}>
-      <h2>Member Art</h2>
-      <div className={styles.list}>
-        {memberArt.map((member) => (
-          <Member name={member.name} art={member.art} key={member.id} />
-        ))}
-      </div>
-    </Card>
+    <div ref={topRef}>
+      <Card className={styles.card}>
+        <h2>Member Art</h2>
+        <div className={styles.list}>
+          {memberArt.map((member) => (
+            <Member name={member.name} art={member.art} key={member.id} />
+          ))}
+        </div>
+      </Card>
+    </div>
   );
 };
 

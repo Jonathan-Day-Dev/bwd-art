@@ -62,7 +62,7 @@ const Event = (props) => {
   useEffect(() => {
     topRef.current.scrollIntoView({
       behavior: "smooth",
-      block: "start"
+      block: "start",
     })
   }, [])
 
