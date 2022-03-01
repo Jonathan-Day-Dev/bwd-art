@@ -1,14 +1,16 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  IconButton,
+  Typography,
+  Menu,
+  Container,
+  Button,
+  MenuItem
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo.png";
@@ -27,7 +29,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{opacity: 0.9}}>
       <MyNav>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
@@ -93,7 +95,16 @@ const ResponsiveAppBar = () => {
                 <Button
                   key={page.name}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, mx: 10, color: "black", display: "block", fontSize: "18px" }}
+                  sx={{
+                    my: 2,
+                    mx: 1,
+                    color: "black",
+                    display: "block",
+                    fontSize: "1.1rem",
+                    fontWeight: 700,
+                    marginLeft: "auto",
+                    marginRight: "auto"
+                  }}
                 >
                   <Link to={page.path || { pathname: page.link }}>
                     {page.name}

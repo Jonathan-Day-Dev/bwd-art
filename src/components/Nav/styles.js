@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 
 export const MyNav = styled("div")({
-  backgroundColor: "darkcyan",
+  backgroundColor: "primary",
   paddingTop: ".2rem",
   paddingBottom: ".2rem",
 });
