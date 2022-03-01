@@ -18,7 +18,6 @@ const events = [
     {
       title: "Acrylics Class with Christine Brisley-Wade",
       date: "March 14 - 16",
-      // time: "2 pm to 6 pm",
       img: painting,
       description:
         "A three day class on painting with acrylics, taught by Christine Brisley-Wade.",
@@ -29,7 +28,7 @@ const events = [
         email: "cbrisleyart@yahoo.com",
         isInstructor: true,
       },
-      price: 120,
+      price: "$120/person",
     },
   ];
 
