@@ -17,6 +17,9 @@ const Theme = createTheme({
     },
   },
   typography: {
+    div: {
+      fontWeight: 500
+    },
     title: {
       backgroundColor: `${baaGray}`,
       opacity: 0.9,
@@ -49,10 +52,19 @@ const Theme = createTheme({
     h3: {
       fontFamily: "Caveat",
     },
+    h5: {
+      textAlign: "center",
+      fontWeight: 600,
+      marginBottom: "2rem",
+      marginTop: "1rem"
+    },
     h6: {
       fontWeight: 600,
       fontSize: 20,
       fontFamily: 'Prata'
+    },
+    p: {
+      marginBottom: "1rem"
     },
     caption: {
       display: "flex",

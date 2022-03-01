@@ -8,6 +8,7 @@ import { Fragment } from "react";
 import AppBar from "./components/Nav/Scroll";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./components/UI/Theme";
+import Box from '@mui/material/Box';
 
 import Banner from "./components/Layout/Header/Banner";
 import Features from "./components/Layout/Features";
@@ -33,10 +34,15 @@ const App = () => {
             path="/"
             element={
               <Fragment>
-                <div className="flex justify-evenly items-center;">
+                <Box sx={{
+                  display: "flex",
+                  flexDirection: { xs: "column", md: "row"},
+                  justifyContent: "space-evenly",
+                  alignItems: "center"
+                }}>
                   <Board />
                   <Daniel />
-                </div>
+                </Box>
                 <Features />
               </Fragment>
             }
