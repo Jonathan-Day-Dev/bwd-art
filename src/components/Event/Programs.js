@@ -1,47 +1,53 @@
 import styles from "./Programs.module.css";
-import painting from "../../assets/christine_painting.jpg";
-import people from "../../assets/people_paint.jpg";
+// import painting from "../../assets/christine_painting.jpg";
+// import people from "../../assets/people_paint.jpg";
 
-import { useState, useEffect, useRef } from "react";
+import { 
+  // useState, 
+  useEffect, useRef } from "react";
 
-import Card from "../UI/Card";
-import Info from "./components/Info";
+  import CustomAcc from "./components/CustomAcc";
 
-const events = [
-  {
-    title: "People Painters",
-    date: "Most Wednesdays",
-    img: people,
-    description:
-      "Brownwood Art Association hosts a regular People Painter Group. Artists of all skill levels are welcome. The group works from either live models or a photograph on a monitor. This portrait was created in the People Painter's Group by Judy Kirksey.",
-    benefit: false,
-    instructor: {
-      name: "Brenda Shaw",
-      phone: "(325) 642-0417",
-      isInstructor: true,
-    },
-    // price: 120,
-  },
-  {
-    title: "Acrylics Class with Christine Brisley-Wade",
-    date: "March 14 - 16",
-    // time: "2 pm to 6 pm",
-    img: painting,
-    description:
-      "A three day class on painting with acrylics, taught by Christine Brisley-Wade.",
-    benefit: false,
-    instructor: {
-      name: "Christine Brisley-Wade",
-      phone: "(512) 963-7032",
-      email: "cbrisleyart@yahoo.com",
-      isInstructor: true,
-    },
-    price: 120,
-  },
-];
+  import events from "./components/program_data";
+
+// import Card from "../UI/Card";
+// import Info from "./components/Info";
+
+// const events = [
+//   {
+//     title: "People Painters",
+//     date: "Most Wednesdays",
+//     img: people,
+//     description:
+//       "Brownwood Art Association hosts a regular People Painter Group. Artists of all skill levels are welcome. The group works from either live models or a photograph on a monitor. This portrait was created in the People Painter's Group by Judy Kirksey.",
+//     benefit: false,
+//     instructor: {
+//       name: "Brenda Shaw",
+//       phone: "(325) 642-0417",
+//       isInstructor: true,
+//     },
+//     // price: 120,
+//   },
+//   {
+//     title: "Acrylics Class with Christine Brisley-Wade",
+//     date: "March 14 - 16",
+//     // time: "2 pm to 6 pm",
+//     img: painting,
+//     description:
+//       "A three day class on painting with acrylics, taught by Christine Brisley-Wade.",
+//     benefit: false,
+//     instructor: {
+//       name: "Christine Brisley-Wade",
+//       phone: "(512) 963-7032",
+//       email: "cbrisleyart@yahoo.com",
+//       isInstructor: true,
+//     },
+//     price: 120,
+//   },
+// ];
 
 const Program = (props) => {
-  const [selectedEvent, setSelectedEvent] = useState(null);
+  // const [selectedEvent, setSelectedEvent] = useState(null);
   const topRef = useRef();
 
   useEffect(() => {
@@ -51,17 +57,18 @@ const Program = (props) => {
     })
   }, [])
 
-  const eventSelect = (index) => {
-    setSelectedEvent(events[index]);
-  };
+  // const eventSelect = (index) => {
+  //   setSelectedEvent(events[index]);
+  // };
 
-  const clearEvents = () => {
-    setSelectedEvent(null);
-  };
+  // const clearEvents = () => {
+  //   setSelectedEvent(null);
+  // };
 
   return (
     <div className={styles.container} ref={topRef}>
-      <Card className={styles.card}>
+      <CustomAcc events={events} />
+      {/* <Card className={styles.card}>
         {selectedEvent && (
           <Info
             title={selectedEvent.title}
@@ -98,7 +105,7 @@ const Program = (props) => {
             ))}
           </ul>
         )}
-      </Card>
+      </Card> */}
     </div>
   );
 };
