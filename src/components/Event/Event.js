@@ -5,9 +5,15 @@ import textile from "../../assets/textile_img.png";
 import sailboat from "../../assets/sailboat.jpg";
 
 import { useState, useEffect, useRef } from "react";
+import Box from "@mui/material/Box";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Avatar from "@mui/material/Avatar";
 
-import Card from "../UI/Card";
-import Info from "./components/Info";
+import CustomCard from "../UI/CustomCard";
 
 const events = [
   {
@@ -24,6 +30,7 @@ const events = [
       email: "regency1298@gmail.com",
       isInstructor: false,
     },
+    price: 200
   },
   {
     title: "Water Media Exhibit - Reception",
@@ -39,87 +46,448 @@ const events = [
     date: "April 2, 2022",
     time: "7:30 am to 9 am",
     img: sailboat,
-    description: 
-      "The event is open to all artists, age 18 and older. Registration will be at the Art Center. Blank canvases will be stamped at this time. Ending time and return to the Art Center will be at 4 pm the same day. One or two plein art artworks created during the event and one studio artwork created at any time of any subject except nudes may be entered in the competition by each artist for a total of 3 works. All works accepted must remain at The Art Center for exhibit and sale through April 23, 2022. Length and width of any frame may not exceed 26\". All work must be sturdily framed or gallery wrapped and ready to hang. All work must be for sale. Artists will receive 70% of the sale price of the work, with BAA receieving 30%.",
+    description:
+      'The event is open to all artists, age 18 and older. Registration will be at the Art Center. Blank canvases will be stamped at this time. Ending time and return to the Art Center will be at 4 pm the same day. One or two plein art artworks created during the event and one studio artwork created at any time of any subject except nudes may be entered in the competition by each artist for a total of 3 works. All works accepted must remain at The Art Center for exhibit and sale through April 23, 2022. Length and width of any frame may not exceed 26". All work must be sturdily framed or gallery wrapped and ready to hang. All work must be for sale. Artists will receive 70% of the sale price of the work, with BAA receieving 30%.',
     benefit: false,
-    price: 20
+    price: 20,
   },
   {
     title: "En Plein Air Brownwood Competition - Exhibit",
     date: "April 7, 2022",
     time: "5 pm to 8 pm",
     img: sailboat,
-    description: 
+    description:
       "The award ceremony will begin at 6 pm and the exhibit will remain open from April 7 to April 22",
-    benefit: false
-  }
+    benefit: false,
+  },
 ];
 
 const Event = (props) => {
-  const [selectedEvent, setSelectedEvent] = useState(null);
   const topRef = useRef();
+  const [expanded, setExpanded] = useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
 
   useEffect(() => {
     topRef.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
-    })
-  }, [])
-
-  const eventSelect = (index) => {
-    setSelectedEvent(events[index]);
-  };
-
-  const clearEvents = () => {
-    setSelectedEvent(null);
-  };
+    });
+  }, []);
 
   return (
     <div className={styles.container} ref={topRef}>
-      <Card className={styles['textile-card']}>
-        <p className="mb-0 text-2xl">Tuesday, March 8</p>
-        <p>6:00 pm</p>
-        <img src={textile} alt="textile artists" className={styles['textile-img']} />
-        <p className="leading-tight">We are hosting an Organizational Meeting for the Fiber &amp; Textile Arts Guild at the Brownwood Art Association. Anyone who is interested in fiber &amp; texile art is encouraged to attend!</p>
-      </Card>
-      <Card className={styles.card}>
-        {selectedEvent && (
-          <Info
-            title={selectedEvent.title}
-            date={selectedEvent.date}
-            time={selectedEvent.time}
-            img={selectedEvent.img}
-            price={selectedEvent.price}
-            instructor={selectedEvent.instructor}
-            desc={selectedEvent.description}
-            supplies={selectedEvent.supplies}
-            benefit={selectedEvent.benefit}
-            onClear={clearEvents}
-          />
-        )}
-        {!selectedEvent && (
-          <ul>
-            {events.map((event, i) => (
-              <li key={event.title} className={styles["list-item"]}>
-                <button className={styles.btn} onClick={() => eventSelect(i)}>
-                  <div className={styles.coverImg}>
-                    <img
-                      src={event.img}
-                      alt={event.title}
-                      className={styles.img}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column-reverse", md: "row" },
+          justifyContent: "space-evenly",
+          alignItems: "center",
+        }}
+      >
+        <CustomCard
+          className={styles["textile-card"]}
+          maxWth={{ xs: "80%", md: "30%" }}
+          title="Tuesday, March 8"
+          body={
+            <div>
+              <p className="text-center font-semibold text-lg mb-4">6:00 pm</p>
+              <img src={textile} alt="textile artists" className="mb-4" />
+              <p className="leading-tight">
+                We are hosting an Organizational Meeting for the Fiber &amp;
+                Textile Arts Guild at the Brownwood Art Association. Anyone who
+                is interested in fiber &amp; texile art is encouraged to attend!
+              </p>
+            </div>
+          }
+        ></CustomCard>
+        <CustomCard
+          title="Upcoming Events"
+          maxWth={{ xs: "80%", md: "60%" }}
+          body={
+            <div>
+              {events[0] && (
+                <Accordion
+                  expanded={expanded === "panel1"}
+                  onChange={handleChange("panel1")}
+                >
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1bh-content"
+                    id="panel1bh-header"
+                  >
+                    <Avatar
+                      alt={events[0].title}
+                      src={events[0].img}
+                      sx={{
+                        marginRight: "2rem",
+                        width: { xs: "4.5rem", md: "6rem", lg: "7rem" },
+                        height: { xs: "4.5rem", md: "6rem", lg: "7rem" },
+                      }}
                     />
-                  </div>
-                  <div className={styles.info}>
-                    <h2>{event.title}</h2>
-                    <span>{event.date}</span>
-                    <span>{event.time}</span>
-                  </div>
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
-      </Card>
+                    <Typography
+                      sx={{
+                        width: "33%",
+                        flexShrink: 0,
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        marginRight: "1.5rem",
+                      }}
+                      component="div"
+                    >
+                      {events[0].title}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        color: "text.secondary",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                      component="div"
+                    >
+                      <span>{events[0].date}</span>
+                      <Typography sx={{ display: { xs: "none", md: "flex" } }}>
+                        {events[0].time}
+                      </Typography>
+                    </Typography>
+                    {events[0].price && (
+                      <Typography
+                        sx={{
+                          color: "text.secondary",
+                          marginTop: "auto",
+                          marginBottom: "auto",
+                          marginLeft: "2rem",
+                        }}
+                        component="div"
+                      >
+                        <Typography
+                          sx={{ display: { xs: "none", md: "block"} }}
+                        >{`Price: $${events[0].price}`}</Typography>
+                      </Typography>
+                    )}
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                      component="div"
+                    >
+                      <p>{events[0].description}</p>
+                      {events[0].price && <Typography sx={{
+                        display: { xs: "block", md: "none"}
+                      }}>
+                        Price: ${events[0].price}
+                      </Typography>}
+                      {events[0].instructor && (
+                        <div className="flex flex-col justify-evenly items-center">
+                          <p>{`Contact ${events[0].instructor.name}`}</p>
+                          <p>{events[0].instructor.phone}</p>
+                          <a
+                            href={`mailto:${events[0].instructor.email}`}
+                            className="text-blue-600 font-semibold text-lg border-2 border-solid border-blue-400 px-6 rounded-xl hover:bg-blue-400 hover:text-white"
+                          >
+                            Email
+                          </a>
+                        </div>
+                      )}
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+              )}
+              {events[1] && (
+                <Accordion
+                  expanded={expanded === "panel2"}
+                  onChange={handleChange("panel2")}
+                >
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2bh-content"
+                    id="panel2bh-header"
+                  >
+                    <Avatar
+                      alt={events[1].title}
+                      src={events[1].img}
+                      sx={{
+                        marginRight: "2rem",
+                        width: { xs: "4.5rem", md: "6rem", lg: "7rem" },
+                        height: { xs: "4.5rem", md: "6rem", lg: "7rem" },
+                      }}
+                    />
+                    <Typography
+                      sx={{
+                        width: "33%",
+                        flexShrink: 0,
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        marginRight: "1.5rem",
+                      }}
+                      component="div"
+                    >
+                      {events[1].title}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        color: "text.secondary",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                      component="div"
+                    >
+                      <span>{events[1].date}</span>
+                      <Typography sx={{ display: { xs: "none", md: "flex" } }}>
+                        {events[1].time}
+                      </Typography>
+                    </Typography>
+                    {events[1].price && (
+                      <Typography
+                        sx={{
+                          color: "text.secondary",
+                          marginTop: "auto",
+                          marginBottom: "auto",
+                          marginLeft: "2rem",
+                        }}
+                        component="div"
+                      >
+                        <Typography
+                          sx={{ display: { xs: "none", md: "block"} }}
+                        >{`Price: $${events[1].price}`}</Typography>
+                      </Typography>
+                    )}
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                      component="div"
+                    >
+                      <p>{events[1].description}</p>
+                      {events[1].price && <Typography sx={{
+                        display: { xs: "block", md: "none"}
+                      }}>
+                        Price: ${events[1].price}
+                      </Typography>}
+                      {events[1].instructor && (
+                        <div className="flex flex-col justify-evenly items-center">
+                          <p>{`Contact ${events[1].instructor.name}`}</p>
+                          <p>{events[1].instructor.phone}</p>
+                          <a
+                            href={`mailto:${events[1].instructor.email}`}
+                            className="text-blue-600 font-semibold text-lg border-2 border-solid border-blue-400 px-6 rounded-xl hover:bg-blue-400 hover:text-white"
+                          >
+                            Email
+                          </a>
+                        </div>
+                      )}
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+              )}
+              {events[2] && (
+                <Accordion
+                  expanded={expanded === "panel3"}
+                  onChange={handleChange("panel3")}
+                >
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel3bh-content"
+                    id="panel3bh-header"
+                  >
+                    <Avatar
+                      alt={events[2].title}
+                      src={events[2].img}
+                      sx={{
+                        marginRight: "2rem",
+                        width: { xs: "4.5rem", md: "6rem", lg: "7rem" },
+                        height: { xs: "4.5rem", md: "6rem", lg: "7rem" },
+                      }}
+                    />
+                    <Typography
+                      sx={{
+                        width: "33%",
+                        flexShrink: 0,
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        marginRight: "1.5rem",
+                      }}
+                      component="div"
+                    >
+                      {events[2].title}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        color: "text.secondary",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                      component="div"
+                    >
+                      <span>{events[2].date}</span>
+                      <Typography sx={{ display: { xs: "none", md: "flex" } }}>
+                        {events[2].time}
+                      </Typography>
+                    </Typography>
+                    {events[2].price && (
+                      <Typography
+                        sx={{
+                          color: "text.secondary",
+                          marginTop: "auto",
+                          marginBottom: "auto",
+                          marginLeft: "2rem",
+                        }}
+                        component="div"
+                      >
+                        <Typography
+                          sx={{ display: { xs: "none", md: "block"} }}
+                        >{`Price: $${events[2].price}`}</Typography>
+                      </Typography>
+                    )}
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                      component="div"
+                    >
+                      <p>{events[2].description}</p>
+                      {events[2].price && <Typography sx={{
+                        display: { xs: "block", md: "none"}
+                      }}>
+                        Price: ${events[2].price}
+                      </Typography>}
+                      {events[2].instructor && (
+                        <div className="flex flex-col justify-evenly items-center">
+                          <p>{`Contact ${events[2].instructor.name}`}</p>
+                          <p>{events[0].instructor.phone}</p>
+                          <a
+                            href={`mailto:${events[2].instructor.email}`}
+                            className="text-blue-600 font-semibold text-lg border-2 border-solid border-blue-400 px-6 rounded-xl hover:bg-blue-400 hover:text-white"
+                          >
+                            Email
+                          </a>
+                        </div>
+                      )}
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+              )}
+              {events[3] && (
+                <Accordion
+                  expanded={expanded === "panel4"}
+                  onChange={handleChange("panel4")}
+                >
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel4bh-content"
+                    id="panel4bh-header"
+                  >
+                    <Avatar
+                      alt={events[3].title}
+                      src={events[3].img}
+                      sx={{
+                        marginRight: "2rem",
+                        width: { xs: "4.5rem", md: "6rem", lg: "7rem" },
+                        height: { xs: "4.5rem", md: "6rem", lg: "7rem" },
+                      }}
+                    />
+                    <Typography
+                      sx={{
+                        width: "33%",
+                        flexShrink: 0,
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        marginRight: "1.5rem",
+                      }}
+                      component="div"
+                    >
+                      {events[3].title}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        color: "text.secondary",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                      component="div"
+                    >
+                      <span>{events[3].date}</span>
+                      <Typography sx={{ display: { xs: "none", md: "flex" } }}>
+                        {events[3].time}
+                      </Typography>
+                    </Typography>
+                    {events[3].price && (
+                      <Typography
+                        sx={{
+                          color: "text.secondary",
+                          marginTop: "auto",
+                          marginBottom: "auto",
+                          marginLeft: "2rem",
+                        }}
+                        component="div"
+                      >
+                        <Typography
+                          sx={{ display: { xs: "none", md: "block"} }}
+                        >{`Price: $${events[3].price}`}</Typography>
+                      </Typography>
+                    )}
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                      component="div"
+                    >
+                      <p>{events[3].description}</p>
+                      {events[3].price && <Typography sx={{
+                        display: { xs: "block", md: "none"}
+                      }}>
+                        Price: ${events[3].price}
+                      </Typography>}
+                      {events[3].instructor && (
+                        <div className="flex flex-col justify-evenly items-center">
+                          <p>{`Contact ${events[3].instructor.name}`}</p>
+                          <p>{events[3].instructor.phone}</p>
+                          <a
+                            href={`mailto:${events[3].instructor.email}`}
+                            className="text-blue-600 font-semibold text-lg border-2 border-solid border-blue-400 px-6 rounded-xl hover:bg-blue-400 hover:text-white"
+                          >
+                            Email
+                          </a>
+                        </div>
+                      )}
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+              )}
+            </div>
+          }
+        />
+      </Box>
     </div>
   );
 };
