@@ -12,7 +12,7 @@ const Banner = () => {
           backgroundImage: `url(${backdrop})`,
           backgroundSize: "cover",
           backgroundPositionY: "center",
-          height: { xs: "50vh", md: "65vh", lg: "90vh" },
+          height: { xs: "50vh", md: "65vh", lg: "90vh", xl: "95vh" },
           width: "100%",
           display: "flex",
           flexDirection: "column",
@@ -20,7 +20,10 @@ const Banner = () => {
           alignItems: "center",
         }}
       >
-        <Typography variant="title">
+        <Typography variant="title" sx={{
+          position: "relative",
+          top: { sm: 0, md: 20, xl: 30},
+        }}>
           <Typography
             variant="h1"
             sx={{

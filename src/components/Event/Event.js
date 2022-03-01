@@ -33,7 +33,7 @@ const events = [
     description:
       'The event is open to all artists, age 18 and older. Registration will be at the Art Center. Blank canvases will be stamped at this time. Ending time and return to the Art Center will be at 4 pm the same day. One or two plein art artworks created during the event and one studio artwork created at any time of any subject except nudes may be entered in the competition by each artist for a total of 3 works. All works accepted must remain at The Art Center for exhibit and sale through April 23, 2022. Length and width of any frame may not exceed 26". All work must be sturdily framed or gallery wrapped and ready to hang. All work must be for sale. Artists will receive 70% of the sale price of the work, with BAA receieving 30%.',
     benefit: false,
-    price: 20,
+    price: "$20/entry",
   },
   {
     title: "En Plein Air Brownwood Competition - Exhibit",
@@ -150,7 +150,7 @@ const Event = (props) => {
                       >
                         <Typography
                           sx={{ display: { xs: "none", md: "block"} }}
-                        >{`Price: $${events[0].price}`}</Typography>
+                        >{`Price: ${events[0].price}`}</Typography>
                       </Typography>
                     )}
                   </AccordionSummary>
@@ -244,7 +244,7 @@ const Event = (props) => {
                       >
                         <Typography
                           sx={{ display: { xs: "none", md: "block"} }}
-                        >{`Price: $${events[1].price}`}</Typography>
+                        >{`Price: ${events[1].price}`}</Typography>
                       </Typography>
                     )}
                   </AccordionSummary>
@@ -338,7 +338,7 @@ const Event = (props) => {
                       >
                         <Typography
                           sx={{ display: { xs: "none", md: "block"} }}
-                        >{`Price: $${events[2].price}`}</Typography>
+                        >{`Price: ${events[2].price}`}</Typography>
                       </Typography>
                     )}
                   </AccordionSummary>
@@ -432,7 +432,7 @@ const Event = (props) => {
                       >
                         <Typography
                           sx={{ display: { xs: "none", md: "block"} }}
-                        >{`Price: $${events[3].price}`}</Typography>
+                        >{`Price: ${events[3].price}`}</Typography>
                       </Typography>
                     )}
                   </AccordionSummary>

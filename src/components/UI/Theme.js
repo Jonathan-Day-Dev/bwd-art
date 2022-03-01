@@ -22,7 +22,7 @@ const Theme = createTheme({
     },
     title: {
       backgroundColor: `${baaGray}`,
-      opacity: 0.9,
+      opacity: 0.7,
       borderRadius: "15px",
       border: "2px solid black",
       width: "80vw",
