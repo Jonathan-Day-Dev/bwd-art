@@ -42,6 +42,7 @@ const Banner = () => {
                   md: "3rem",
                   lg: "4rem",
                 },
+                fontWeight: 700
               }}
             >
               PO Box 782
@@ -55,6 +56,7 @@ const Banner = () => {
                   md: "3rem",
                   lg: "4rem",
                 },
+                fontWeight: 700
               }}
             >
               Brownwood, TX 76804
@@ -70,6 +72,7 @@ const Banner = () => {
                   md: "2rem",
                   lg: "3rem",
                 },
+                fontWeight: 700
               }}
             >
               Open 2:00 pm - 6:00 pm Monday - Friday
@@ -85,6 +88,7 @@ const Banner = () => {
                   md: "2rem",
                   lg: "3rem",
                 },
+                fontWeight: 700
               }}
             >
               (325) 641-2916

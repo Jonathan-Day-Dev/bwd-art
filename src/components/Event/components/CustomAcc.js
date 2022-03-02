@@ -17,7 +17,7 @@ const CustomAcc = (props) => {
   };
   return (
     <CustomCard
-      title="Upcoming Events"
+      title={props.title}
       maxWth={{ xs: "80%", md: "100%" }}
       body={
         <div>

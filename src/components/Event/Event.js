@@ -45,7 +45,7 @@ const Event = (props) => {
             </div>
           }
         ></CustomCard>
-        <CustomAcc events={events} />
+        <CustomAcc events={events} title="Upcoming Events" />
       </Box>
     </div>
   );

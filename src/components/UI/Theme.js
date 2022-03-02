@@ -15,6 +15,9 @@ const Theme = createTheme({
     secondary: {
       main: `${arcOrange}`,
     },
+    social: {
+      main: "#4267B2"
+    }
   },
   typography: {
     div: {
@@ -76,6 +79,9 @@ const Theme = createTheme({
     button: {
       borderRadius: "20px",
       fontFamily: "Caveat",
+    },
+    social: {
+      fontSize: "36px"
     }
   },
 });

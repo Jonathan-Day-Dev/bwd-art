@@ -19,7 +19,7 @@ const Program = (props) => {
 
   return (
     <div className={styles.container} ref={topRef}>
-      <CustomAcc events={events} />
+      <CustomAcc events={events} title="Our Programs" />
     </div>
   );
 };

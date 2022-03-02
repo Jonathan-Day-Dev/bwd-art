@@ -12,7 +12,8 @@ import Box from '@mui/material/Box';
 
 import Banner from "./components/Layout/Header/Banner";
 import Features from "./components/Layout/Features";
-import Footer from "./components/Layout/Footer";
+// import Footer from "./components/Layout/Footer";
+import MuiFooter from "./components/Layout/Footer/Footer"
 
 import AboutUs from "./components/About/AboutUs";
 import Contact from "./components/Contact/Contact";
@@ -55,7 +56,8 @@ const App = () => {
           <Route path="/programs" element={<Programs />} />
           {/* </div> */}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
+        <MuiFooter />
       </div>
     </ThemeProvider>
   );
