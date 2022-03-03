@@ -18,7 +18,7 @@ const StyledFooter = styled("footer")(({ theme }) => ({
 const StyledGrid = styled(Grid)({
   color: "white",
   fontFamily: "Arial",
-  fontSize: "0.75rem",
+  fontSize: "1rem",
   fontWeight: "bold",
 });
 
@@ -83,7 +83,7 @@ const Footer = () => {
 
       <Grid
         container
-        sx={{ justifyContent: { xs: "center", md: "flex-end" } }}
+        sx={{ justifyContent: { xs: "center", md: "flex-end" }, flexWrap: "nowrap" }}
         spacing={4}
       >
         <Grid item>
