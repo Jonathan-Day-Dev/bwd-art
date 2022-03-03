@@ -1,6 +1,8 @@
 import { styled } from '@mui/system';
 import donated from "../../assets/donated.jpg";
 
+import { useRef, useEffect } from "react";
+
 import CustomCard from "../UI/CustomCard";
 
 const FloatingImg = styled("img")({
@@ -11,9 +13,16 @@ const FloatingImg = styled("img")({
 })
 
 const AboutUs = (props) => {
+  const topRef = useRef();
+
+  useEffect(() => {
+    topRef.current.scrollIntoView({
+      behavior: "smooth",
+    })
+  }, [])
 
   return (
-    <CustomCard title="Our History" body={<article>
+    <CustomCard title="Our History" body={<article ref={topRef}>
       <FloatingImg src={donated} alt="donated by" />
       <p>
         On February 22, 1927, Mrs. W.R. Roberts called area artists together
