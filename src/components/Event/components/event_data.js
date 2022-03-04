@@ -1,17 +1,7 @@
 import ducks01 from "../../../assets/ducks01.jpg";
 import ducks02 from "../../../assets/ducks02.jpg";
-import marchExhibit2 from "../../../assets/march_image02.jpg";
 
 const events = [
-    {
-      title: "Water Media Exhibit - Reception",
-      date: "March 3, 2022",
-      time: "5 pm to 8 pm",
-      img: marchExhibit2,
-      description:
-        "Browse artwork by BAA member artists while enjoying a glass of wine and hors d'oeuvres. The exhibit will remain open throughout March.",
-      benefit: false,
-    },
     {
       title: "En Plein Air Brownwood Competition - Entry",
       date: "April 2, 2022",

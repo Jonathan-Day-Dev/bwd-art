@@ -28,7 +28,7 @@ const CustomCard = (props) => {
           component="img"
           image={props.imgPath}
           alt={props.imgPath}
-          sx={{ height: "25vw" }}
+          sx={{ height: "70vh" }}
         />
       )}
       <CardContent>

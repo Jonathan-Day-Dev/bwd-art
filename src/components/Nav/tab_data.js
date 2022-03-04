@@ -7,7 +7,8 @@ const pages = [
   { name: "Member Galleries", path: "/members" },
   { name: "Donations", link: donateLink },
   { name: "Membership", link: membershipLink },
-  { name: "About Us", path: "/about" }
+  { name: "About Us", path: "/about" },
+  { name: "Our History", path: "/history", hide: true }
 ];
 
 export default pages;

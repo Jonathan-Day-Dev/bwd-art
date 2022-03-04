@@ -107,7 +107,7 @@ const ResponsiveAppBar = () => {
                   }}
                 >
                   <Link to={page.path || { pathname: page.link }}>
-                    {page.name}
+                    {page.hide ? null : page.name}
                   </Link>
                 </Button>
               ))}

@@ -50,6 +50,9 @@ const Footer = () => {
             <Grid item component={Link} to="/about">
               About Us
             </Grid>
+            <Grid item component={Link} to="/history">
+              Our History
+            </Grid>
             <Grid
               item
               component={Link}

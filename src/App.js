@@ -22,6 +22,7 @@ import Event from "./components/Event/Event";
 import Daniel from "./components/Daniel/Daniel";
 import Board from "./components/Board/Board";
 import Programs from "./components/Event/Programs";
+import History from "./components/History/History";
 
 const App = () => {
   return (
@@ -47,7 +48,8 @@ const App = () => {
               </Fragment>
             }
           />
-          <Route path="/about" element={<AboutUs />} />
+          <Route path="/history" element={<AboutUs />} />
+          <Route path="/about" element={<History />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/members" element={<MemberArt />} />
