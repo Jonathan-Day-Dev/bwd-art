@@ -20,10 +20,13 @@ const Banner = () => {
           alignItems: "center",
         }}
       >
-        <Typography variant="title" sx={{
-          position: "relative",
-          top: { sm: 0, md: 20, xl: 30},
-        }}>
+        <Typography
+          variant="title"
+          sx={{
+            position: "relative",
+            top: { sm: 0, md: 20, xl: 30 },
+          }}
+        >
           <Typography
             variant="h1"
             sx={{
@@ -42,7 +45,7 @@ const Banner = () => {
                   md: "3rem",
                   lg: "4rem",
                 },
-                fontWeight: 700
+                fontWeight: 700,
               }}
             >
               PO Box 782
@@ -56,7 +59,7 @@ const Banner = () => {
                   md: "3rem",
                   lg: "4rem",
                 },
-                fontWeight: 700
+                fontWeight: 700,
               }}
             >
               Brownwood, TX 76804
@@ -72,7 +75,7 @@ const Banner = () => {
                   md: "2rem",
                   lg: "3rem",
                 },
-                fontWeight: 700
+                fontWeight: 700,
               }}
             >
               Open 2:00 pm - 6:00 pm Monday - Friday
@@ -88,7 +91,7 @@ const Banner = () => {
                   md: "2rem",
                   lg: "3rem",
                 },
-                fontWeight: 700
+                fontWeight: 700,
               }}
             >
               (325) 641-2916
@@ -149,6 +152,30 @@ const Banner = () => {
         <Typography variant="caption">
           Mural by Christine Brisley-Wade and June Musick on the Art Center
           Building at 215 Fisk Ave.
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          width: "100vw",
+          height: "fit",
+          backgroundColor: "yellow",
+          // display: { xs: "none", lg: "block" },
+        }}
+      >
+        <Typography
+          component={"a"}
+          href="//cbrisleyart.faso.com"
+          target="_blank"
+          variant="caption"
+          sx={{
+            fontSize: { xs: "1rem", md: "1.5rem" },
+            ml: "1rem",
+            mr: "1rem",
+            textAlign: "center",
+            fontWeight: "bold"
+          }}
+        >
+          Click here to see Christine Brisley-Wade's new online Gallery!
         </Typography>
       </Box>
     </Fragment>

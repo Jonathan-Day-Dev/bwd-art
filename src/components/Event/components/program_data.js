@@ -1,4 +1,3 @@
-import painting from "../../../assets/christine_painting.jpg";
 import people from "../../../assets/people_paint.jpg";
 
 const events = [
@@ -14,21 +13,6 @@ const events = [
         phone: "(325) 642-0417",
         isInstructor: true,
       },
-    },
-    {
-      title: "Acrylics Class with Christine Brisley-Wade",
-      date: "March 14 - 16",
-      img: painting,
-      description:
-        "A three day class on painting with acrylics, taught by Christine Brisley-Wade.",
-      benefit: false,
-      instructor: {
-        name: "Christine Brisley-Wade",
-        phone: "(512) 963-7032",
-        email: "cbrisleyart@yahoo.com",
-        isInstructor: true,
-      },
-      price: "$120/person",
     },
   ];
 
