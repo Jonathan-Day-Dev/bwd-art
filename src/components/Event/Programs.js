@@ -1,5 +1,5 @@
 import styles from "./Programs.module.css";
-import bowl from "../../assets/bowl_img.png";
+import bowl from "../../assets/embre.jpg";
 
 import { useEffect, useRef } from "react";
 import Box from "@mui/material/Box";
@@ -30,30 +30,50 @@ const Program = (props) => {
         alignItems: "center",
       }}
     >
-        <CustomCard
-          className={styles["textile-card"]}
-          maxWth={{ xs: "80%", md: "30%" }}
-          title="Tuesday, March 15"
-          body={
-            <div>
-              <p className="text-center font-semibold text-lg mb-4">2:00 pm</p>
-              <img src={bowl} alt="textile artists" className="mb-4" />
-              <p className="leading-tight">
-                The first meeting of our Fiber &amp; Textile group was a great
-                success. More than 20 artists came, and shared their art and
-                hopes for future skills. The group's next meeting will be next
-                Tuesday, March 15, at 2:00 at The Art Center. Linda Morris, who
-                created this piece, will be giving a demonstration for making
-                shirred rugs. Everyone is invited to participate. There is no
-                cost, the only requirement is to join the Brownwood Art
-                Assn...only $25 for the year. Bring a project to work on, and
-                invite other Textile artists. We are very excited about the
-                group's future!
-              </p>
-            </div>
-          }
-        />
-        <CustomAcc events={events} title="Our Programs" />
+      <CustomCard
+        className={styles["textile-card"]}
+        maxWth={{ xs: "80%", md: "30%" }}
+        title="The Art of Fiber"
+        body={
+          <div>
+            {/* <p className="text-center font-semibold text-lg mb-4">2:00 pm</p> */}
+            <p className="leading-tight">
+              BAA wants to promote artistic expression in all its forms, and has
+              extended its media horizon to include fiber and textile arts.
+              Anyone interested in fiber and textile arts in invited to join.
+            </p>
+            <p className="leading-tight">
+              The new group includes traditional fiber arts such as embroidery,
+              weaving, and macramé, but artistic expression is open to a wide
+              range of media. Fiber and textiles are among the oldest artistic
+              expressions known. This new group brings these ancient and
+              traditional arts into a contemporary environment where they can
+              inspire and grow in relation to our modern contemporary world.
+            </p>
+            <img src={bowl} alt="textile artists" className="mb-4 w-full" />
+            <p className="leading-tight">
+              There are many textile artists in our community, and our goal is
+              to bring them together and provide a forum that inspires and
+              encourages others to try their artistic hand at textiles.
+            </p>
+            <p className="leading-tight">
+              The only requirement for membership in the BAA Fiber and Textiles
+              Arts group is membership in the art association. Cost of
+              membership is only $25. For further information, call or text
+              Engle at 325-203-2370.
+            </p>
+            <p className="leading-tight">
+              We are looking forward to seeing the fruits of their labors since
+              the Fiber Group is exhibiting their work in the BAA gallery for
+              the month of June. The exhibit, called{" "}
+              <strong>The Art of Fiber</strong>, will be opening with a
+              reception from 5 pm to 8 pm on June 2 in The Art Center gallery.
+              We invite everyone to attend!
+            </p>
+          </div>
+        }
+      />
+      <CustomAcc events={events} title="Our Programs" />
     </Box>
   );
 };
