@@ -1,7 +1,22 @@
 // import ducks01 from "../../../assets/ducks01.jpg";
 // import ducks02 from "../../../assets/ducks02.jpg";
+// import clay from "../../../assets/clay.jpg";
 
 const events = [
+  // {
+  //   title: "Self-Drying Clay Class",
+  //   date: "April 12 & April 19, 2022",
+  //   time: "6:30-8:30",
+  //   img: clay,
+  //   description: "Learn how to make art with clay! To sign up, call (325) 641-2916 or stop by The Art Center between 2 pm and 6 pm weekdays.",
+  //   benefit: false,
+  //   price: "$25",
+  //   instructor: {
+  //     name: "Christine Brisley-Wade",
+  //     phone: "(512) 693-7032",
+  //     isInstructor: true,
+  //   },
+  // }
     // {
     //   title: "En Plein Air Brownwood Competition - Entry",
     //   date: "April 2, 2022",
