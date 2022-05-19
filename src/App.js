@@ -37,9 +37,9 @@ const App = () => {
               <Fragment>
                 <Box sx={{
                   display: "flex",
-                  flexDirection: { xs: "column", md: "row"},
+                  flexDirection: { xs: "column", lg: "row"},
                   justifyContent: "space-evenly",
-                  alignItems: "center"
+                  alignItems: "center",
                 }}>
                   <Board />
                   <Daniel />

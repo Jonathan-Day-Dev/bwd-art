@@ -7,7 +7,7 @@ export const MyNav = styled("div")({
 });
 
 export const MyLogo = styled("img")({
-  height: "5rem",
+  height: "fit",
   width: "5rem",
   borderRadius: "100%",
   padding: "0.25rem",

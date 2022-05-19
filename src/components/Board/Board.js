@@ -8,7 +8,7 @@ import CustomCard from "../UI/CustomCard";
 const Board = () => {
   return (
     <CustomCard
-      maxWth={{ xs: "80%", md: "60%" }}
+      maxWth={{ xs: "80%", lg: "60%" }}
       title="Maurine Stewart Exhibit"
       body={
         <div className={styles.main}>

@@ -31,13 +31,13 @@ const ResponsiveAppBar = () => {
   return (
     <AppBar position="fixed" sx={{opacity: 0.9}}>
       <MyNav>
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>
+        <Container sx={{height: "5rem"}}>
+          <Toolbar disableGutters sx={{height: "100%"}}>
             <Typography
               variant="h6"
               noWrap
               component="div"
-              sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+              sx={{ mr: 2, display: { xs: "none", md: "flex" }, height: "100%"}}
             >
               <MyLogo src={logo} alt={logo} />
             </Typography>
