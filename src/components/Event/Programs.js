@@ -32,7 +32,7 @@ const Program = (props) => {
     >
       <CustomCard
         className={styles["textile-card"]}
-        maxWth={{ xs: "80%", md: "80%" }}
+        maxWth={{ xs: "80%", md: "40%" }}
         title="The Art of Fiber"
         body={
           <div>
@@ -50,7 +50,7 @@ const Program = (props) => {
               traditional arts into a contemporary environment where they can
               inspire and grow in relation to our modern contemporary world.
             </p>
-            <img src={bowl} alt="textile artists" className="mb-4 w-[50%]" />
+            <img src={bowl} alt="textile artists" className="mb-4 w-[50%] mr-auto ml-auto" />
             <p className="leading-tight">
               There are many textile artists in our community, and our goal is
               to bring them together and provide a forum that inspires and
