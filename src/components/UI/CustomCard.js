@@ -44,9 +44,9 @@ const CustomCard = (props) => {
           {props.body}
         </Typography>
       </CardContent>
-      <CardActions>
+      {props.learn && <CardActions>
         <Button size="small">Learn More</Button>
-      </CardActions>
+      </CardActions>}
     </Card>
   );
 };

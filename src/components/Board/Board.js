@@ -10,6 +10,7 @@ const Board = () => {
       body={
         <img src={fiber} alt="The Art of Fiber" />
       }
+      learn={false}
     />
   );
 };
