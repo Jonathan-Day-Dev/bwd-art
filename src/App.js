@@ -14,7 +14,6 @@ import Banner from "./components/Layout/Header/Banner";
 import Features from "./components/Layout/Features";
 import MuiFooter from "./components/Layout/Footer/Footer"
 
-import AboutUs from "./components/About/AboutUs";
 import Contact from "./components/Contact/Contact";
 import Classes from "./components/OnlineClasses/Classes";
 import MemberArt from "./components/MemberArt/MemberArt";
@@ -48,7 +47,6 @@ const App = () => {
               </Fragment>
             }
           />
-          <Route path="/history" element={<AboutUs />} />
           <Route path="/about" element={<History />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/classes" element={<Classes />} />
