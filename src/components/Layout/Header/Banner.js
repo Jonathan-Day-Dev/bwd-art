@@ -141,7 +141,7 @@ const Banner = () => {
       </Box>
 
       {/* Caption about mural at the bottom of banner */}
-      <Box
+      {/* <Box
         sx={{
           width: "100vw",
           height: "3rem",
@@ -153,7 +153,7 @@ const Banner = () => {
           Mural by Christine Brisley-Wade and June Musick on the Art Center
           Building at 215 Fisk Ave.
         </Typography>
-      </Box>
+      </Box> */}
       <Box
         sx={{
           width: "100vw",
