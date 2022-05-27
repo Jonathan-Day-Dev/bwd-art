@@ -8,6 +8,7 @@ import camera from "../../../assets/camera.jpg";
 import chili from "../../../assets/chili.jpg";
 import belli from "../../../assets/belli.jpg";
 import boyd from "../../../assets/boyd.jpg";
+import crafts from "../../../assets/crafts.jpg";
 
 import {Link} from "react-router-dom";
 
@@ -86,6 +87,11 @@ const events = [
     description: <Link to="/programs">View Program</Link>
   },
   {
+    title: "Children's Summer Art Camp",
+    date: "June 28 - 30",
+    img: crafts
+  },
+  {
     title: 'People Painters',
     date: 'June 29',
     time: '1 pm - 3 pm',
@@ -96,6 +102,16 @@ const events = [
     title: '"For The Love of Color" Reception',
     date: "July 7",
     img: colors2,
+  },
+  {
+    title: "Children's Summer Art Camp",
+    date: "July 12 - 14",
+    img: crafts
+  },
+  {
+    title: "Children's Summer Art Camp",
+    date: "July 26 - 28",
+    img: crafts
   },
   {
     title: '"Scenes from Brown County" Exhibit Reception by Martin Belli',
