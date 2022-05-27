@@ -52,46 +52,262 @@ const History = () => {
         title="Meet Our Officers!"
         body={
           <div>
-            <p style={{ marginBottom: "1rem"}}>
+            <p style={{ marginBottom: "1rem" }}>
               Brownwood Art Association membership meeting was held on April 21,
               2022 and new officers for the 2022-2023 fiscal year were elected.
               They are as follows:
             </p>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.7rem" }}>
-              <p style={{ marginLeft: "10rem", marginRight: "2rem", width: "100%" }}><b><u>President</u></b></p>
-              <p style={{ marginRight: "10rem", width: "100%", textAlign: "center" }}>Anthony Reine</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "0.7rem",
+              }}
+            >
+              <p
+                style={{
+                  marginLeft: "10rem",
+                  marginRight: "2rem",
+                  width: "100%",
+                }}
+              >
+                <b>
+                  <u>President</u>
+                </b>
+              </p>
+              <p
+                style={{
+                  marginRight: "10rem",
+                  width: "100%",
+                  textAlign: "center",
+                }}
+              >
+                Anthony Reine
+              </p>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.7rem" }}>
-              <p style={{ marginLeft: "10rem", marginRight: "2rem", width: "100%"  }}><b><u>1st VP</u></b></p>
-              <p style={{ marginRight: "10rem", width: "100%", textAlign: "center" }}>Claudette West</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "0.7rem",
+              }}
+            >
+              <p
+                style={{
+                  marginLeft: "10rem",
+                  marginRight: "2rem",
+                  width: "100%",
+                }}
+              >
+                <b>
+                  <u>1st VP</u>
+                </b>
+              </p>
+              <p
+                style={{
+                  marginRight: "10rem",
+                  width: "100%",
+                  textAlign: "center",
+                }}
+              >
+                Claudette West
+              </p>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.7rem" }}>
-              <p style={{ marginLeft: "10rem", marginRight: "2rem", width: "100%"  }}><b><u>2nd VP</u></b></p>
-              <p style={{ marginRight: "10rem", width: "100%", textAlign: "center" }}>Christine Brisley-Wade</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "0.7rem",
+              }}
+            >
+              <p
+                style={{
+                  marginLeft: "10rem",
+                  marginRight: "2rem",
+                  width: "100%",
+                }}
+              >
+                <b>
+                  <u>2nd VP</u>
+                </b>
+              </p>
+              <p
+                style={{
+                  marginRight: "10rem",
+                  width: "100%",
+                  textAlign: "center",
+                }}
+              >
+                Christine Brisley-Wade
+              </p>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.7rem" }}>
-              <p style={{ marginLeft: "10rem", marginRight: "2rem", width: "100%"  }}><b><u>3rd VP</u></b></p>
-              <p style={{ marginRight: "10rem", width: "100%", textAlign: "center" }}>Brenda Shaw</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "0.7rem",
+              }}
+            >
+              <p
+                style={{
+                  marginLeft: "10rem",
+                  marginRight: "2rem",
+                  width: "100%",
+                }}
+              >
+                <b>
+                  <u>3rd VP</u>
+                </b>
+              </p>
+              <p
+                style={{
+                  marginRight: "10rem",
+                  width: "100%",
+                  textAlign: "center",
+                }}
+              >
+                Brenda Shaw
+              </p>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.7rem" }}>
-              <p style={{ marginLeft: "10rem", marginRight: "2rem", width: "100%"  }}><b><u>Secretary</u></b></p>
-              <p style={{ marginRight: "10rem", width: "100%", textAlign: "center" }}>LeCorya Finley</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "0.7rem",
+              }}
+            >
+              <p
+                style={{
+                  marginLeft: "10rem",
+                  marginRight: "2rem",
+                  width: "100%",
+                }}
+              >
+                <b>
+                  <u>Secretary</u>
+                </b>
+              </p>
+              <p
+                style={{
+                  marginRight: "10rem",
+                  width: "100%",
+                  textAlign: "center",
+                }}
+              >
+                LeCorya Finley
+              </p>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.7rem" }}>
-              <p style={{ marginLeft: "10rem", marginRight: "2rem", width: "100%"  }}><b><u>Treasurer</u></b></p>
-              <p style={{ marginRight: "10rem", width: "100%", textAlign: "center" }}>Cary Perrin</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "0.7rem",
+              }}
+            >
+              <p
+                style={{
+                  marginLeft: "10rem",
+                  marginRight: "2rem",
+                  width: "100%",
+                }}
+              >
+                <b>
+                  <u>Treasurer</u>
+                </b>
+              </p>
+              <p
+                style={{
+                  marginRight: "10rem",
+                  width: "100%",
+                  textAlign: "center",
+                }}
+              >
+                Cary Perrin
+              </p>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.7rem" }}>
-              <p style={{ marginLeft: "10rem", marginRight: "2rem", width: "100%"  }}><b><u>Reporter</u></b></p>
-              <p style={{ marginRight: "10rem", width: "100%", textAlign: "center" }}>Freda Day</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "0.7rem",
+              }}
+            >
+              <p
+                style={{
+                  marginLeft: "10rem",
+                  marginRight: "2rem",
+                  width: "100%",
+                }}
+              >
+                <b>
+                  <u>Reporter</u>
+                </b>
+              </p>
+              <p
+                style={{
+                  marginRight: "10rem",
+                  width: "100%",
+                  textAlign: "center",
+                }}
+              >
+                Freda Day
+              </p>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.7rem" }}>
-              <p style={{ marginLeft: "10rem", marginRight: "2rem", width: "100%" }}><b><u>Parliamentarian</u></b></p>
-              <p style={{ marginRight: "10rem", width: "100%", textAlign: "center" }}>Jim Blake</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "0.7rem",
+              }}
+            >
+              <p
+                style={{
+                  marginLeft: "10rem",
+                  marginRight: "2rem",
+                  width: "100%",
+                }}
+              >
+                <b>
+                  <u>Parliamentarian</u>
+                </b>
+              </p>
+              <p
+                style={{
+                  marginRight: "10rem",
+                  width: "100%",
+                  textAlign: "center",
+                }}
+              >
+                Jim Blake
+              </p>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.7rem" }}>
-              <p style={{ marginLeft: "10rem", marginRight: "2rem", width: "100%" }}><b><u>Auditor</u></b></p>
-              <p style={{ marginRight: "10rem", width: "100%", textAlign: "center" }}>Jillian Johnson</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "0.7rem",
+              }}
+            >
+              <p
+                style={{
+                  marginLeft: "10rem",
+                  marginRight: "2rem",
+                  width: "100%",
+                }}
+              >
+                <b>
+                  <u>Auditor</u>
+                </b>
+              </p>
+              <p
+                style={{
+                  marginRight: "10rem",
+                  width: "100%",
+                  textAlign: "center",
+                }}
+              >
+                Jillian Johnson
+              </p>
             </div>
             <p>The new officers take office on June 1</p>
           </div>
