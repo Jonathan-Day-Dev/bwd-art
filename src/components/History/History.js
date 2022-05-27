@@ -52,7 +52,7 @@ const History = () => {
         title="Meet Our Officers!"
         body={
           <div>
-            <p>
+            <p style={{ marginBottom: "1rem"}}>
               Brownwood Art Association membership meeting was held on April 21,
               2022 and new officers for the 2022-2023 fiscal year were elected.
               They are as follows:
