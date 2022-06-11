@@ -1,5 +1,6 @@
 import people from "../../../assets/people_paint.jpg";
 import textileart from "../../../assets/textileart.jpg";
+import photography from "../../../assets/photography.png";
 
 const events = [
     {
@@ -28,6 +29,18 @@ const events = [
         isInstructor: true,
       },
     },
+    {
+      title: "Photography Group",
+      date: "Every 2nd Thursday",
+      img: photography,
+      time: "6 pm",
+      benefit: false,
+      description: "Anyone interested in improving their photography skills is invited to attend.",
+      instructor: {
+        name: "Craig Seger",
+        phone: "325-998-0084"
+      }
+    }
   ];
 
   export default events;

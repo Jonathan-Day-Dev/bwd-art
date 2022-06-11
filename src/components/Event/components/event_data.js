@@ -11,6 +11,9 @@ import boyd from "../../../assets/boyd.jpg";
 import crafts from "../../../assets/crafts.jpg";
 import lovecolor from "../../../assets/love_colors.jpg";
 import textileart from "../../../assets/textileart.jpg";
+import photography from "../../../assets/photography.png";
+import logo from "../../../assets/logo.png";
+import ice from "../../../assets/ice_cover.jpg";
 
 import {Link} from "react-router-dom";
 
@@ -89,6 +92,12 @@ const events = [
     description: <Link to="/programs">View Program</Link>
   },
   {
+    title: "Ice Dyeing Demonstration",
+    date: "June 25",
+    time: "11 am",
+    img: ice
+  },
+  {
     title: "Children's Summer Art Camp",
     date: "June 28 - 30",
     img: crafts
@@ -108,9 +117,22 @@ const events = [
     description: "A one woman show of new works and a retrospective of the works of BAA 2022 Artist of the Year, Christine Brisley. Gallery is open weekdays from 2 pm - 6 pm"
   },
   {
+    title: "2nd Sunday at the Art Center",
+    date: "July 10",
+    time: "1 pm - 5 pm",
+    img: logo
+  },
+  {
     title: "Children's Summer Art Camp",
     date: "July 12 - 14",
     img: crafts
+  },
+  {
+    title: "Photo Group Meeting",
+    date: "July 14",
+    time: "6 pm",
+    img: photography,
+    description: <Link to="/programs">View Program</Link>
   },
   {
     title: "Children's Summer Art Camp",
