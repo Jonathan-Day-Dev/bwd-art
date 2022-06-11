@@ -1,32 +1,32 @@
-import daniel from "../../assets/daniel.jpg";
+import craig from "../../assets/craig.jpg";
 
 import CustomCard from "../UI/CustomCard";
 
 const Daniel = () => {
   return (
     <CustomCard
-      maxWth={{ xs:"80%", md:"30%" }}
-      title="Meet The Gallery Guy"
+      maxWth={{ xs: "80%", md: "30%" }}
+      title="A Huge Thank You to Craig Seger!"
       body={
         <div>
           <p>
-            Meet Daniel Graham, The Gallery Guy, who makes it possible to have
-            The Art Center gallery open five days a week. Daniel is our new
-            Gallery Attendant. In addition to being a gallery attendant, Daniel
-            is a beekeeper, a drummer, and an environmentalist. He is a fire
-            starter, a train lover, a garlic grower, a talker and a listener. We
-            invite you to stop by The Art Center weekdays between 2 p.m. and 6
-            p.m. to meet him!
-          </p>
-          <p>
-            This portrait was done by Sandra McSwain in The People Painters
-            Group.
+            2021 was quite a year! Thanks to a burst pipe above the the
+            classroom and gallery at The Art Center during our Big Freeze, there
+            was many thousands of dollars worth of damage. Lots of work was done
+            by plumbers, air conditioner technicians, flooring installers,
+            builders, electricians, and other assorted workers, but through it
+            all, there was Craig. Craig was in the midst of every step of
+            getting the building repaired and rehabbed. Without Craig's
+            leadership and attention, parts of the building would probably still
+            be unusable. He was president throughout the damage, and really
+            stepped up to make sure everything was put back together better than
+            ever. So, if you enjoy The Art Center, be sure to tell Craig thank
+            you for all he did!
           </p>
         </div>
       }
-      imgPath={daniel}
-    >
-    </CustomCard>
+      imgPath={craig}
+    ></CustomCard>
   );
 };
 
