@@ -120,6 +120,7 @@ const events = [
     title: "2nd Sunday at the Art Center",
     date: "July 10",
     time: "1 pm - 5 pm",
+    description: <Link to="/programs">View Program</Link>,
     img: logo
   },
   {
