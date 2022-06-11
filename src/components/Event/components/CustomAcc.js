@@ -117,15 +117,15 @@ const CustomAcc = (props) => {
                       </Typography>
                     )}
                     {props.events[i].instructor && (
-                      <div className="flex flex-col justify-evenly items-center">
+                      <div className="flex flex-col justify-evenly items-center mt-4">
                         <p className="text-center">{`Contact ${props.events[i].instructor.name}`}</p>
                         <p>{props.events[i].instructor.phone}</p>
-                        <a
+                        {/* <a
                           href={`mailto:${props.events[i].instructor.email}`}
                           className="text-blue-600 font-semibold text-lg border-2 border-solid border-blue-400 px-6 rounded-xl hover:bg-blue-400 hover:text-white"
                         >
                           Email
-                        </a>
+                        </a> */}
                       </div>
                     )}
                   </Typography>

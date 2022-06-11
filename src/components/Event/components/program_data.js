@@ -1,5 +1,5 @@
 import people from "../../../assets/people_paint.jpg";
-import textile from "../../../assets/textile.jpg";
+import textileart from "../../../assets/textileart.jpg";
 
 const events = [
     {
@@ -17,15 +17,16 @@ const events = [
     },
     {
       title: "Fiber & Textiles Artist Group",
-      img: textile,
+      date: "June 2 - 28",
+      img: textileart,
       description:
-      "BAA wants to promote artistic expression in all its forms, and has extended its media horizon to include fiber and texitle arts. Anyone interested in fiber and textile arts is invited to join. The only requirement for membership in the BAA Fiber and Textiles Arts group is membership in the Art Association. Cost of membership is only $25. For further information, call or text Mary Engle at 325-203-2370.",
+      "BAA wants to promote artistic expression in all its forms, and has extended its media horizon to include fiber and texitle arts. Anyone interested in fiber and textile arts is invited to join. The only requirement for membership in the BAA Fiber and Textiles Arts group is membership in the Art Association. Cost of membership is only $25.",
       benefit: false,
-      // instructor: {
-      //   name: "Brenda Shaw",
-      //   phone: "(325) 642-0417",
-      //   isInstructor: true,
-      // },
+      instructor: {
+        name: "Mary Engle",
+        phone: "325-203-2370",
+        isInstructor: true,
+      },
     },
   ];
 

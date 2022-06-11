@@ -1,7 +1,7 @@
 // import maurine from "../../../assets/mauselfie.jpg";
 import peoplepaint from "../../../assets/people_paint.jpg";
 // import memorial from "../../../assets/memorial.jpg";
-import textile from "../../../assets/textile.jpg";
+// import textile from "../../../assets/textile.jpg";
 // import colors2 from "../../../assets/colors2.jpg";
 import bobsw from "../../../assets/bobsw.jpg";
 import camera from "../../../assets/camera.jpg";
@@ -10,6 +10,7 @@ import belli from "../../../assets/belli.jpg";
 import boyd from "../../../assets/boyd.jpg";
 import crafts from "../../../assets/crafts.jpg";
 import lovecolor from "../../../assets/love_colors.jpg";
+import textileart from "../../../assets/textileart.jpg";
 
 import {Link} from "react-router-dom";
 
@@ -45,13 +46,13 @@ const events = [
   //   img: peoplepaint,
   //   description: <Link to="/programs">View Program</Link>
   // },
-  // {
-  //   title: '"The Art of Fiber" Fiber & Textile Group Exhibit Reception',
-  //   date: "June 2",
-  //   time: "5 pm - 8 pm",
-  //   img: textile,
-  //   description: "We are looking forward to seeing the fruits of their labors since the Fiber Group is exhibiting their work in the BAA gallery for the month of June. The exhibit, called 'The Art of Fiber,' will be opening with a reception from 5 pm to 8 pm on June 2 in The Art Center gallery. We invite everyone to attend!"
-  // },
+  {
+    title: '"The Art of Fiber" Fiber & Textile Group Exhibit',
+    date: "June 2",
+    time: "5 pm - 8 pm",
+    img: textileart,
+    description: "We are looking forward to seeing the fruits of their labors since the Fiber Group is exhibiting their work in the BAA gallery for the month of June. The exhibit, called 'The Art of Fiber,' will be opening with a reception from 5 pm to 8 pm on June 2 in The Art Center gallery. We invite everyone to attend!"
+  },
   // {
   //   title: "Fiber & Textile Artist Group",
   //   date: "June 7",
@@ -75,10 +76,10 @@ const events = [
   },
   {
     title: "Fiber & Textile Artist Group",
-    date: "June 7",
+    date: "June 21",
     time: "2 pm",
     description: <Link to="/programs">View Program</Link>,
-    img: textile
+    img: textileart
   },
   {
     title: 'People Painters',
@@ -100,9 +101,11 @@ const events = [
     description: <Link to="/programs">View Program</Link>
   },
   {
-    title: '"For The Love of Color" Reception',
-    date: "July 7",
+    title: '"For The Love of Color"',
+    date: "July 7 - 29",
+    time: "2 pm - 6 pm",
     img: lovecolor,
+    description: "A one woman show of new works and a retrospective of the works of BAA 2022 Artist of the Year, Christine Brisley. Gallery is open weekdays from 2 pm - 6 pm"
   },
   {
     title: "Children's Summer Art Camp",

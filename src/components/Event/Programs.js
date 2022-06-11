@@ -65,10 +65,7 @@ const Program = (props) => {
             <p className="leading-tight">
               We are looking forward to seeing the fruits of their labors since
               the Fiber Group is exhibiting their work in the BAA gallery for
-              the month of June. The exhibit, called{" "}
-              <strong>The Art of Fiber</strong>, will be opening with a
-              reception from 5 pm to 8 pm on June 2 in The Art Center gallery.
-              We invite everyone to attend!
+              the month of June.
             </p>
           </div>
         }
