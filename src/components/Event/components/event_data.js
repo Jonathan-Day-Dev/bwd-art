@@ -51,10 +51,9 @@ const events = [
   // },
   {
     title: '"The Art of Fiber" Fiber & Textile Group Exhibit',
-    date: "June 2",
-    time: "5 pm - 8 pm",
+    date: "June 2 - 28",
     img: textileart,
-    description: "We are looking forward to seeing the fruits of their labors since the Fiber Group is exhibiting their work in the BAA gallery for the month of June. The exhibit, called 'The Art of Fiber,' will be opening with a reception from 5 pm to 8 pm on June 2 in The Art Center gallery. We invite everyone to attend!"
+    description: "We are looking forward to seeing the fruits of their labors since the Fiber Group is exhibiting their work in the BAA gallery for the month of June."
   },
   // {
   //   title: "Fiber & Textile Artist Group",

@@ -5,7 +5,7 @@ const membershipLink =
 const pages = [
   { name: "Home", path: "/" },
   { name: "Member Galleries", path: "/members" },
-  { name: "Donations", link: donateLink },
+  { name: "Donate Here", link: donateLink },
   { name: "Membership", link: membershipLink },
   { name: "About Us", path: "/about" },
   { name: "Our History", path: "/history", hide: true }
