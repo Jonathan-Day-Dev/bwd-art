@@ -1,4 +1,4 @@
-import fiber from "../../assets/fiber.jpg"
+import poster from "../../assets/christine_poster.jpg";
 
 import CustomCard from "../UI/CustomCard";
 
@@ -8,7 +8,7 @@ const Board = () => {
       maxWth={{ xs: "80%", lg: "60%" }}
       title=""
       body={
-        <img src={fiber} alt="The Art of Fiber" />
+        <img src={poster} alt="The Art of Fiber" />
       }
       learn={false}
     />

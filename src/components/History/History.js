@@ -66,7 +66,7 @@ const History = () => {
             >
               <p
                 style={{
-                  marginLeft: "10rem",
+                  marginLeft: "15rem",
                   marginRight: "2rem",
                   width: "100%",
                 }}
@@ -77,7 +77,7 @@ const History = () => {
               </p>
               <p
                 style={{
-                  marginRight: "10rem",
+                  marginRight: "15rem",
                   width: "100%",
                   textAlign: "center",
                 }}
@@ -94,7 +94,7 @@ const History = () => {
             >
               <p
                 style={{
-                  marginLeft: "10rem",
+                  marginLeft: "15rem",
                   marginRight: "2rem",
                   width: "100%",
                 }}
@@ -105,7 +105,7 @@ const History = () => {
               </p>
               <p
                 style={{
-                  marginRight: "10rem",
+                  marginRight: "15rem",
                   width: "100%",
                   textAlign: "center",
                 }}
@@ -122,7 +122,7 @@ const History = () => {
             >
               <p
                 style={{
-                  marginLeft: "10rem",
+                  marginLeft: "15rem",
                   marginRight: "2rem",
                   width: "100%",
                 }}
@@ -133,7 +133,7 @@ const History = () => {
               </p>
               <p
                 style={{
-                  marginRight: "10rem",
+                  marginRight: "15rem",
                   width: "100%",
                   textAlign: "center",
                 }}
@@ -150,7 +150,7 @@ const History = () => {
             >
               <p
                 style={{
-                  marginLeft: "10rem",
+                  marginLeft: "15rem",
                   marginRight: "2rem",
                   width: "100%",
                 }}
@@ -161,7 +161,7 @@ const History = () => {
               </p>
               <p
                 style={{
-                  marginRight: "10rem",
+                  marginRight: "15rem",
                   width: "100%",
                   textAlign: "center",
                 }}
@@ -178,7 +178,7 @@ const History = () => {
             >
               <p
                 style={{
-                  marginLeft: "10rem",
+                  marginLeft: "15rem",
                   marginRight: "2rem",
                   width: "100%",
                 }}
@@ -189,7 +189,7 @@ const History = () => {
               </p>
               <p
                 style={{
-                  marginRight: "10rem",
+                  marginRight: "15rem",
                   width: "100%",
                   textAlign: "center",
                 }}
@@ -206,7 +206,7 @@ const History = () => {
             >
               <p
                 style={{
-                  marginLeft: "10rem",
+                  marginLeft: "15rem",
                   marginRight: "2rem",
                   width: "100%",
                 }}
@@ -217,7 +217,7 @@ const History = () => {
               </p>
               <p
                 style={{
-                  marginRight: "10rem",
+                  marginRight: "15rem",
                   width: "100%",
                   textAlign: "center",
                 }}
@@ -234,7 +234,7 @@ const History = () => {
             >
               <p
                 style={{
-                  marginLeft: "10rem",
+                  marginLeft: "15rem",
                   marginRight: "2rem",
                   width: "100%",
                 }}
@@ -245,7 +245,7 @@ const History = () => {
               </p>
               <p
                 style={{
-                  marginRight: "10rem",
+                  marginRight: "15rem",
                   width: "100%",
                   textAlign: "center",
                 }}
@@ -262,7 +262,7 @@ const History = () => {
             >
               <p
                 style={{
-                  marginLeft: "10rem",
+                  marginLeft: "15rem",
                   marginRight: "2rem",
                   width: "100%",
                 }}
@@ -273,7 +273,7 @@ const History = () => {
               </p>
               <p
                 style={{
-                  marginRight: "10rem",
+                  marginRight: "15rem",
                   width: "100%",
                   textAlign: "center",
                 }}
@@ -290,7 +290,7 @@ const History = () => {
             >
               <p
                 style={{
-                  marginLeft: "10rem",
+                  marginLeft: "15rem",
                   marginRight: "2rem",
                   width: "100%",
                 }}
@@ -301,7 +301,7 @@ const History = () => {
               </p>
               <p
                 style={{
-                  marginRight: "10rem",
+                  marginRight: "15rem",
                   width: "100%",
                   textAlign: "center",
                 }}
