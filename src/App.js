@@ -43,7 +43,7 @@ const App = () => {
                   <Board />
                   <Daniel />
                 </Box>
-                <Features />
+                {/* <Features /> */}
               </Fragment>
             }
           />
