@@ -10,7 +10,7 @@ const CustomCard = (props) => {
   return (
     <Card
       sx={{
-        minWidth: 300,
+        minWidth: 200,
         maxWidth: props.maxWth,
         backgroundColor: "#94a3b8",
         marginTop: "1rem",

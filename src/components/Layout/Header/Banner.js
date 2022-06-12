@@ -18,6 +18,7 @@ const Banner = () => {
           flexDirection: "column",
           justifyContent: "space-evenly",
           alignItems: "center",
+          mt: {xs: "2.5rem", md: "1rem"}
         }}
       >
         <Typography
