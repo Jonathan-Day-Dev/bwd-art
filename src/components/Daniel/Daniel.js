@@ -5,7 +5,7 @@ import CustomCard from "../UI/CustomCard";
 const Daniel = () => {
   return (
     <CustomCard
-      maxWth={{ xs: "80%", md: "30%" }}
+      maxWth={{ xs: "80%", sm: "60%", md: "45%" }}
       title="A Huge Thank You to Craig Seger!"
       body={
         <div>

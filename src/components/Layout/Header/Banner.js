@@ -145,6 +145,7 @@ const Banner = () => {
           width: "100vw",
           height: "fit",
           backgroundColor: "yellow",
+          mt: { xs: "1.6rem", sm: "2.5rem", md: "0"},
           // display: { xs: "none", lg: "block" },
         }}
       >
