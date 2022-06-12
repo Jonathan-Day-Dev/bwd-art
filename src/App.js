@@ -18,10 +18,11 @@ import Contact from "./components/Contact/Contact";
 import Classes from "./components/OnlineClasses/Classes";
 import MemberArt from "./components/MemberArt/MemberArt";
 import Event from "./components/Event/Event";
-import Daniel from "./components/Daniel/Daniel";
+import Craig from "./components/Craig/Craig";
 import Board from "./components/Board/Board";
 import Programs from "./components/Event/Programs";
 import History from "./components/History/History";
+import Thanks from "./components/Thanks/Thanks";
 
 const App = () => {
   return (
@@ -36,14 +37,15 @@ const App = () => {
               <Fragment>
                 <Box sx={{
                   display: "flex",
-                  flexDirection: { xs: "column", lg: "row"},
+                  flexDirection: "row",
+                  flexWrap: "wrap",
                   justifyContent: "space-evenly",
                   alignItems: "center",
                 }}>
                   <Board />
-                  <Daniel />
+                  <Thanks />
+                  <Craig />
                 </Box>
-                {/* <Features /> */}
               </Fragment>
             }
           />

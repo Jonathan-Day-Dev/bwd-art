@@ -58,13 +58,15 @@ const Theme = createTheme({
     h5: {
       textAlign: "center",
       fontWeight: 600,
-      marginBottom: "2rem",
+      marginBottom: "1rem",
       marginTop: "1rem"
     },
     h6: {
       fontWeight: 600,
-      fontSize: 20,
-      fontFamily: 'Prata'
+      fontSize: "0.9rem",
+      fontFamily: 'Prata',
+      textAlign: "center",
+      display: "list-item"
     },
     p: {
       marginBottom: "1rem"
@@ -82,6 +84,9 @@ const Theme = createTheme({
     },
     social: {
       fontSize: "36px"
+    },
+    li: {
+      textAlign: "center"
     }
   },
 });
