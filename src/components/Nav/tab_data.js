@@ -8,7 +8,8 @@ const pages = [
   { name: "Donate Here", link: donateLink },
   { name: "Membership", link: membershipLink },
   { name: "About Us", path: "/about" },
-  { name: "Our History", path: "/history", hide: true }
+  { name: "Video Tutorials", path: "/vids"},
+  // { name: "Our History", path: "/history", hide: true },
 ];
 
 export default pages;

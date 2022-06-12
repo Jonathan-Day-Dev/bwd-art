@@ -53,6 +53,7 @@ const App = () => {
           <Route path="/members" element={<MemberArt />} />
           <Route path="/event" element={<Event />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/vids" element={<Features />}/>
         </Routes>
         <MuiFooter />
       </div>
