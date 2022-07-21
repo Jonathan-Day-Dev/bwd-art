@@ -1,7 +1,8 @@
 import people from "../../../assets/people_paint.jpg";
 import textileart from "../../../assets/textileart.jpg";
 import photography from "../../../assets/photography.png";
-import ice from "../../../assets/ice_cover.jpg";
+// import ice from "../../../assets/ice_cover.jpg";
+import building from "../../../assets/backdrop.jpg";
 
 const events = [
   {
@@ -19,7 +20,7 @@ const events = [
   },
   {
     title: "Fiber & Textiles Artist Group",
-    date: "June 2 - 28",
+    date: "Alternate Tuesdays",
     img: textileart,
     description:
       "BAA wants to promote artistic expression in all its forms, and has extended its media horizon to include fiber and texitle arts. Anyone interested in fiber and textile arts is invited to join. The only requirement for membership in the BAA Fiber and Textiles Arts group is membership in the Art Association. Cost of membership is only $25.",
@@ -46,7 +47,7 @@ const events = [
   {
     title: "2nd Sunday at the Art Center",
     time: "1 pm - 5 pm",
-    img: ice,
+    img: building,
     description:
       "The Art Center is open special hours on the 2nd Sunday of summer months. Stop by and enjoy the art and watch some of our artists at work!",
   },

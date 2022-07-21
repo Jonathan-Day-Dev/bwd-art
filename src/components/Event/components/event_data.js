@@ -1,5 +1,5 @@
 // import maurine from "../../../assets/mauselfie.jpg";
-import peoplepaint from "../../../assets/people_paint.jpg";
+// import peoplepaint from "../../../assets/people_paint.jpg";
 // import memorial from "../../../assets/memorial.jpg";
 // import textile from "../../../assets/textile.jpg";
 // import colors2 from "../../../assets/colors2.jpg";
@@ -10,10 +10,10 @@ import belli from "../../../assets/belli.jpg";
 import boyd from "../../../assets/boyd.jpg";
 import crafts from "../../../assets/crafts.jpg";
 import lovecolor from "../../../assets/love_colors.jpg";
-import textileart from "../../../assets/textileart.jpg";
+// import textileart from "../../../assets/textileart.jpg";
 import photography from "../../../assets/photography.png";
 import logo from "../../../assets/logo.png";
-import ice from "../../../assets/ice_cover.jpg";
+// import ice from "../../../assets/ice_cover.jpg";
 
 import {Link} from "react-router-dom";
 
@@ -31,83 +31,52 @@ const events = [
   //     phone: "",
   //     isInstructor: true,
   //   },
-  // }
+
   // {
-  //   title: "Maurine Stewart Exhibit",
-  //   date: "May 13 - May 27",
-  //   img: maurine,
-  // },
-  // {
-  //   title: "Art Center Closed for Memorial Day",
-  //   date: "May 30",
-  //   img: memorial,
+  //   title: '"The Art of Fiber" Fiber & Textile Group Exhibit',
+  //   date: "June 2 - 28",
+  //   img: textileart,
+  //   description: "We are looking forward to seeing the fruits of their labors since the Fiber Group is exhibiting their work in the BAA gallery for the month of June."
   // },
   // {
   //   title: 'People Painters',
-  //   date: 'June 1',
+  //   date: 'June 15',
   //   time: '1 pm - 3 pm',
   //   img: peoplepaint,
   //   description: <Link to="/programs">View Program</Link>
   // },
-  {
-    title: '"The Art of Fiber" Fiber & Textile Group Exhibit',
-    date: "June 2 - 28",
-    img: textileart,
-    description: "We are looking forward to seeing the fruits of their labors since the Fiber Group is exhibiting their work in the BAA gallery for the month of June."
-  },
   // {
   //   title: "Fiber & Textile Artist Group",
-  //   date: "June 7",
+  //   date: "June 21",
   //   time: "2 pm",
   //   description: <Link to="/programs">View Program</Link>,
-  //   img: textile
+  //   img: textileart
   // },
   // {
   //   title: 'People Painters',
-  //   date: 'June 8',
+  //   date: 'June 22',
   //   time: '1 pm - 3 pm',
   //   img: peoplepaint,
   //   description: <Link to="/programs">View Program</Link>
   // },
-  {
-    title: 'People Painters',
-    date: 'June 15',
-    time: '1 pm - 3 pm',
-    img: peoplepaint,
-    description: <Link to="/programs">View Program</Link>
-  },
-  {
-    title: "Fiber & Textile Artist Group",
-    date: "June 21",
-    time: "2 pm",
-    description: <Link to="/programs">View Program</Link>,
-    img: textileart
-  },
-  {
-    title: 'People Painters',
-    date: 'June 22',
-    time: '1 pm - 3 pm',
-    img: peoplepaint,
-    description: <Link to="/programs">View Program</Link>
-  },
-  {
-    title: "Ice Dyeing Demonstration",
-    date: "June 25",
-    time: "11 am",
-    img: ice
-  },
-  {
-    title: "Children's Summer Art Camp",
-    date: "June 28 - 30",
-    img: crafts
-  },
-  {
-    title: 'People Painters',
-    date: 'June 29',
-    time: '1 pm - 3 pm',
-    img: peoplepaint,
-    description: <Link to="/programs">View Program</Link>
-  },
+  // {
+  //   title: "Ice Dyeing Demonstration",
+  //   date: "June 25",
+  //   time: "11 am",
+  //   img: ice
+  // },
+  // {
+  //   title: "Children's Summer Art Camp",
+  //   date: "June 28 - 30",
+  //   img: crafts
+  // },
+  // {
+  //   title: 'People Painters',
+  //   date: 'June 29',
+  //   time: '1 pm - 3 pm',
+  //   img: peoplepaint,
+  //   description: <Link to="/programs">View Program</Link>
+  // },
   {
     title: '"For The Love of Color"',
     date: "July 7 - 29",
@@ -166,6 +135,7 @@ const events = [
     date: "December 1",
     img: chili,
   },
+  
 ];
 
 export default events;
