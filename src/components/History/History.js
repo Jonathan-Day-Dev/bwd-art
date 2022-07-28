@@ -309,7 +309,6 @@ const History = () => {
                 Jillian Johnson
               </p>
             </div>
-            <p>The new officers take office on June 1</p>
           </div>
         }
       />

@@ -62,11 +62,6 @@ const Program = (props) => {
               membership is only $25. For further information, call or text
               Engle at 325-203-2370.
             </p>
-            <p className="leading-tight">
-              We are looking forward to seeing the fruits of their labors since
-              the Fiber Group is exhibiting their work in the BAA gallery for
-              the month of June.
-            </p>
           </div>
         }
       />
