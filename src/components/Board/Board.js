@@ -6,7 +6,7 @@ import CustomCard from "../UI/CustomCard";
 const Board = () => {
   return (
     <CustomCard
-      maxWth={{ xs: "80%", lg: "60%" }}
+      maxWth={{ xs: "80%", lg: "50%" }}
       title=""
       body={
         <img src={belli} alt="The Art of Fiber" />
