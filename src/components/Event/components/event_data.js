@@ -10,7 +10,7 @@ import belli from "../../../assets/belli.jpg";
 import boyd from "../../../assets/boyd.jpg";
 import crafts from "../../../assets/crafts.jpg";
 import lovecolor from "../../../assets/love_colors.jpg";
-// import textileart from "../../../assets/textileart.jpg";
+import textileart from "../../../assets/textileart.jpg";
 import photography from "../../../assets/photography.png";
 import logo from "../../../assets/logo.png";
 // import ice from "../../../assets/ice_cover.jpg";
@@ -113,6 +113,13 @@ const events = [
     date: "August 4",
     time: "5 pm - 8 pm",
     img: belli,
+  },
+    {
+    title: "Fiber & Textile Artist Group",
+    date: "August 19",
+    time: "2 pm",
+    description: <Link to="/programs">View Program</Link>,
+    img: textileart
   },
   {
     title: "The Eclectic World of Boyd Harris Exhibit Reception",
