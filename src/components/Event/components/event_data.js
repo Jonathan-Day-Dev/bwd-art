@@ -115,7 +115,7 @@ const events = [
     img: belli,
   },
     {
-    title: "Fiber & Textile Artist Group",
+    title: "Fiber & Textile Artist Group - Theme is \"The Artist's Interpretaion of Recycling\"",
     date: "August 19",
     time: "2 pm",
     description: <Link to="/programs">View Program</Link>,

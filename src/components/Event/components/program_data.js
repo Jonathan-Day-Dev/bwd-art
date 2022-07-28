@@ -2,7 +2,8 @@ import people from "../../../assets/people_paint.jpg";
 import textileart from "../../../assets/textileart.jpg";
 import photography from "../../../assets/photography.png";
 // import ice from "../../../assets/ice_cover.jpg";
-import building from "../../../assets/backdrop.jpg";
+// import building from "../../../assets/backdrop.jpg";
+import artcenter from "../../../assets/new/artcenter.jpg";
 
 const events = [
   {
@@ -47,7 +48,7 @@ const events = [
   {
     title: "2nd Sunday at the Art Center",
     time: "1 pm - 5 pm",
-    img: building,
+    img: artcenter,
     description:
       "The Art Center is open special hours on the 2nd Sunday of summer months. Stop by and enjoy the art and watch some of our artists at work!",
   },
