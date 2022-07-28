@@ -8,11 +8,11 @@ import camera from "../../../assets/camera.jpg";
 import chili from "../../../assets/chili.jpg";
 import belli from "../../../assets/belli.jpg";
 import boyd from "../../../assets/boyd.jpg";
-import crafts from "../../../assets/crafts.jpg";
-import lovecolor from "../../../assets/love_colors.jpg";
+// import crafts from "../../../assets/crafts.jpg";
+// import lovecolor from "../../../assets/love_colors.jpg";
 import textileart from "../../../assets/textileart.jpg";
-import photography from "../../../assets/photography.png";
-import logo from "../../../assets/logo.png";
+// import photography from "../../../assets/photography.png";
+// import logo from "../../../assets/logo.png";
 // import ice from "../../../assets/ice_cover.jpg";
 
 import {Link} from "react-router-dom";
@@ -77,37 +77,37 @@ const events = [
   //   img: peoplepaint,
   //   description: <Link to="/programs">View Program</Link>
   // },
-  {
-    title: '"For The Love of Color"',
-    date: "July 7 - 29",
-    time: "2 pm - 6 pm",
-    img: lovecolor,
-    description: "A one woman show of new works and a retrospective of the works of BAA 2022 Artist of the Year, Christine Brisley. Gallery is open weekdays from 2 pm - 6 pm"
-  },
-  {
-    title: "2nd Sunday at the Art Center",
-    date: "July 10",
-    time: "1 pm - 5 pm",
-    description: <Link to="/programs">View Program</Link>,
-    img: logo
-  },
-  {
-    title: "Children's Summer Art Camp",
-    date: "July 12 - 14",
-    img: crafts
-  },
-  {
-    title: "Photo Group Meeting",
-    date: "July 14",
-    time: "6 pm",
-    img: photography,
-    description: <Link to="/programs">View Program</Link>
-  },
-  {
-    title: "Children's Summer Art Camp",
-    date: "July 26 - 28",
-    img: crafts
-  },
+  // {
+  //   title: '"For The Love of Color"',
+  //   date: "July 7 - 29",
+  //   time: "2 pm - 6 pm",
+  //   img: lovecolor,
+  //   description: "A one woman show of new works and a retrospective of the works of BAA 2022 Artist of the Year, Christine Brisley. Gallery is open weekdays from 2 pm - 6 pm"
+  // },
+  // {
+  //   title: "2nd Sunday at the Art Center",
+  //   date: "July 10",
+  //   time: "1 pm - 5 pm",
+  //   description: <Link to="/programs">View Program</Link>,
+  //   img: logo
+  // },
+  // {
+  //   title: "Children's Summer Art Camp",
+  //   date: "July 12 - 14",
+  //   img: crafts
+  // },
+  // {
+  //   title: "Photo Group Meeting",
+  //   date: "July 14",
+  //   time: "6 pm",
+  //   img: photography,
+  //   description: <Link to="/programs">View Program</Link>
+  // },
+  // {
+  //   title: "Children's Summer Art Camp",
+  //   date: "July 26 - 28",
+  //   img: crafts
+  // },
   {
     title: '"Scenes from Brown County" Exhibit Reception by Martin Belli',
     date: "August 4",
