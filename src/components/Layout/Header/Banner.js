@@ -141,7 +141,7 @@ const Banner = () => {
         </Box>
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           width: "100vw",
           height: "fit",
@@ -165,7 +165,7 @@ const Banner = () => {
         >
           Click here to see Christine Brisley-Wade's new online Gallery!
         </Typography>
-      </Box>
+      </Box> */}
     </Fragment>
   );
 };
