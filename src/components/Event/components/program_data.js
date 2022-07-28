@@ -4,7 +4,7 @@ import photography from "../../../assets/photography.png";
 // import ice from "../../../assets/ice_cover.jpg";
 // import building from "../../../assets/backdrop.jpg";
 import artcenter from "../../../assets/new/artcenter.jpg";
-import studio from "../../../assets/new/studio.jpg";
+import studio from "../../../assets/new/easel.jpg";
 
 const events = [
   {

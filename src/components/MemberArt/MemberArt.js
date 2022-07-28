@@ -56,8 +56,8 @@ const MemberArt = (props) => {
     //   art: [fred_01, fred_02, fred_03, fred_04, fred_05, fred_06],
     // },
     {name: "Martin Belli", id: "01", art: [belli_01, belli_02]},
-    {name: "Christine Brisley", id: "02", art: [christine_01, christine_02]},
-    { name: "Judy Kirksey", id: "03", art: [judy_01, judy_02] },
+    {name: "Christine Brisley", id: "02", art: [christine_01, christine_02], link: true},
+    {name: "Judy Kirksey", id: "03", art: [judy_01, judy_02] },
     {
       name: "Julie Mize",
       id: "04",

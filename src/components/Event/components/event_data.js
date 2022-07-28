@@ -113,6 +113,7 @@ const events = [
     date: "August 4",
     time: "5 pm - 8 pm",
     img: belli,
+    description: "Martin Belli moved to Brownwood from New York in 1994. He is currently the Medical Director and Chief Pathologist at Hendrick Medical Center in Brownwood. \"Scenes from Brown County\" is Dr. Belli's first solo exhibit. Much of his photography is shot at his Brown County ranch."
   },
     {
     title: "Fiber & Textile Artist Group - Theme is \"The Artist's Interpretaion of Recycling\"",
