@@ -13,6 +13,7 @@ const Thanks = (props) => {
             <Typography variant="h6">Sandra McSwain</Typography>
             <Typography variant="h6">E.P. Woodruff Trust</Typography>
             <Typography variant="h6">Ace Heritage Hardware of Sandy, OR</Typography>
+            <Typography variant="h6">Mike &amp; Donna Lewis</Typography>
 
           <Typography variant="h5">Benefactor of the Arts</Typography>
           <Typography variant="h6">Brad &amp; Cathy Bradley</Typography>
