@@ -56,7 +56,7 @@ const MemberArt = (props) => {
     //   art: [fred_01, fred_02, fred_03, fred_04, fred_05, fred_06],
     // },
     {name: "Martin Belli", id: "01", art: [belli_01, belli_02]},
-    {name: "Christine Brisley", id: "02", art: [christine_01, christine_02], link: true},
+    {name: "Christine Brisley", id: "02", art: [christine_01, christine_02], link: "//cbrisleyart.faso.com/"},
     {name: "Judy Kirksey", id: "03", art: [judy_01, judy_02] },
     {
       name: "Julie Mize",
@@ -76,7 +76,7 @@ const MemberArt = (props) => {
         <h2>Member Art</h2>
         <div className={styles.list}>
           {memberArt.map((member) => (
-            <Member name={member.name} art={member.art} key={member.id} />
+            <Member name={member.name} art={member.art} key={member.id} link={member.link} />
           ))}
         </div>
       </Card>

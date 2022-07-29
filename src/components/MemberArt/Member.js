@@ -1,9 +1,18 @@
 import styles from "./Member.module.css";
+import { Link } from "react-router-dom";
+// import { Typography } from "@mui/material";
 
 const Member = (props) => {
   return (
     <div className={styles.card}>
-      {props.link && <a href="http://cbrisleyart.faso.com/" target="_blank" rel="noreferrer"><h1 className={styles.header}>{props.name}</h1></a>}
+      {props.link && (
+        <div>
+          <h1 className={styles.header}>{props.name}</h1>
+          <Link to={{ pathname: props.link }}>
+            <p className={styles.link}>Click Here To View {props.name}'s Website</p>
+          </Link>
+        </div>
+      )}
       {!props.link && <h1 className={styles.header}>{props.name}</h1>}
       <div className={styles.images}>
         {props.art.map((pic) => (
