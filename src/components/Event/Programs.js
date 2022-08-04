@@ -36,7 +36,6 @@ const Program = (props) => {
         title="The Art of Fiber"
         body={
           <div>
-            {/* <p className="text-center font-semibold text-lg mb-4">2:00 pm</p> */}
             <p className="leading-tight">
               BAA wants to promote artistic expression in all its forms, and has
               extended its media horizon to include fiber and textile arts.

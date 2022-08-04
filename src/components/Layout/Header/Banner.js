@@ -140,32 +140,6 @@ const Banner = () => {
           </Button>
         </Box>
       </Box>
-
-      {/* <Box
-        sx={{
-          width: "100vw",
-          height: "fit",
-          backgroundColor: "yellow",
-          mt: { xs: "1.6rem", sm: "2.5rem", md: "0"},
-          // display: { xs: "none", lg: "block" },
-        }}
-      >
-        <Typography
-          component={"a"}
-          href="//cbrisleyart.faso.com"
-          target="_blank"
-          variant="caption"
-          sx={{
-            fontSize: { xs: "1rem", md: "1.5rem" },
-            ml: "1rem",
-            mr: "1rem",
-            textAlign: "center",
-            fontWeight: "bold"
-          }}
-        >
-          Click here to see Christine Brisley-Wade's new online Gallery!
-        </Typography>
-      </Box> */}
     </Fragment>
   );
 };

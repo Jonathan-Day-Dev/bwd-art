@@ -1,4 +1,3 @@
-// import poster from "../../assets/christine_poster.jpg";
 import belli from "../../assets/new/belli.jpg";
 
 import CustomCard from "../UI/CustomCard";
