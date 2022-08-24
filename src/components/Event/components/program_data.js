@@ -65,7 +65,7 @@ const events = [
     title: "Monthly Artist Demonstrations",
     date: "2nd Tuesday",
     time: "6 pm",
-    img: studio,
+    // img: studio,
     description:
       "All members and prospective members are invited to join us for a demonstration by an artist and a bit of comradery with other artist.",
     benefit: false,
