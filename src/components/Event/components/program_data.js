@@ -47,7 +47,7 @@ const events = [
   },
   {
     title: "2nd Sunday at the Art Center",
-    time: "1 pm - 5 pm",
+    time: "1 pm - 4 pm",
     img: artcenter,
     description:
       "The Art Center is open special hours on the 2nd Sunday of summer months. Stop by and enjoy the art and watch some of our artists at work!",
