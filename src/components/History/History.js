@@ -52,7 +52,7 @@ const History = () => {
         title="Meet Our Officers!"
         body={
           <div>
-            <p style={{ marginBottom: "1rem" }}>
+            <p style={{ marginBottom: "1rem", marginRight: "5rem", marginLeft: "5rem" }}>
               Brownwood Art Association membership meeting was held on April 21,
               2022 and new officers for the 2022-2023 fiscal year were elected.
               They are as follows:
@@ -309,6 +309,20 @@ const History = () => {
                 Jillian Johnson
               </p>
             </div>
+            <p
+              style={{
+                textAlign: "center",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                textDecoration: "underline",
+                color: "black",
+                marginRight: "5rem",
+                marginLeft: "5rem"
+              }}
+            >
+              The Board of Directors meets on the 2nd Monday of each month. BAA
+              Members are always welcome!
+            </p>
           </div>
         }
       />
