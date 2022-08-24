@@ -61,6 +61,15 @@ const events = [
       "BAA has a new program at the Art Center. Starting Monday, August 1, 2022, the Art Center will be open from 10 am to 3pm most Mondays for an Independent Study Group. Everyone is invited to come work and share ideas with other artists. This study will be self guided, independent of instructors, in any mediums/media and free at this stage. This will happen every Monday unless canceled for holidays or workshops. Gayle Massey…..817-233-2228",
     benefit: false,
   },
+  {
+    title: "Monthly Artist Demonstrations",
+    date: "2nd Tuesday",
+    time: "6 pm",
+    img: studio,
+    description:
+      "All members and prospective members are invited to join us for a demonstration by an artist and a bit of comradery with other artist.",
+    benefit: false,
+  },
 ];
 
 export default events;

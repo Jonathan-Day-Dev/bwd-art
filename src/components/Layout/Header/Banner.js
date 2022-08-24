@@ -105,7 +105,8 @@ const Banner = () => {
           border: "4px solid blue",
           padding: "0.5rem",
           fontWeight: "bold",
-          fontSize: "1.1rem"
+          fontSize: "1.1rem",
+          maxSize: "80%"
         }}>The gallery will be closed September 5 for Labor Day</Box>
 
         {/* Button Group inside Banner */}
