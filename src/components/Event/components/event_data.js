@@ -19,14 +19,14 @@ const events = [
   //     phone: "",
   //     isInstructor: true,
   //   },
-  {
-    title: "Demonstration - Scott Coers",
-    description:
-      "Scott will be demonstrating how to edit and post personal videos online using free apps",
-    date: "September 13",
-    time: "6 pm",
-    // img: boyd,
-  },
+  // {
+  //   title: "Demonstration - Scott Coers",
+  //   description:
+  //     "Scott will be demonstrating how to edit and post personal videos online using free apps",
+  //   date: "September 13",
+  //   time: "6 pm",
+  //   // img: boyd,
+  // },
   {
     title: "Bob Stuth-Wade Exhibit Reception",
     date: "October 6",
