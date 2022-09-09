@@ -99,7 +99,7 @@ const Banner = () => {
             </Typography>
           </Typography>
         </Typography>
-        <Box sx={{
+        {/* <Box sx={{
           backgroundColor: "white",
           marginTop: "1rem",
           border: "4px solid blue",
@@ -107,7 +107,7 @@ const Banner = () => {
           fontWeight: "bold",
           fontSize: "1.1rem",
           maxSize: "80%"
-        }}>The gallery will be closed September 5 for Labor Day</Box>
+        }}>The gallery will be closed September 5 for Labor Day</Box> */}
 
         {/* Button Group inside Banner */}
         <Box
