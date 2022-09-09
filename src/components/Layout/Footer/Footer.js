@@ -1,4 +1,5 @@
 import { styled } from "@mui/system";
+import React from "react";
 
 import Grid from "@mui/material/Grid";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -33,7 +34,7 @@ const Footer = () => {
       >
         <StyledGrid item>
           <Grid container direction="column" spacing={2}>
-            <Grid item component={Link} to="/">
+            <Grid item component={Link} to="/" sx={{ textDecoration: "none", color: "white" }}>
               Home
             </Grid>
           </Grid>
@@ -44,19 +45,21 @@ const Footer = () => {
               item
               component={Link}
               to="//checkout.square.site/merchant/3M8VC0T8TZ955/checkout/CGOPRSY5DJFUMQZHL5MXFQU4"
+              sx={{ textDecoration: "none", color: "white" }}
             >
               Donate
             </Grid>
-            <Grid item component={Link} to="/about">
+            <Grid item component={Link} to="/about" sx={{ textDecoration: "none", color: "white" }}>
               About Us
             </Grid>
-            <Grid item component={Link} to="/history">
+            <Grid item component={Link} to="/history" sx={{ textDecoration: "none", color: "white" }}>
               Our History
             </Grid>
             <Grid
               item
               component={Link}
               to="//checkout.square.site/merchant/3M8VC0T8TZ955/checkout/BRMFSPKMUFN3T3XT2SYEYPZ6"
+              sx={{ textDecoration: "none", color: "white" }}
             >
               Membership
             </Grid>
@@ -64,20 +67,20 @@ const Footer = () => {
         </StyledGrid>
         <StyledGrid item>
           <Grid container direction="column" spacing={2}>
-            <Grid item component={Link} to="/members">
+            <Grid item component={Link} to="/members" sx={{ textDecoration: "none", color: "white" }}>
               Galleries
             </Grid>
-            <Grid item component={Link} to="/event">
+            <Grid item component={Link} to="/event" sx={{ textDecoration: "none", color: "white" }}>
               Upcoming Events
             </Grid>
-            <Grid item component={Link} to="/programs">
+            <Grid item component={Link} to="/programs" sx={{ textDecoration: "none", color: "white" }}>
               Our Programs
             </Grid>
           </Grid>
         </StyledGrid>
         <StyledGrid item>
           <Grid container direction="column" spacing={2}>
-            <Grid item component={Link} to="/contact">
+            <Grid item component={Link} to="/contact" sx={{ textDecoration: "none", color: "white" }}>
               Contact Us
             </Grid>
           </Grid>
@@ -93,7 +96,7 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/brownwoodart"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <FacebookIcon sx={{ fontSize: { xs: "3rem", md: "4rem"} }} color="social" />
           </a>
@@ -102,7 +105,7 @@ const Footer = () => {
           <a
             href="https://www.twitter.com/BrownwoodArt"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <TwitterIcon sx={{ fontSize: { xs: "3rem", md: "4rem"} }} color="social" />
           </a>

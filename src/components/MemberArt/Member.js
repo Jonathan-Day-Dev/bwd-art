@@ -1,6 +1,7 @@
 import styles from "./Member.module.css";
 import { Link } from "react-router-dom";
 // import { Typography } from "@mui/material";
+import React from "react";
 
 const Member = (props) => {
   return (

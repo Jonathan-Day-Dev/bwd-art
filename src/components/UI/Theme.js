@@ -86,7 +86,7 @@ const Theme = createTheme({
       fontSize: "36px"
     },
     li: {
-      textAlign: "center"
+      textAlign: "center",
     }
   },
 });

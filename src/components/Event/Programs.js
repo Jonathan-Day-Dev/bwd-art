@@ -1,7 +1,7 @@
 import styles from "./Programs.module.css";
 import bowl from "../../assets/embre.jpg";
 
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Box from "@mui/material/Box";
 
 import CustomAcc from "./components/CustomAcc";

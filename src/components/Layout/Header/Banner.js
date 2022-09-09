@@ -1,6 +1,6 @@
 import backdrop from "../../../assets/backdrop.jpg";
 
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Box, Typography, Button } from "@mui/material";
 
@@ -131,7 +131,7 @@ const Banner = () => {
               marginBottom: { xs: "0.5rem", md: "0" },
             }}
           >
-            <Link to="/event">Upcoming Events</Link>
+            <Link to="/event" style={{textDecoration: "none", color: "white"}}>Upcoming Events</Link>
           </Button>
           <Button
             variant="contained"
@@ -145,7 +145,7 @@ const Banner = () => {
               marginBottom: { xs: "0.5rem", md: "0" },
             }}
           >
-            <Link to="/programs">View Our Programs</Link>
+            <Link to="/programs" style={{textDecoration: "none", color: "white"}}>View Our Programs</Link>
           </Button>
         </Box>
       </Box>

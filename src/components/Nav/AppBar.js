@@ -8,14 +8,14 @@ import {
   Menu,
   Container,
   Button,
-  MenuItem
+  MenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo.png";
 import pages from "./tab_data";
-import { MyLogo, MyNav } from "./styles";
+import { MyLogo, MyNav, StyledButton } from "./styles";
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,15 +29,19 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="fixed" sx={{opacity: 0.9}}>
+    <AppBar position="fixed" sx={{ opacity: 0.9 }}>
       <MyNav>
-        <Container sx={{height: "5rem"}}>
-          <Toolbar disableGutters sx={{height: "100%"}}>
+        <Container sx={{ height: "5rem" }}>
+          <Toolbar disableGutters sx={{ height: "100%" }}>
             <Typography
               variant="h6"
               noWrap
               component="div"
-              sx={{ mr: 2, display: { xs: "none", md: "flex" }, height: "100%"}}
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                height: "100%",
+              }}
             >
               <MyLogo src={logo} alt={logo} />
             </Typography>
@@ -73,10 +77,17 @@ const ResponsiveAppBar = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">
-                      <Link to={page.path || { pathname: page.link }}>
+                    <Typography textAlign="center" variant="button">
+                      <Typography
+                        component={Link}
+                        to={page.path || { pathname: page.link }}
+                        sx={{ textDecoration: "none" }}
+                      >
                         {page.name}
-                      </Link>
+                      </Typography>
+                      {/* <Link to={page.path || { pathname: page.link }}>
+                        {page.name}
+                      </Link> */}
                     </Typography>
                   </MenuItem>
                 ))}
@@ -103,12 +114,24 @@ const ResponsiveAppBar = () => {
                     fontSize: "1.1rem",
                     fontWeight: 700,
                     marginLeft: "auto",
-                    marginRight: "auto"
+                    marginRight: "auto",
                   }}
                 >
-                  <Link to={page.path || { pathname: page.link }}>
+                  <Typography
+                    component={StyledButton}
+                    to={page.path || { pathname: page.link }}
+                    sx={{
+                      textDecoration: "none",
+                      fontFamily: "Caveat",
+                      fontSize: "1.2rem",
+                      color: "black",
+                    }}
+                  >
                     {page.hide ? null : page.name}
-                  </Link>
+                  </Typography>
+                  {/* <Link to={page.path || { pathname: page.link }}>
+                    {page.hide ? null : page.name}
+                  </Link> */}
                 </Button>
               ))}
             </Box>

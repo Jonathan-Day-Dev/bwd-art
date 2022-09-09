@@ -1,10 +1,11 @@
 import CustomCard from "../UI/CustomCard";
 import { Typography } from "@mui/material";
+import React from "react";
 
 const Thanks = (props) => {
   return (
     <CustomCard
-      maxWth={{ xs: "80%", sm: "60%", md: "45%" }}
+      maxWidth={{ xs: "80%", sm: "60%", md: "45%" }}
       title="Thank You to the Patrons of BAA"
       body={
         <div>

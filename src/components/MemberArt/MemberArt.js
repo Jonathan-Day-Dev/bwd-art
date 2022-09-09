@@ -1,5 +1,5 @@
 import styles from "./MemberArt.module.css";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 import Card from "../UI/Card";
 import Member from "./Member";

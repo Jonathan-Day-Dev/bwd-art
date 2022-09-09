@@ -3,7 +3,7 @@ import "./index.css";
 
 import { Route, Routes } from "react-router-dom";
 
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 
 import AppBar from "./components/Nav/Scroll";
 import { ThemeProvider } from "@mui/material/styles";
@@ -19,7 +19,7 @@ import Classes from "./components/OnlineClasses/Classes";
 import MemberArt from "./components/MemberArt/MemberArt";
 import Event from "./components/Event/Event";
 // import Craig from "./components/Craig/Craig";
-import Board from "./components/Board/Board";
+// import Board from "./components/Board/Board";
 import Programs from "./components/Event/Programs";
 import History from "./components/History/History";
 import Thanks from "./components/Thanks/Thanks";
@@ -42,7 +42,7 @@ const App = () => {
                   justifyContent: "space-evenly",
                   alignItems: "center",
                 }}>
-                  <Board />
+                  {/* <Board /> */}
                   <Thanks />
                   {/* <Craig /> */}
                 </Box>

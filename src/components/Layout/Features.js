@@ -1,6 +1,6 @@
 import styles from "./Features.module.css";
 
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 import Card from "../UI/Card";
 import OnlineClasses from '../OnlineClasses/Classes';

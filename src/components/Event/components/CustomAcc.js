@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Avatar from "@mui/material/Avatar";
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 import CustomCard from "../../UI/CustomCard";
 
