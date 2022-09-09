@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo.png";
 import pages from "./tab_data";
-import { MyLogo, MyNav, StyledButton } from "./styles";
+import { MyLogo, MyNav, StyledType } from "./styles";
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -118,16 +118,16 @@ const ResponsiveAppBar = () => {
                   }}
                 >
                   <Typography
-                    component={StyledButton}
+                    component={Link}
                     to={page.path || { pathname: page.link }}
                     sx={{
                       textDecoration: "none",
-                      fontFamily: "Caveat",
-                      fontSize: "1.2rem",
-                      color: "black",
+                      // fontFamily: "Caveat",
+                      // fontSize: "1.2rem",
+                      // color: "black",
                     }}
                   >
-                    {page.hide ? null : page.name}
+                    <StyledType>{page.hide ? null : page.name}</StyledType>
                   </Typography>
                   {/* <Link to={page.path || { pathname: page.link }}>
                     {page.hide ? null : page.name}
