@@ -23,6 +23,7 @@ const Thanks = (props) => {
           <Typography variant="h6">Womens' Club of Brownwood</Typography>
 
           <Typography variant="h5">Supporter of the Arts</Typography>
+          <Typography variant="h6">In Memory of Sandra Blasingame</Typography>
           <Typography variant="h6">Jimmie Hudson</Typography>
           <Typography variant="h6">Roger &amp; Linda Levesque</Typography>
           <Typography variant="h6">Keith Clark</Typography>
