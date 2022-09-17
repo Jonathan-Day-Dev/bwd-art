@@ -43,6 +43,32 @@ const events = [
     img: powwow
   },
   {
+    title: "Drawing With Susan Step",
+    description: "Want to learn to draw? Or do you draw and want to improve your skills? Join Susan Step in her weekly drawing classes at the Art Center! The only supplies that you'll need are a sketch pad and a pencil. We encourage students to preregister by calling the Art Center, though it isn't necessary.",
+    date: "September 28",
+    time: "10 am - 11:30 am",
+    price: "$20 per session",
+    instructor: {
+      name: "Susan Step",
+      phone: "254-842-4676",
+      isInstructor: true
+    },
+    img: stepart
+  },
+  {
+    title: "Drawing With Susan Step",
+    description: "Want to learn to draw? Or do you draw and want to improve your skills? Join Susan Step in her weekly drawing classes at the Art Center! The only supplies that you'll need are a sketch pad and a pencil. We encourage students to preregister by calling the Art Center, though it isn't necessary.",
+    date: "October 5",
+    time: "10 am - 11:30 am",
+    price: "$20 per session",
+    instructor: {
+      name: "Susan Step",
+      phone: "254-842-4676",
+      isInstructor: true
+    },
+    img: stepart
+  },
+  {
     title: "Bob Stuth-Wade Exhibit Reception",
     date: "October 6",
     img: bobsw,
@@ -53,6 +79,45 @@ const events = [
     date: "October 11",
     time: "6 pm",
     img: jserna,
+  },
+  {
+    title: "Drawing With Susan Step",
+    description: "Want to learn to draw? Or do you draw and want to improve your skills? Join Susan Step in her weekly drawing classes at the Art Center! The only supplies that you'll need are a sketch pad and a pencil. We encourage students to preregister by calling the Art Center, though it isn't necessary.",
+    date: "October 12",
+    time: "10 am - 11:30 am",
+    price: "$20 per session",
+    instructor: {
+      name: "Susan Step",
+      phone: "254-842-4676",
+      isInstructor: true
+    },
+    img: stepart
+  },
+  {
+    title: "Drawing With Susan Step",
+    description: "Want to learn to draw? Or do you draw and want to improve your skills? Join Susan Step in her weekly drawing classes at the Art Center! The only supplies that you'll need are a sketch pad and a pencil. We encourage students to preregister by calling the Art Center, though it isn't necessary.",
+    date: "October 19",
+    time: "10 am - 11:30 am",
+    price: "$20 per session",
+    instructor: {
+      name: "Susan Step",
+      phone: "254-842-4676",
+      isInstructor: true
+    },
+    img: stepart
+  },
+  {
+    title: "Drawing With Susan Step",
+    description: "Want to learn to draw? Or do you draw and want to improve your skills? Join Susan Step in her weekly drawing classes at the Art Center! The only supplies that you'll need are a sketch pad and a pencil. We encourage students to preregister by calling the Art Center, though it isn't necessary.",
+    date: "October 26",
+    time: "10 am - 11:30 am",
+    price: "$20 per session",
+    instructor: {
+      name: "Susan Step",
+      phone: "254-842-4676",
+      isInstructor: true
+    },
+    img: stepart
   },
   {
     title: "BAA Photo Group Exhibit Reception",
