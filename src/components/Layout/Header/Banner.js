@@ -49,7 +49,7 @@ const Banner = () => {
                 fontWeight: 700,
               }}
             >
-              PO Box 782
+              215 Fisk Ave
             </Typography>
             <Typography
               variant="h2"
