@@ -26,14 +26,7 @@ const CustomCard = (props) => {
       }}
       raised
     >
-      {props.imgPath && (
-        <CardMedia
-          component="img"
-          image={props.imgPath}
-          alt={props.imgPath}
-          sx={{ height: "70vh" }}
-        />
-      )}
+      
       <CardContent>
         <Typography variant="h5" component="div">
           {props.title}
@@ -47,6 +40,14 @@ const CustomCard = (props) => {
           {props.body}
         </Typography>
       </CardContent>
+      {props.imgPath && (
+        <CardMedia
+          component="img"
+          image={props.imgPath}
+          alt={props.imgPath}
+          sx={{ height: "70vh" }}
+        />
+      )}
       {props.learn && (
         <CardActions>
           {/* <Button size="small" color="info">Learn More</Button> */}

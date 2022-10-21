@@ -1,5 +1,6 @@
 // import belli from "../../assets/new/belli.jpg";
-import boyd from "../../assets/boydharrisposter.jpg";
+// import boyd from "../../assets/boydharrisposter.jpg";
+import enplein from "../../assets/enplein.jpg";
 
 import React from "react";
 import CustomCard from "../UI/CustomCard";
@@ -7,12 +8,13 @@ import CustomCard from "../UI/CustomCard";
 const Board = () => {
   return (
     <CustomCard
-      maxWidth={{ xs: "80%", lg: "50%", xl: "40%" }}
-      title="Boyd Harris Exhibit"
+      // maxWth="40%"
+      maxWth={{ xs: "80%", lg: "50%", xl: "40%" }}
+      title="En Plein Air"
       body={
-        <img src={boyd} alt="Boyd Harris Exhibit" width="10%" />
+        <img src={enplein} alt="Boyd Harris Exhibit" width="100%" />
       }
-      learn={true}
+      // learn={true}
     />
   );
 };
