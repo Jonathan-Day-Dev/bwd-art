@@ -44,7 +44,7 @@ const events = [
     img: charlotte,
   },
   {
-    title: "En Plein Air",
+    title: "En Plein Air Workshop",
     description: "Painting outdoors with the world as your model.",
     date: "November 12",
     time: "10 am - noon / 1 pm - 3pm",

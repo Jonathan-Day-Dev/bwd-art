@@ -13,7 +13,7 @@ const Board = () => {
     <CustomCard
       // maxWth="40%"
       maxWth={{ xs: "80%", lg: "50%", xl: "40%" }}
-      title="En Plein Air"
+      // title="En Plein Air"
       body={
         <Box sx={{ border: "1px solid green"}}>
           <Link href="http://brownwoodart-245781.square.site/" color="#d32f2f">
