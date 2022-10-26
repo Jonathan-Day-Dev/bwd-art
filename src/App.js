@@ -18,7 +18,6 @@ import Contact from "./components/Contact/Contact";
 import Classes from "./components/OnlineClasses/Classes";
 import MemberArt from "./components/MemberArt/MemberArt";
 import Event from "./components/Event/Event";
-// import Craig from "./components/Craig/Craig";
 import Board from "./components/Board/Board";
 import Programs from "./components/Event/Programs";
 import History from "./components/History/History";

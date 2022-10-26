@@ -6,6 +6,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Avatar from "@mui/material/Avatar";
 
 import React, { useState } from "react";
+import Link from '@mui/material/Link';
 
 import CustomCard from "../../UI/CustomCard";
 
@@ -116,6 +117,7 @@ const CustomAcc = (props) => {
                         Price: {props.events[i].price}
                       </Typography>
                     )}
+                    {props.events[i].link && <Link href={props.events[i].link} color="#43a047">Click here to buy tickets!</Link>}
                     {props.events[i].instructor && (
                       <div className="flex flex-col justify-evenly items-center mt-4">
                         <p className="text-center">{`Contact ${props.events[i].instructor.name}`}</p>
@@ -138,4 +140,4 @@ const CustomAcc = (props) => {
   );
 };
 
-export default CustomAcc;
+export default CustomAcc

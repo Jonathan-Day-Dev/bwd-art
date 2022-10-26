@@ -33,3 +33,13 @@ p {
 caption {
     @apply lg:text-sm lg:mx-3 lg:mb-3 lg:italic lg:block lg:w-[70%] hidden;
 }
+
+.div {
+    border: 1px solid green;
+    width: 100%;
+}
+
+.link {
+    border: 1px solid red;
+    text-align: center;
+}

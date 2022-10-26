@@ -3,7 +3,6 @@ import chili from "../../../assets/chili.jpg";
 import charlotte from "../../../assets/charlotte.jpg";
 import stepart from "../../../assets/susan_step.jpg";
 import enplein from "../../../assets/enplein02.jpg";
-// import {Link} from "react-router-dom";
 
 const events = [
   // {
@@ -50,7 +49,8 @@ const events = [
     date: "November 12",
     time: "10 am - noon / 1 pm - 3pm",
     img: enplein,
-    price: "$75/session"
+    price: "$75/session",
+    link: "http://brownwoodart-245781.square.site/"
   },
   {
     title: "BAA Chili Lunch and Silent Auction Fundraiser",
