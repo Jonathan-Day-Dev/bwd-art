@@ -2,7 +2,7 @@ import camera from "../../../assets/camera.jpg";
 import chili from "../../../assets/chili.jpg";
 import charlotte from "../../../assets/charlotte.jpg";
 import stepart from "../../../assets/susan_step.jpg";
-import enplein from "../../../assets/enplein02.jpg";
+// import enplein from "../../../assets/enplein02.jpg";
 
 const events = [
   // {
@@ -43,15 +43,15 @@ const events = [
     time: "6 pm",
     img: charlotte,
   },
-  {
-    title: "En Plein Air Workshop",
-    description: "Painting outdoors with the world as your model.",
-    date: "November 12",
-    time: "10 am - noon / 1 pm - 3pm",
-    img: enplein,
-    price: "$75/session",
-    link: "http://brownwoodart-245781.square.site/"
-  },
+  // {
+  //   title: "En Plein Air Workshop",
+  //   description: "Painting outdoors with the world as your model.",
+  //   date: "November 12",
+  //   time: "10 am - noon / 1 pm - 3pm",
+  //   img: enplein,
+  //   price: "$75/session",
+  //   link: "http://brownwoodart-245781.square.site/"
+  // },
   {
     title: "BAA Chili Lunch and Silent Auction Fundraiser",
     date: "December 1",
