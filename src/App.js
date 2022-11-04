@@ -18,7 +18,7 @@ import Contact from "./components/Contact/Contact";
 import Classes from "./components/OnlineClasses/Classes";
 import MemberArt from "./components/MemberArt/MemberArt";
 import Event from "./components/Event/Event";
-// import Board from "./components/Board/Board";
+import Board from "./components/Board/Board";
 import Programs from "./components/Event/Programs";
 import History from "./components/History/History";
 import Thanks from "./components/Thanks/Thanks";
@@ -41,7 +41,7 @@ const App = () => {
                   justifyContent: "space-evenly",
                   alignItems: "center",
                 }}>
-                  {/* <Board /> */}
+                  <Board />
                   <Thanks />
                   {/* <Craig /> */}
                 </Box>
